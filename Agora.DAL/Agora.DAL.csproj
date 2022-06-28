@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Agora.MAP\Agora.MAP.csproj" />
+    <ProjectReference Include="..\Agora.MODEL\Agora.MODEL.csproj" />
+  </ItemGroup>
+
+</Project>
