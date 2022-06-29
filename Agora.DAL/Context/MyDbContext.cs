@@ -16,8 +16,25 @@ namespace Agora.DAL.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductPictureConfiguration());
+            modelBuilder.ApplyConfiguration(new TownConfiguration());
+            modelBuilder.ApplyConfiguration(new CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new UserDetailConfiguration());
+            modelBuilder.ApplyConfiguration(new TransferConfiguration());
+
         }
 
         public DbSet<User>  Users { get; set; }
+        public DbSet<UserDetail> UserDetails { get; set; }
+        public DbSet<Cargo> Cargos { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<City> Cities { get; set; }
+        public DbSet<Town> Towns { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<ProductPicture> ProductPictures { get; set; }
+        public DbSet<Transfer> Transfers { get; set; }
     }
 }

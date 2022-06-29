@@ -74,5 +74,8 @@ namespace Agora.BLL.Base
             table.Add(item);
             Save();
         }
+
+
+        
     }
 }

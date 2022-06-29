@@ -13,8 +13,11 @@ namespace Agora.MAP.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.Property(x => x.UserName).IsRequired().HasMaxLength(10);
+            builder.Property(x => x.UserName).HasColumnType("varchar(20)").IsRequired().HasMaxLength(10);
             builder.Property(x => x.Password).IsRequired().HasMaxLength(10);
+
+            builder.HasIndex(x => x.UserName).IsUnique();
+
         }
     }
 }

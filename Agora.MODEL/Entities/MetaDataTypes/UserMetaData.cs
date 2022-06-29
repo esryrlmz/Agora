@@ -12,6 +12,7 @@ namespace Agora.MODEL.Entities.MetaDataTypes
     {
 
         [Required(ErrorMessage = "Zorunlu alan"), Column(TypeName = "nvarchar(50)")]
+
         public string UserName { get; set; }
 
         [Column(TypeName = "char(6)")]

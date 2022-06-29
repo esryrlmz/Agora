@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Agora.MODEL.Entities
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         public BaseEntity()
         {
