@@ -23,6 +23,7 @@ namespace Agora.DAL.Context
             modelBuilder.ApplyConfiguration(new ProductCategoryConfiguration());
             modelBuilder.ApplyConfiguration(new UserDetailConfiguration());
             modelBuilder.ApplyConfiguration(new TransferConfiguration());
+            modelBuilder.ApplyConfiguration(new CommentConfiguration());
 
         }
 
@@ -36,5 +37,6 @@ namespace Agora.DAL.Context
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
         public DbSet<Transfer> Transfers { get; set; }
+        public DbSet<Transfer> Comments { get; set; }
     }
 }

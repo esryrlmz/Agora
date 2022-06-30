@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Areas\Management\images\bg-01.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Areas\Management\images\bg-01.PNG">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,14 +27,6 @@
     <ProjectReference Include="..\Agora.BLL\Agora.BLL.csproj" />
     <ProjectReference Include="..\Agora.DAL\Agora.DAL.csproj" />
     <ProjectReference Include="..\Agora.MODEL\Agora.MODEL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\fonts\" />
-    <Folder Include="wwwroot\images\" />
-    <Folder Include="wwwroot\js\" />
-    <Folder Include="wwwroot\vendor\" />
   </ItemGroup>
 
 </Project>

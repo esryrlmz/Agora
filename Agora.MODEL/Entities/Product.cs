@@ -30,7 +30,7 @@ namespace Agora.MODEL.Entities
         public virtual User User { get; set; }
         public virtual Town Town { get; set; }
         public virtual List<ProductCategory> ProductCategories { get; set; }
-
+        public List<Comment> Comments { get; set; }
         public virtual Transfer Transfer { get; set; }
     }
 }
