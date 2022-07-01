@@ -12,5 +12,13 @@ namespace Agora.UI.Areas.Management.Controllers
             List<Comment> comments = new List<Comment>();
             return View(comments);
         }
+        public IActionResult Edit()
+        {
+           
+            Comment comment = new Comment();
+            return View(comment);
+        }
+
+
     }
 }

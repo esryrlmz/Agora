@@ -1,0 +1,248 @@
+﻿@model Transfer
+
+
+
+
+   <div class="container-fluid">
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    Transfer Bilgileri
+                                </div>
+                                <div class="panel-body">
+								<div class="row">
+								 
+								   <form role="form">
+								   <div class="form-group">
+                                       <div class="col-lg-3">
+                                     <label>Transfer Numarası:</label>
+                                     </div>
+                                      <div class="col-lg-4">
+                                      <input class="form-control" placeholder="Tarnsfer Numarasını Giriniz...">
+                                      </div>
+                                     </div>
+								   
+								   <button type="submit" class="btn" style="background-color: #31708f; color:#ffffff">Sorgula</button>
+								   
+								   </form>
+								   
+								 </div>
+								</div>
+								</div>
+                             <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <i class="fa fa-truck fa-fw"></i> Transfer Sahibi
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <div class="list-group">
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                      <div class="col-lg-3"> <b> Ad Soyad </b></div>
+                                                      <div class="col-lg-3">  Esra Yorulmaz </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"> <b> Telefon</b></div>
+                                                      <div class="col-lg-3">  05434762972 </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"> <b> Email</b></div>
+                                                      <div class="col-lg-3">  esryrlmz@gmail.com </div>
+                                                   </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"><b>  İl/İlce</b></div>
+                                                      <div class="col-lg-3">  İstanbul/Eyüp </div>
+                                                  </div>
+                                                </div>
+                                               
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-lg-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <i class="fa fa-truck fa-fw"></i> Transfer Alıcısı
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <div class="list-group">
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                      <div class="col-lg-3"> <b> Ad Soyad </b></div>
+                                                      <div class="col-lg-3">  Betül Koca </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"> <b> Telefon</b></div>
+                                                      <div class="col-lg-3">  05434589696 </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"> <b> Email</b></div>
+                                                      <div class="col-lg-3">  betul@gmail.com </div>
+                                                   </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-3"><b>  İl/İlce</b></div>
+                                                      <div class="col-lg-3">  İstanbul/Üsküdar </div>
+                                                  </div>
+                                                </div>
+                                               
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                 </div>
+     
+                                </div>
+                                  <div class="row">
+                                      <div class="col-lg-12">
+                                         <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <i class="fa fa-truck fa-fw"></i> Transfer Bilgileri
+                                                <a asp-controller="Transfer" asp-area="Management" asp-action="Edit" style="color: #31708f; float:right" ><i class="fa fa-pencil-square-o fa-lg"></i> </a>
+                                            </div>
+   
+                                         <div class="panel-body">
+                                        <!-- /.panel-heading -->
+                                        <div class="row">
+                                             <div class="col-lg-6">
+                                           <div class="panel-body">
+                                             <div class="list-group">
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                      <div class="col-lg-4"> <b> Teslim Adresi </b></div>
+                                                      <div class="col-lg-8">  Yayla sok. Gül apartmanı No: 27/1 </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-4"> <b> İl/İlce</b></div>
+                                                      <div class="col-lg-8">  İstnabul/Eyüp </div>
+                                                  </div>
+                                                </div>
+                                               
+                                                
+                                              </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                               <div class="panel-body">
+                                                <div class="list-group">
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-4"> <b> Transfer Durumu</b></div>
+                                                      <div class="col-lg-8">  Kargo ile Transfer :kargo Numarası: 098765262783</div>
+                                                   </div>
+                                                </div>
+                                                 <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-4"><b>  Transfer Tarihi</b></div>
+                                                      <div class="col-lg-8"> 04.07.1987 </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                               </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     </div>
+                                 </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                         <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <i class="fa fa-truck fa-fw"></i> Transfer Edilen Ürün Bilgileri
+                                                  <a asp-controller="Product" asp-area="Management" asp-action="Edit" style="color: #31708f; float:right" ><i class="fa fa-pencil-square-o fa-lg"></i> </a>
+                                            </div>
+   
+                                         <div class="panel-body">
+                                        <!-- /.panel-heading -->
+                                        <div class="row">
+                                          <div class="col-lg-6">
+                                           <div class="panel-body">
+                                             <div class="list-group">
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                      <div class="col-lg-4"> <b> Kategori </b></div>
+                                                      <div class="col-lg-8">  Çanta </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                      <div class="col-lg-4"> <b> Ürün Adı </b></div>
+                                                      <div class="col-lg-8">  Siyah Çanta </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-4"> <b> Açıklama</b></div>
+                                                      <div class="col-lg-8">  Siyah renk deri sırt çantası </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                @*buradaki container kaldırdım*@
+                                               @*<div class="container">*@
+                                                 <div id="myCarousel" class="carousel slide" >
+                                                  <!-- Indicators -->
+                                                  <ol class="carousel-indicators">
+                                                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                  </ol>
+                                                  <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        @*img tagındaki style width ve height değerlerini kaldırdım*@
+                                                      <img src="/images/canta1.jpg" class="img-responsive">
+                                                    </div>
+                                                    <div class="item">
+                                                        @*img tagındaki style width ve height değerlerini kaldırdım*@
+                                                      <img src="/images/canta2.jpg" class="img-responsive" >
+                                                    </div>
+                                                    <div class="item">
+                                                        @*img tagındaki style width ve height değerlerini kaldırdım*@
+                                                      <img src="/images/canta3.jpg" class="img-responsive" >
+                                                    </div>
+                                                  </div>
+                                                  <!-- Controls -->
+                                                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                    <span class="icon-prev"></span>
+                                                  </a>
+                                                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                                    <span class="icon-next"></span>
+                                                  </a>  
+                                                </div>
+                                               @*</div>*@
+                                             </div>
+                                         </div>
+                                     </div>
+                                     </div>
+                                 </div>
+
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+
+

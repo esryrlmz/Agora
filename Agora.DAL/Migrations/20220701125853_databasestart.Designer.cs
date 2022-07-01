@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agora.DAL.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20220629081346_databasecreate")]
-    partial class databasecreate
+    [Migration("20220701125853_databasestart")]
+    partial class databasestart
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -117,6 +117,41 @@ namespace Agora.DAL.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Cities");
+                });
+
+            modelBuilder.Entity("Agora.MODEL.Entities.Comment", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Interpretation")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsCheck")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NameSurname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("ProductID");
+
+                    b.ToTable("Comment");
                 });
 
             modelBuilder.Entity("Agora.MODEL.Entities.Product", b =>
@@ -290,12 +325,6 @@ namespace Agora.DAL.Migrations
                     b.Property<int?>("UserID")
                         .HasColumnType("int");
 
-                    b.Property<string>("Xcoordinate")
-                        .HasColumnType("varchar(100)");
-
-                    b.Property<string>("Ycoordinate")
-                        .HasColumnType("varchar(100)");
-
                     b.HasKey("ID");
 
                     b.HasIndex("ProductID")
@@ -303,7 +332,7 @@ namespace Agora.DAL.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Transfers");
+                    b.ToTable("Transfer");
                 });
 
             modelBuilder.Entity("Agora.MODEL.Entities.User", b =>
@@ -350,11 +379,17 @@ namespace Agora.DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
                         .HasColumnType("varchar(100)");
+
+                    b.Property<int>("Gender")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("ModifiedDate")
                         .HasColumnType("datetime2");
@@ -369,6 +404,9 @@ namespace Agora.DAL.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
+
+                    b.Property<string>("Towner")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserID")
                         .HasColumnType("int");
@@ -397,6 +435,17 @@ namespace Agora.DAL.Migrations
                     b.HasOne("Agora.MODEL.Entities.Category", null)
                         .WithMany("SubCategory")
                         .HasForeignKey("CategoryID");
+                });
+
+            modelBuilder.Entity("Agora.MODEL.Entities.Comment", b =>
+                {
+                    b.HasOne("Agora.MODEL.Entities.Product", "Product")
+                        .WithMany("Comments")
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Agora.MODEL.Entities.Product", b =>
@@ -501,6 +550,8 @@ namespace Agora.DAL.Migrations
 
             modelBuilder.Entity("Agora.MODEL.Entities.Product", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("ProductCategories");
 
                     b.Navigation("ProductPictures");

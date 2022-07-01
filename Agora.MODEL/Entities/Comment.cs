@@ -10,6 +10,7 @@ namespace Agora.MODEL.Entities
     {
         public string NameSurname { get; set; }
         public string Interpretation { get; set; }
+        public bool IsCheck { get; set; }
 
         public int ProductID { get; set; }
 

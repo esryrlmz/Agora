@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Agora.DAL.Migrations
 {
-    public partial class databasecreate : Migration
+    public partial class databasestart : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -97,6 +97,9 @@ namespace Agora.DAL.Migrations
                     NameSurname = table.Column<string>(type: "varchar(150)", nullable: false),
                     Phone = table.Column<string>(type: "varchar(11)", nullable: false),
                     Email = table.Column<string>(type: "varchar(100)", nullable: true),
+                    Country = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Towner = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Gender = table.Column<int>(type: "int", nullable: false),
                     UserID = table.Column<int>(type: "int", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -143,6 +146,31 @@ namespace Agora.DAL.Migrations
                         name: "FK_Products_Users_TownID",
                         column: x => x.TownID,
                         principalTable: "Users",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Comment",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NameSurname = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Interpretation = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsCheck = table.Column<bool>(type: "bit", nullable: false),
+                    ProductID = table.Column<int>(type: "int", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Comment", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_Comment_Products_ProductID",
+                        column: x => x.ProductID,
+                        principalTable: "Products",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -200,14 +228,12 @@ namespace Agora.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Transfers",
+                name: "Transfer",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Adress = table.Column<string>(type: "varchar(max)", nullable: false),
-                    Xcoordinate = table.Column<string>(type: "varchar(100)", nullable: true),
-                    Ycoordinate = table.Column<string>(type: "varchar(100)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TransferDate = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ProductStatus = table.Column<int>(type: "int", nullable: false),
@@ -219,15 +245,15 @@ namespace Agora.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Transfers", x => x.ID);
+                    table.PrimaryKey("PK_Transfer", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Transfers_Products_ProductID",
+                        name: "FK_Transfer_Products_ProductID",
                         column: x => x.ProductID,
                         principalTable: "Products",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Transfers_Users_UserID",
+                        name: "FK_Transfer_Users_UserID",
                         column: x => x.UserID,
                         principalTable: "Users",
                         principalColumn: "ID",
@@ -252,9 +278,9 @@ namespace Agora.DAL.Migrations
                 {
                     table.PrimaryKey("PK_Cargos", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Cargos_Transfers_TranserID",
+                        name: "FK_Cargos_Transfer_TranserID",
                         column: x => x.TranserID,
-                        principalTable: "Transfers",
+                        principalTable: "Transfer",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -275,6 +301,11 @@ namespace Agora.DAL.Migrations
                 name: "IX_Categories_CategoryID",
                 table: "Categories",
                 column: "CategoryID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Comment_ProductID",
+                table: "Comment",
+                column: "ProductID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductCategories_ProductID",
@@ -303,14 +334,14 @@ namespace Agora.DAL.Migrations
                 column: "CityID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Transfers_ProductID",
-                table: "Transfers",
+                name: "IX_Transfer_ProductID",
+                table: "Transfer",
                 column: "ProductID",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Transfers_UserID",
-                table: "Transfers",
+                name: "IX_Transfer_UserID",
+                table: "Transfer",
                 column: "UserID");
 
             migrationBuilder.CreateIndex(
@@ -332,6 +363,9 @@ namespace Agora.DAL.Migrations
                 name: "Cargos");
 
             migrationBuilder.DropTable(
+                name: "Comment");
+
+            migrationBuilder.DropTable(
                 name: "ProductCategories");
 
             migrationBuilder.DropTable(
@@ -341,7 +375,7 @@ namespace Agora.DAL.Migrations
                 name: "UserDetails");
 
             migrationBuilder.DropTable(
-                name: "Transfers");
+                name: "Transfer");
 
             migrationBuilder.DropTable(
                 name: "Categories");

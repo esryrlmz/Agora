@@ -14,8 +14,6 @@ namespace Agora.MAP.Configurations
         public void Configure(EntityTypeBuilder<Transfer> builder)
         {
             builder.Property(x => x.Adress).HasColumnType("varchar(max)").IsRequired();
-            builder.Property(x => x.Xcoordinate).HasColumnType("varchar(100)");
-            builder.Property(x => x.Ycoordinate).HasColumnType("varchar(100)");
 
             builder.HasOne<Product>(s => s.Product)
                 .WithOne(a => a.Transfer)

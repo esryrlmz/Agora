@@ -11,9 +11,19 @@ namespace Agora.UI.Areas.Management.Controllers
             return View();
         }
 
+        public IActionResult Product()
+        {
+
+            return View(new Product());
+        }
         public IActionResult Create()
         {
             
+            return View(new Product());
+        }
+        public IActionResult Edit()
+        {
+
             return View(new Product());
         }
     }

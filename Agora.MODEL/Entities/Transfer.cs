@@ -14,8 +14,6 @@ namespace Agora.MODEL.Entities
             ProductStatus = ProductStatus.Ownerless;
         }
         public string Adress { get; set; }
-        public string Xcoordinate { get; set; }
-        public string Ycoordinate { get; set; }
         public string Description { get; set; }
         public DateTime TransferDate { get; set; }//transferdate transfer edildiğinde girilecek ve status guncellenecek
         public ProductStatus ProductStatus { get; set; }

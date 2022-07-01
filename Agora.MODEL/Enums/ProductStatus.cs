@@ -8,8 +8,8 @@ namespace Agora.MODEL.Enums
 {
     public enum ProductStatus
     {
-        Rezerved=1, Ownerless=2, Adopted=3
+        Rezerved=1, Ownerless=2, Adopted=3, Cancel= 4
 
-            //Rezerved = rezerve edildi, Ownerless = sahipsiz rezerve edilebilir, Adopted = sahiplendirildi
+            //Rezerved = rezerve edildi, Ownerless = sahipsiz rezerve edilebilir, Adopted = sahiplendirildi, cancel: transfer ital edildi
     }
 }

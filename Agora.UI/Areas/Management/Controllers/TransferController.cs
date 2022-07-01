@@ -22,6 +22,16 @@ namespace Agora.UI.Areas.Management.Controllers
             List<Transfer> transfers = new List<Transfer>();
             return View(transfers);
         }
+        public IActionResult Transfer()
+        {
+            Transfer transfer = new Transfer();
+            return View(transfer);
+        }
+        public IActionResult ShowTransfer()
+        {
+            Transfer transfer = new Transfer();
+            return View(transfer);
+        }
         public IActionResult Edit()
         {
             Transfer transfer = new Transfer();

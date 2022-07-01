@@ -12,9 +12,6 @@ namespace Agora.UI.Areas.Management.Controllers
             List<Category> categories = new List<Category>();   
             return View(categories);
         }
-        public IActionResult Create()
-        {
-            return View(new Category());
-        }
+       
     }
 }

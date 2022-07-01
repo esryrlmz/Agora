@@ -5,17 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Areas\Management\images\bg-01.PNG" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Areas\Management\images\bg-01.PNG">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.14">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

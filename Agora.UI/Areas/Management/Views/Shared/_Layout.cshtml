@@ -13,9 +13,12 @@
         <link href="~/css/metisMenu.min.css" rel="stylesheet">
         <link href="~/css/timeline.css" rel="stylesheet">
         <link href="~/css/startmin.css" rel="stylesheet">
+         <link href="~/css/tree.css" rel="stylesheet">
         <link href="~/css/morris.css" rel="stylesheet">
+         <link href="~/css/datepicker.css" rel="stylesheet">
+          <link href="~/css/crouser.css" rel="stylesheet">
         <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-</head>
+ </head>
 <body>
 
      <div id="wrapper">
@@ -86,9 +89,6 @@
                                     <li>
                                         <a asp-controller="Category" asp-area="Management" asp-action="CategoryList">Kategori Listesi</a>
                                     </li>
-                                    <li>
-                                        <a asp-controller="Category" asp-area="Management" asp-action="Create">Yeni Kategori Aç</a>
-                                    </li>
                                 </ul>
                             </li>
                             <li>
@@ -104,9 +104,9 @@
                                         <a asp-controller="Transfer" asp-area="Management" asp-action="TransferListHand">Elden Teslim Transferler</a>
                                     </li>
                                     <li>
-                                        <a asp-controller="Transfer" asp-area="Management" asp-action="Edit">Transfer Düzenle</a>
+                                        <a asp-controller="Transfer" asp-area="Management" asp-action="Transfer">Transfer Bilgisi</a>
                                     </li>
-                                </ul>
+                                   </ul>
                             </li>
                               <li>
                                 <a href="#"><i class="fa fa-cubes "></i> Ürünler <span class="fa arrow"></span></a>
@@ -117,6 +117,7 @@
                                     <li>
                                         <a  asp-controller="Product" asp-area="Management" asp-action="Create" >Yeni Ürün Ekle</a>
                                     </li>
+                                    
                                 </ul>
                             </li>
                              <li>
@@ -156,5 +157,15 @@
         <script src="~/js/bootstrap.min.js"></script>
         <script src="~/js/metisMenu.min.js"></script>
         <script src="~/js/startmin.js"></script>
+         <script src="~/js/dataTables/jquery.dataTables.min.js"></script>
+        <script src="~/js/dataTables/dataTables.bootstrap.min.js"></script>
+        <script src="~/js/startmin.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#dataTables-example').DataTable({
+                    responsive: true
+                });
+            });
+        </script>
 </body>
 </html>
