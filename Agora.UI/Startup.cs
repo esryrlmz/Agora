@@ -12,6 +12,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Agora.BLL.Concrete;
+using Agora.BLL.Base;
+using Agora.MODEL.Entities;
 
 namespace Agora.UI
 {
@@ -26,6 +28,13 @@ namespace Agora.UI
         {
             services.AddDbContext<MyDbContext>(options => options.UseSqlServer(_configuration["ConnectionStrings:Mssql"]));
             services.AddScoped<IUserRepository, UserRepository>();
+
+
+            services.AddScoped<IRepository<City>, Repository<City>>();
+            services.AddScoped<IRepository< Town>, Repository<Town>>();
+            services.AddScoped<IRepository<UserDetail>, Repository<UserDetail>>();
+
+
             services.AddControllersWithViews();
         }
 

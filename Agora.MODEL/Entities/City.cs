@@ -8,7 +8,7 @@ namespace Agora.MODEL.Entities
 {
     public class City: BaseEntity
     {
-        public int CityName { get; set; }
+        public string CityName { get; set; }
 
         //relation Property
 

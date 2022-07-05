@@ -1,0 +1,111 @@
+﻿@using Agora.MODEL.Enums
+
+@model (User ,UserDetail )
+
+ <div class="container-fluid">
+<div class="row">
+<div class="col-lg-12">
+
+
+
+        <div class="row">
+
+                     <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <span  style="color: #31708f"><b>  DİĞER BİLGİLER </b></span>
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+
+                         <form method="post" asp-controller="User" asp-area="Management" asp-action="UpdateUserDetail"  role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                          
+										<div class="form-group">
+                                            <label>Kullanıcı Ad Soyad</label>
+                                            <input asp-for="@Model.Item2.NameSurname" class="form-control"/>
+                                        </div>
+											
+                                        <div class="form-group">
+                                            <label>Telefon</label>
+                                            <input asp-for="@Model.Item2.Phone"  class="form-control"/>
+                                         </div>
+                                         <div class="form-group">
+                                            <label>Mail</label>
+                                            <input asp-for="@Model.Item2.Email"  class="form-control"/>
+                                         </div>
+                                          
+                                         <div class="form-group">
+                                           <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">KAYDET</button>
+                                         </div>
+                                         <input type="hidden" asp-for="@Model.Item2.ID"/> 
+                                         <input type="hidden" asp-for="@Model.Item2.UserID"/> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <span  style="color: #31708f"><b>  HESAP BİLGİLERİ</b></span>
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <form method="post" asp-controller="User" asp-area="Management" asp-action="UpdateUser"  role="form">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                          
+										<div class="form-group">
+                                            <label>Kullanıcı Adı</label>
+                                            <input asp-for="@Model.Item1.UserName" enabled class="form-control"/>
+                                        </div>
+											
+                                        <div class="form-group">
+                                            <label>Şifre</label>
+                                            <input asp-for="@Model.Item1.Password" type="password" placeholder="*******" class="form-control"/>
+                                         </div>
+                                         <label>Role</label>
+										<div class="form-group ">
+                                            @if(@Model.Item1.Role==Role.Admin)
+                                            {
+                                            <label class="radio-inline">
+                                            <input asp-for="@Model.Item1.Role" type="radio"  id="optionsRadiosInline1" value="2" >Uye
+                                            </label>
+                                            <label class="radio-inline">
+                                            <input asp-for="@Model.Item1.Role" type="radio"  id="optionsRadiosInline2" value="1" checked>Admin
+                                            </label> 
+                                            }else
+                                            {
+                                            <label class="radio-inline">
+                                            <input asp-for="@Model.Item1.Role" type="radio"  id="optionsRadiosInline1" value="2" checked>Uye
+                                            </label>
+                                            <label class="radio-inline">
+                                            <input asp-for="@Model.Item1.Role" type="radio"  id="optionsRadiosInline2" value="1">Admin
+                                            </label>
+                                            }
+                                            
+                                                    
+                                        </div>	
+                                         <div class="form-group">
+                                           <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">KAYDET</button>
+                                         </div>
+                                         <input type="hidden" asp-for="@Model.Item1.ID"/> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+       
+     
+            </div>
+ </div>
+</div>
+</div>
+
+
+

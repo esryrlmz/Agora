@@ -1,4 +1,5 @@
-﻿@model List<User>
+﻿@using Agora.MODEL.Enums
+@model List<User> 
 
 
   <div class="container-fluid">
@@ -21,30 +22,29 @@
                                                     <th>Mail</th>
                                                     <th>İl</th>
                                                     <th>İlce</th>
-                                                    <th>Durum</th>
+                                                    <th>Cinsiyet</th>
                                                     <th>İşlem</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr class="odd gradeA">
-                                                    <td>1 </td>
-                                                    <td>esryrlmz</td>
-                                                    <td>Esra Yorulmaz Salman</td>
-                                                    <td>5056669988</td>
-                                                    <td>esryrlmz@hotmail.com</td>
-                                                    <td>İstanbul</td>
-                                                    <td>Eyüp</td>
-                                                    <td> <i style='color: 	#C62828;' class="fa fa-window-close-o fa-lg" aria-hidden="true"></i> 
-                                                        <i style='color: #388E3C;' class="fa fa-check-square-o  fa-lg" aria-hidden="true"></i>
-                                                        </td>
+                                                 @for (int i = 0; i < Model.Count(); i++)
+                                               {
+                                                 <tr class="odd gradeA">
+                                                    <td>@(i+1) </td>
+                                                    <td>@Model[i].UserName</td>
+                                                    <td>@Model[i].UserDetail.NameSurname</td>
+                                                    <td>@Model[i].UserDetail.Phone</td>
+                                                    <td>@Model[i].UserDetail.Email</td>
+                                                    <td>@Model[i].UserDetail.Country</td>
+                                                    <td>@Model[i].UserDetail.Towner</td>
+                                                    @if (@Model[i].UserDetail.Gender==Gender.Female) {<td> Kadın   </td>  } else{<td> Erkek   </td> }
                                                     <td>
-											          <a  class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
-                                                     <a   class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+											         <a  asp-area="Management" asp-controller="User" asp-action="GetUser"   asp-route-id="@Model[i].ID" class="btn btn-info"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                                     <a  asp-area="Management" asp-controller="User" asp-action="UserDelete"   asp-route-id="@Model[i].ID" class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+
 													</td>
                                                 </tr>
-                                                
-                                           
-
+                                                }
                                             </tbody>
                                         </table>
                                     </div>

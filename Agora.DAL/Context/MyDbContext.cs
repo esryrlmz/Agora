@@ -1,4 +1,5 @@
-﻿using Agora.MAP.Configurations;
+﻿using Agora.DAL.Initializer;
+using Agora.MAP.Configurations;
 using Agora.MODEL.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,6 +16,7 @@ namespace Agora.DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            DataInitializer.Seed(modelBuilder);
             modelBuilder.ApplyConfiguration(new UserConfiguration());
             modelBuilder.ApplyConfiguration(new ProductPictureConfiguration());
             modelBuilder.ApplyConfiguration(new TownConfiguration());
