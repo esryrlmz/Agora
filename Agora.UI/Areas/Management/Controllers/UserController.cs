@@ -42,6 +42,7 @@ namespace Agora.UI.Areas.Management.Controllers
             var TownList = _repoTown.GetByFilter(x => x.CityID == Convert.ToInt32(cityId));
             return Json(TownList);
         }
+
         [HttpPost]
         public IActionResult createUser([Bind(Prefix="Item1")] UserDto userDto)
         {

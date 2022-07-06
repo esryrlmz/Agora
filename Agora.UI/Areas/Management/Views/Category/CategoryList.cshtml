@@ -1,116 +1,118 @@
-﻿@model List<Category>
+﻿@model (List<Category>, Category )
 
-    <style>
-        .licolor{
-            color:black !important;
-        }
-    </style>
+<style>
+    .licolor {
+        color: black !important;
+    }
+
+</style>
 <div class="container-fluid">
-                   
-                    <!-- /.row -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                      
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                 <span  style="color: #31708f"><b> KATEGORİ LİSTESİ </b></span>  
-                                </div>
-                                <br />
-                                  <div class="row">
-                                       <div class="container">
-                                           <div class="col-lg-1"></div>
-                                           <div class="col-lg-6">
-								           <a  class="btn " data-toggle="modal" data-target="#exampleModalCenter" style="background-color: #31708f; float: left; color:#ffffff">Ana Kategori Ekle </a>
-                                       </div>  
-                                     </div>   
-                                 </div>
-                                     <br />
-                                 <div class="row">
-                                      <div class="container">
-                                          <div class="col-lg-1"></div>
-                                          <div class="col-lg-8">
-                                     <ul class="tree">
- 
-                                  <!-- (B) SECTION -->
-                                  <li class="section licolor">
-                                    <input type="checkbox" id="groupA"/>
-                                    <label for="groupA">Group A</label>
-                                    <ul class="licolor">
-                                      <li  class="licolor">Group A Item 1 
-                                          <a  href="#" style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a>
-                                      </li> 
-                                      <li  class="licolor">Group A Item 2 <a href="#" style="color: #31708f; float: right;" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a></li>
-                                    </ul>
-                                  </li>
- 
-                                  <!-- (C) SECTION WITH SUB-SECTION -->
-                                  <li class="section licolor">
-                                    <input type="checkbox" id="groupB"/>
-                                    <label for="groupB">Group B</label>
-                                    <ul class="licolor">
-                                      <li class="licolor">Group B Item 1<a href="#" style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a></li>
-                                      <li class="licolor">Group B Item 2<a href="#" style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a></li>
-                                      <!-- SUB-SECTION -->
-                                      <li class="section licolor" >
-                                        <input type="checkbox" id="groupC"/>
-                                        <label for="groupC">Group C </label>
-                                        <a  href="#"  style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a>
-                                        <ul class="licolor">
-                                          <li class="licolor">Group C Item 1<a href="#" style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a></li>
-                                          <li class="licolor">Group C Item 2<a href="#" style="color: #31708f; float:right" data-toggle="modal" data-target="#exampleModalCenter"><i class="fa fa-plus-square-o fa-lg"></i> </a></li>
-                                        </ul>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                </ul>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
 
-                                 </div>
-                                   <div class="col-lg-2"></div>
-                                  </div>
-                                </div>
-
-                                 <br />
-
-                                </div>
-                                <!-- /.panel-body -->
-                                </div>
-                            </div>
-                            <!-- /.panel -->
-             
-                        <!-- /.col-lg-12 -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span style="color: #31708f"><b> KATEGORİ LİSTESİ </b></span>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="container">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-6">
+                            <a class="btn " onclick="DropCategoriId()" data-toggle="modal" data-target="#myModal"
+                               style="background-color: #31708f; float: left; color:#ffffff">Ana Kategori Ekle </a>
+                        </div>
                     </div>
-                    <!-- /.row -->
-                <!-- /.container-fluid -->
+                </div>
+                <br />
+                <div class="row">
+                    <div class="container">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-8">
+                            <ul class="tree">
+                                @foreach (Category categori in @Model.Item1)
+                                {
+                                    <!-- Aana kategoriler -->
+                                    <li class="section licolor">
+                                        <a  href="#" style="color: #31708f; float:right"  data-toggle="modal" data-target="#myModal" onclick="GetCategoriId('@categori.ID')"> Alt Kategori Ekle </a>
+                                        @if (@categori.Childs.Count() > 0)
+                                        {
+                                            <input type="checkbox" id="@categori.ID" />
+                                        }
+                                        <label for="@categori.ID"> @categori.CategoryName / ( @categori.Childs.Count())
+                                            @if (@categori.Childs.Count() == 0)
+                                            {
+                                                <a asp-area="Management" asp-controller="Category" asp-action="Delete" asp-route-id="@categori.ID">
+                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                </a>
+                                            }
+                                        </label>
+                                        @if (categori.Childs.Count() > 0)
+                                        {
+                                            @foreach(Category subcategori in categori.Childs)
+                                            {
+                                                <ul>
+                                                    <li class="licolor"> @subcategori.CategoryName
+                                                        <a asp-area="Management" asp-controller="Category" asp-action="Delete" asp-route-id="@subcategori.ID">
+                                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            }
+                                        }
+                                    </li>
 
- <!-- Modal -->
 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" ><span  style="color: #31708f"><b> YENİ KATEGORİ EKRANI </b></span> </h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      	<form role="form">
-          <div class="modal-body">
-              <div class="row">
-                   <div class="col-lg-4">
-                       <label>Yeni Kategori Giriniz</label>
-                   </div>
-                   <div class="col-lg-6">
-                      <div class="form-group">
-                         <input class="form-control" >
-                      </div>
-                   </div>
-              </div>
-              </div>
-          <div class="modal-footer">
-           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-           <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">Kaydet</button>
-          </div>
-        </form>
+                                }
+                            </ul>
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+                </div>
+
+                <br />
+
+            </div>
+            <!-- /.panel-body -->
+        </div>
     </div>
-  </div>
+    <!-- /.panel -->
+    <!-- /.col-lg-12 -->
 </div>
+
+  <!-- insert category modal -->
+    <div class="modal"  tabindex="-1" id="myModal" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form role="form" method="post" asp-controller="Category" asp-area="Management" asp-action="CreateCategory" >
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <label>Yeni Kategori Giriniz</label>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <input asp-for="@Model.Item2.CategoryName" class="form-control" />
+                                <input type='hidden' asp-for="@Model.Item2.CategoryID" value=""  />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">Kaydet</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+    <script  type="text/javascript">
+       function GetCategoriId(Cid) {
+           $("#myModal").find("input[type='hidden']").val(Cid); 
+        }
+        function DropCategoriId() {
+            $("#myModal").find("input[type='hidden']").val(""); 
+        }
+</script>

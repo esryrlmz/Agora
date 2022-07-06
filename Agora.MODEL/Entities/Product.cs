@@ -14,7 +14,7 @@ namespace Agora.MODEL.Entities
             IsCargo = false;
             IsHandDeliver = true;
         }
-        public int ShortName { get; set; }
+        public string ShortName { get; set; }
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsCargo { get; set; }

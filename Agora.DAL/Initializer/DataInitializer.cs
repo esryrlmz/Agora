@@ -25,6 +25,23 @@ namespace Agora.DAL.Initializer
                 new UserDetail() { ID = 1, NameSurname = "Admin", Phone = "00000000000", Gender = Gender.Female, UserID=1 },
                 new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Phone="05432563636", Gender=Gender.Female, UserID=2}
             );
+            modelBuilder.Entity<Category>().HasKey(k => k.ID);
+            modelBuilder.Entity<Category>().HasData(
+               new Category() { ID = 1, CategoryName = "Elektronik" },
+               new Category() { ID = 2, CategoryName = "Bilgisayar" , CategoryID=1},
+               new Category() { ID = 3, CategoryName = "Telefon", CategoryID = 1 },
+               new Category() { ID = 4, CategoryName = "Küçük Ev Aletleri", CategoryID = 1 },
+               new Category() { ID = 5, CategoryName = "Bebek-Çocuk" },
+               new Category() { ID = 6, CategoryName = "Bebek Mobilyaları" , CategoryID = 5 },
+               new Category() { ID = 7, CategoryName = "Bebek Kıyafetleri", CategoryID = 5 },
+               new Category() { ID = 8, CategoryName = "Bebek Oyuncakları", CategoryID = 5 },
+               new Category() { ID = 9, CategoryName = "Kitap" },
+               new Category() { ID = 10, CategoryName = "Ev Textil" },
+               new Category() { ID = 11, CategoryName = "Halı", CategoryID = 10 },
+               new Category() { ID = 12, CategoryName = "Perde, Nevresim", CategoryID = 10 },
+               new Category() { ID = 13, CategoryName = "Ayakkabı - Çanta" }
+           );
+
             // il bilgisi
             modelBuilder.Entity<City>().HasKey(k => k.ID);
             modelBuilder.Entity<City>().HasData(

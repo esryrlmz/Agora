@@ -87,5 +87,16 @@ namespace Agora.BLL.Concrete
             }
         }
 
+        public List<OnlyUser> OnlyUserList()
+        {
+          return  _db.UserDetails
+                .Where(x => x.Status != DataStatus.Deleted&& x.User.Role==Role.Uye)
+                .Select(x => new OnlyUser
+                {
+                    NameSurname=x.NameSurname,
+                    UserID=x.UserID
+                }).ToList();
+        }
+
     }
 }
