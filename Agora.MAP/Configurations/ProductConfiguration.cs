@@ -16,13 +16,9 @@ namespace Agora.MAP.Configurations
         {
             builder.Property(x => x.ShortName).HasColumnType("varchar(80)").IsRequired();
 
-            builder.HasOne<Town>(s => s.Town)
-                .WithMany(a => a.Products)
-                .HasForeignKey(b => b.TownID);
-
             builder.HasOne<User>(s => s.User)
                .WithMany(a => a.Products)
-               .HasForeignKey(b => b.TownID);
+               .HasForeignKey(b => b.UserID);
         }
     }
 }

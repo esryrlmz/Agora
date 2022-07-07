@@ -13,7 +13,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <form role="form" method="post" asp-controller="Product" asp-area="Management" asp-action="Create" >
+                        <form role="form" method="post" asp-controller="Product" asp-area="Management" asp-action="Create" enctype="multipart/form-data" >
 							<div class="form-group">
                                <div class="row">
                                    <div class="col-lg-4"> <label> 
@@ -59,21 +59,21 @@
                             <div class="form-group">
                               <div class="row">
                                 <div class="col-lg-4"> <label>  <b>Ürünün 1.Resmini Yükle</b></label></div>
-                                 <div class="col-lg-6"><input type="file" asp-for="@Model.Item1.Pictures[0].PictureUrl" onchange="preview(this,'resim1')"> </div>
+                                 <div class="col-lg-6"><input  type="file" asp-for="@Model.Item1.Pictures[0].Image" onchange="preview(this,'resim1')"> </div>
                                  <div class="col-lg-4"><img id="resim1" style="height: 100px;width: 100px;"></div>
                              </div>
                             </div>
                             <div class="form-group">
                               <div class="row">
                                 <div class="col-lg-4"> <label>  <b>Ürünün 2.Resmini Yükle</b></label></div>
-                                 <div class="col-lg-6"><input type="file" asp-for="@Model.Item1.Pictures[1].PictureUrl" onchange="preview(this,'resim2')"> </div>
+                                 <div class="col-lg-6"><input type="file" asp-for="@Model.Item1.Pictures[1].Image" onchange="preview(this,'resim2')"> </div>
                                  <div class="col-lg-4"><img id="resim2" style="height: 100px;width: 100px;"></div>
                               </div>
                             </div>
                             <div class="form-group">
                                  <div class="row">
                                 <div class="col-lg-4"> <label>  <b>Ürünün 3.Resmini Yükle</b></label></div>
-                                 <div class="col-lg-6"><input type="file" asp-for="@Model.Item1.Pictures[2].PictureUrl" onchange="preview(this,'resim3')"> </div>
+                                 <div class="col-lg-6"><input type="file" asp-for="@Model.Item1.Pictures[2].Image" onchange="preview(this,'resim3')"> </div>
                                  <div class="col-lg-4"><img id="resim3" style="height: 100px;width: 100px;"></div>
                                  </div>
                             </div>
@@ -109,41 +109,43 @@
 </div>
 
 <script type="text/javascript">
-$(document).ready(function() {
-    $("#CategoriList").change(function() {
-        var id = $('#CategoriList option:selected').val();
-        $.ajax("/Management/Category/SubCategoriList/", {
-            data: { CategoryId: id}, 
-            timeout: 500,
-            success: function (data) {
-                console.log(data)
-                var select_data = '<option value="0"> Ana Kategoriye Ekle</option>';
-                $.each(data, function(index, value) { 
-                    select_data += '<option value="'+ value.ID +'">'+ value.categoryName +'</option>';
-                });
-                $('#SubCategoriList').html(select_data);
-            }
+    $(document).ready(function() {
+        $("#CategoriList").change(function() {
+            var id = $('#CategoriList option:selected').val();
+            $.ajax("/Management/Category/SubCategoriList/", {
+                data: { CategoryId: id}, 
+                timeout: 500,
+                success: function (data) {
+                    console.log(data)
+                    var select_data = '<option value="0"> Ana Kategoriye Ekle</option>';
+                    $.each(data, function(index, value) { 
+                        select_data += '<option value="'+ value.id +'">'+ value.categoryName +'</option>';
+                    });
+                    $('#SubCategoriList').html(select_data);
+                }
+            });
         });
     });
-});
 
-function preview(obj,outImage)
-{
-	if (FileReader)
-	{
-		var reader = new FileReader();
-		reader.readAsDataURL(obj.files[0]);
-		reader.onload = function (e) {
-		var image=new Image();
-		image.src=e.target.result;
-		image.onload = function () {
-			document.getElementById(outImage).src=image.src;
-		};
-		}
-	}
-	else
-	{
-		    // Not supported
-	}
-}
+    function preview(obj,outImage)
+    {
+	    if (FileReader)
+	    {
+		    var reader = new FileReader();
+		    reader.readAsDataURL(obj.files[0]);
+		    reader.onload = function (e) {
+		    var image=new Image();
+		    image.src=e.target.result;
+		    image.onload = function () {
+			    document.getElementById(outImage).src=image.src;
+		    };
+		    }
+	    }
+	    else
+	    {
+		        // Not supported
+	    }
+    }
+
+
 </script>

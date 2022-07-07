@@ -22,13 +22,13 @@ namespace Agora.MODEL.Entities
 
         //fk
         public int UserID { get; set; }
-        public int TownID { get; set; }
+        public string Town { get; set; }
+        public string City { get; set; }
 
 
         //relation Property
         public virtual List<ProductPicture> ProductPictures { get; set; }
         public virtual User User { get; set; }
-        public virtual Town Town { get; set; }
         public virtual List<ProductCategory> ProductCategories { get; set; }
         public List<Comment> Comments { get; set; }
         public virtual Transfer Transfer { get; set; }

@@ -13,6 +13,7 @@ namespace Agora.MAP.Configurations
     {
         public void Configure(EntityTypeBuilder<ProductPicture> builder)
         {
+            builder.Ignore("Image");
             builder.Property(x => x.PictureUrl).HasColumnType("varchar(300)").IsRequired();
             builder.HasIndex(x => x.PictureUrl).IsUnique();
 

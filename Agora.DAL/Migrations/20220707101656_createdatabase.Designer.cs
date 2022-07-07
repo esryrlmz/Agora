@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Agora.DAL.Migrations
 {
     [DbContext(typeof(MyDbContext))]
-    [Migration("20220705102723_createandseeddatabase")]
-    partial class createandseeddatabase
+    [Migration("20220707101656_createdatabase")]
+    partial class createdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -96,7 +96,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 1,
                             CategoryName = "Elektronik",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1061),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3434),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -105,7 +105,7 @@ namespace Agora.DAL.Migrations
                             ID = 2,
                             CategoryID = 1,
                             CategoryName = "Bilgisayar",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1308),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3679),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -114,7 +114,7 @@ namespace Agora.DAL.Migrations
                             ID = 3,
                             CategoryID = 1,
                             CategoryName = "Telefon",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1575),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3941),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -123,7 +123,7 @@ namespace Agora.DAL.Migrations
                             ID = 4,
                             CategoryID = 1,
                             CategoryName = "Küçük Ev Aletleri",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1580),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3944),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -131,7 +131,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 5,
                             CategoryName = "Bebek-Çocuk",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1581),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3946),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -140,7 +140,7 @@ namespace Agora.DAL.Migrations
                             ID = 6,
                             CategoryID = 5,
                             CategoryName = "Bebek Mobilyaları",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1582),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3947),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -149,7 +149,7 @@ namespace Agora.DAL.Migrations
                             ID = 7,
                             CategoryID = 5,
                             CategoryName = "Bebek Kıyafetleri",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1583),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3948),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -158,7 +158,7 @@ namespace Agora.DAL.Migrations
                             ID = 8,
                             CategoryID = 5,
                             CategoryName = "Bebek Oyuncakları",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1584),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3949),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -166,7 +166,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 9,
                             CategoryName = "Kitap",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1585),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3950),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -174,25 +174,25 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 10,
                             CategoryName = "Ev Textil",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1586),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3951),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
                         new
                         {
                             ID = 11,
-                            CategoryID = 5,
+                            CategoryID = 10,
                             CategoryName = "Halı",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1587),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3952),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
                         new
                         {
                             ID = 12,
-                            CategoryID = 5,
+                            CategoryID = 10,
                             CategoryName = "Perde, Nevresim",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1589),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3953),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -200,7 +200,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 13,
                             CategoryName = "Ayakkabı - Çanta",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(1590),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(3955),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         });
@@ -234,7 +234,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 1,
                             CityName = "Adana",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2562),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(4976),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -242,7 +242,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 2,
                             CityName = "Adıyaman",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2888),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5299),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -250,7 +250,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 3,
                             CityName = "Afyonkarahisar",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2892),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5302),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -258,7 +258,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 4,
                             CityName = "Ağrı",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2893),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5303),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -266,7 +266,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 5,
                             CityName = "Amasya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2895),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5305),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -274,7 +274,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 6,
                             CityName = "Ankara",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2896),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5306),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -282,7 +282,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 7,
                             CityName = "Antalya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2897),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5307),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -290,7 +290,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 8,
                             CityName = "Artvin",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2898),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5309),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -298,7 +298,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 9,
                             CityName = "Aydın",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2899),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5310),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -306,7 +306,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 10,
                             CityName = "Balıkesir",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2900),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5311),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -314,7 +314,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 11,
                             CityName = "Bilecik",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2901),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5312),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -322,7 +322,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 12,
                             CityName = "Bingöl",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2902),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5313),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -330,7 +330,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 13,
                             CityName = "Bitlis",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2903),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5314),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -338,7 +338,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 14,
                             CityName = "Bolu",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2904),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5315),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -346,7 +346,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 15,
                             CityName = "Burdur",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2936),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5316),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -354,7 +354,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 16,
                             CityName = "Bursa",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2937),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5317),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -362,7 +362,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 17,
                             CityName = "Çanakkale",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2939),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5318),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -370,7 +370,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 18,
                             CityName = "Çankırı",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2940),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5319),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -378,7 +378,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 19,
                             CityName = "Çorum",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2941),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5320),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -386,7 +386,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 20,
                             CityName = "Denizli",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2942),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5321),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -394,7 +394,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 21,
                             CityName = "Diyarbakır",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2943),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5322),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -402,7 +402,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 22,
                             CityName = "Edirne",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2944),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5323),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -410,7 +410,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 23,
                             CityName = "Elazığ",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2945),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5324),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -418,7 +418,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 24,
                             CityName = "Erzincan",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2946),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5325),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -426,7 +426,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 25,
                             CityName = "Erzurum",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2947),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5326),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -434,7 +434,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 26,
                             CityName = "Eskişehir",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2948),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5327),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -442,7 +442,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 27,
                             CityName = "Gaziantep",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2950),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5328),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -450,7 +450,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 28,
                             CityName = "Giresun",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2951),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5329),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -458,7 +458,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 29,
                             CityName = "Gümüşhane",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2953),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5329),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -466,7 +466,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 30,
                             CityName = "Hakkari",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2954),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5330),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -474,7 +474,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 31,
                             CityName = "Hatay",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2955),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5331),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -482,7 +482,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 32,
                             CityName = "Isparta",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2956),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5332),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -490,7 +490,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 33,
                             CityName = "Mersin",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2957),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5333),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -498,7 +498,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 34,
                             CityName = "İstanbul",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2958),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5335),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -506,7 +506,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 35,
                             CityName = "İzmir",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2959),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5336),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -514,7 +514,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 36,
                             CityName = "Kars",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2960),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5337),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -522,7 +522,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 37,
                             CityName = "Kastamonu",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2961),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5338),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -530,7 +530,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 38,
                             CityName = "Kayseri",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2962),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5339),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -538,7 +538,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 39,
                             CityName = "Kırklareli",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2963),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5340),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -546,7 +546,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 40,
                             CityName = "Kırşehir",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2964),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5341),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -554,7 +554,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 41,
                             CityName = "Kocaeli",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2965),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5342),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -562,7 +562,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 42,
                             CityName = "Konya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2966),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5343),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -570,7 +570,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 43,
                             CityName = "Kütahya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2967),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5344),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -578,7 +578,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 44,
                             CityName = "Malatya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2968),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5345),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -586,7 +586,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 45,
                             CityName = "Manisa",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2969),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5346),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -594,7 +594,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 46,
                             CityName = "Kahramanmaraş",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2970),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5347),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -602,7 +602,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 47,
                             CityName = "Mardin",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2971),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5348),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -610,7 +610,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 48,
                             CityName = "Muğla",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2972),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5349),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -618,7 +618,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 49,
                             CityName = "Muş",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2973),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5350),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -626,7 +626,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 50,
                             CityName = "Nevşehir",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2974),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5351),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -634,7 +634,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 51,
                             CityName = "Niğde",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2975),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5352),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -642,7 +642,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 52,
                             CityName = "Ordu",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2976),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5353),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -650,7 +650,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 53,
                             CityName = "Rize",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2978),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5354),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -658,7 +658,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 54,
                             CityName = "Sakarya",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2979),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5355),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -666,7 +666,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 55,
                             CityName = "Samsun",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2980),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5356),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -674,7 +674,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 56,
                             CityName = "Siirt",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2981),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5357),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -682,7 +682,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 57,
                             CityName = "Sinop",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2982),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5358),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -690,7 +690,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 58,
                             CityName = "Sivas",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2983),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5359),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -698,7 +698,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 59,
                             CityName = "Tekirdağ",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2984),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5360),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -706,7 +706,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 60,
                             CityName = "Tokat",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2985),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5361),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -714,7 +714,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 61,
                             CityName = "Trabzon",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2986),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5362),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -722,7 +722,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 62,
                             CityName = "Tunceli",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2987),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5363),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -730,7 +730,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 63,
                             CityName = "Şanlıurfa",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2988),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5364),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -738,7 +738,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 64,
                             CityName = "Uşak",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2990),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5365),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -746,7 +746,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 65,
                             CityName = "Van",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2991),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5366),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -754,7 +754,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 66,
                             CityName = "Yozgat",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2992),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5367),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -762,7 +762,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 67,
                             CityName = "Zonguldak",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2993),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5368),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -770,7 +770,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 68,
                             CityName = "Aksaray",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2994),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5369),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -778,7 +778,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 69,
                             CityName = "Bayburt",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2995),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5371),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -786,7 +786,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 70,
                             CityName = "Karaman",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2996),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5372),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -794,7 +794,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 71,
                             CityName = "Kırıkkale",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2997),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5373),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -802,7 +802,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 72,
                             CityName = "Batman",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2998),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5374),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -810,7 +810,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 73,
                             CityName = "Şırnak",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(2999),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5375),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -818,7 +818,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 74,
                             CityName = "Bartın",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3000),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5376),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -826,7 +826,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 75,
                             CityName = "Ardahan",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3001),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5377),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -834,7 +834,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 76,
                             CityName = "Iğdır",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3002),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5378),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -842,7 +842,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 77,
                             CityName = "Yalova",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3003),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5379),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -850,7 +850,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 78,
                             CityName = "Karabük",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3004),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5380),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -858,7 +858,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 79,
                             CityName = "Kilis",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3005),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5381),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -866,7 +866,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 80,
                             CityName = "Osmaniye",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3006),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5382),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         },
@@ -874,7 +874,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 81,
                             CityName = "Düzce",
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3007),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5383),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1
                         });
@@ -922,6 +922,9 @@ namespace Agora.DAL.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
@@ -947,15 +950,15 @@ namespace Agora.DAL.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<int>("TownID")
-                        .HasColumnType("int");
+                    b.Property<string>("Town")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
                     b.HasKey("ID");
 
-                    b.HasIndex("TownID");
+                    b.HasIndex("UserID");
 
                     b.ToTable("Products");
                 });
@@ -1055,7 +1058,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 1,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3479),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(5896),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seyhan"
@@ -1064,7 +1067,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 2,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3918),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6392),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ceyhan"
@@ -1073,7 +1076,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 3,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3922),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6396),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Feke"
@@ -1082,7 +1085,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 4,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3923),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6398),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karaisalı"
@@ -1091,7 +1094,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 5,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3924),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6399),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karataş"
@@ -1100,7 +1103,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 6,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3926),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6400),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kozan"
@@ -1109,7 +1112,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 7,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3927),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6401),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pozantı"
@@ -1118,7 +1121,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 8,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3928),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6402),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saimbeyli"
@@ -1127,7 +1130,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 9,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3929),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6403),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tufanbeyli"
@@ -1136,7 +1139,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 10,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3930),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6404),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yumurtalık"
@@ -1145,7 +1148,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 11,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3931),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6405),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yüreğir"
@@ -1154,7 +1157,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 12,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3932),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6406),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aladağ"
@@ -1163,7 +1166,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 13,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3933),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6407),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İmamoğlu"
@@ -1172,7 +1175,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 14,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3934),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6408),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıçam"
@@ -1181,7 +1184,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 15,
                             CityID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3936),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6409),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çukurova"
@@ -1190,7 +1193,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 16,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3937),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6410),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Adıyaman Merkez"
@@ -1199,7 +1202,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 17,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3938),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6411),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Besni"
@@ -1208,7 +1211,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 18,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3939),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6412),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çelikhan"
@@ -1217,7 +1220,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 19,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3940),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6414),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gerger"
@@ -1226,7 +1229,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 20,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3942),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6415),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölbaşı"
@@ -1235,7 +1238,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 21,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3943),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6416),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kahta"
@@ -1244,7 +1247,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 22,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3944),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6417),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Samsat"
@@ -1253,7 +1256,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 23,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3945),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6418),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sincik"
@@ -1262,7 +1265,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 24,
                             CityID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3946),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6419),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tut"
@@ -1271,7 +1274,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 25,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3947),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6420),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Afyonkarahisar"
@@ -1280,7 +1283,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 26,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3948),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6421),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bolvadin"
@@ -1289,7 +1292,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 27,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3949),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6422),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çay"
@@ -1298,7 +1301,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 28,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3950),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6423),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dazkırı"
@@ -1307,7 +1310,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 29,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3952),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6424),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dinar"
@@ -1316,7 +1319,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 30,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3953),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6425),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Emirdağ"
@@ -1325,7 +1328,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 31,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3954),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6426),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İhsaniye"
@@ -1334,7 +1337,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 32,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3955),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6427),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sandıklı"
@@ -1343,7 +1346,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 33,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3991),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6428),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sinanpaşa"
@@ -1352,7 +1355,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 34,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3993),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6429),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sultandağı"
@@ -1361,7 +1364,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 35,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3994),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6430),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şuhut"
@@ -1370,7 +1373,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 36,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3995),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6431),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başmakçı"
@@ -1379,7 +1382,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 37,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3996),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6432),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayat"
@@ -1388,7 +1391,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 38,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3997),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6433),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İscehisar"
@@ -1397,7 +1400,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 39,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3998),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6435),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çobanlar"
@@ -1406,7 +1409,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 40,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(3999),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6436),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Evciler"
@@ -1415,7 +1418,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 41,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4000),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6437),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hocalar"
@@ -1424,7 +1427,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 42,
                             CityID = 3,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4001),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6438),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kızılören"
@@ -1433,7 +1436,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 43,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4002),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6439),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ağrı Merkez"
@@ -1442,7 +1445,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 44,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4004),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6440),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Diyadin"
@@ -1451,7 +1454,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 45,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4005),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6441),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğubayazıt"
@@ -1460,7 +1463,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 46,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4006),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6442),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eleşkirt"
@@ -1469,7 +1472,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 47,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4007),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6443),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hamur"
@@ -1478,7 +1481,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 48,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4008),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6444),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Patnos"
@@ -1487,7 +1490,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 49,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4009),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6445),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Taşlıçay"
@@ -1496,7 +1499,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 50,
                             CityID = 4,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4011),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6447),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tutak"
@@ -1505,7 +1508,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 51,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4012),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6448),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Amasya Merkez"
@@ -1514,7 +1517,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 52,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4013),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6449),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Göynücek"
@@ -1523,7 +1526,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 53,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4014),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6450),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gümüşhacıköy"
@@ -1532,7 +1535,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 54,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4015),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6451),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merzifon"
@@ -1541,7 +1544,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 55,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4016),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6452),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Suluova"
@@ -1550,7 +1553,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 56,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4017),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6453),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Taşova"
@@ -1559,7 +1562,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 57,
                             CityID = 5,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4018),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6454),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hamamözü"
@@ -1568,7 +1571,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 58,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4019),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6455),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altındağ"
@@ -1577,7 +1580,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 59,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4020),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6456),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayaş"
@@ -1586,7 +1589,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 60,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4021),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6457),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bala"
@@ -1595,7 +1598,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 61,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4022),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6458),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beypazarı"
@@ -1604,7 +1607,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 62,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4023),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6459),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamlıdere"
@@ -1613,7 +1616,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 63,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4025),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6460),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çankaya"
@@ -1622,7 +1625,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 64,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4026),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6461),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çubuk"
@@ -1631,7 +1634,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 65,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4027),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6462),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Elmadağ"
@@ -1640,7 +1643,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 66,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4028),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6463),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güdül"
@@ -1649,7 +1652,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 67,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4029),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6465),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Haymana"
@@ -1658,7 +1661,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 68,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4030),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6466),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kalecik"
@@ -1667,7 +1670,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 69,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4031),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6467),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kızılcahamam"
@@ -1676,7 +1679,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 70,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4032),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6468),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nallıhan"
@@ -1685,7 +1688,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 71,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4033),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6470),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Polatlı"
@@ -1694,7 +1697,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 72,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4034),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6471),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şereflikoçhisar"
@@ -1703,7 +1706,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 73,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4035),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6472),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenimahalle"
@@ -1712,7 +1715,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 74,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4036),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6473),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölbaşı"
@@ -1721,7 +1724,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 75,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4038),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6474),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keçiören"
@@ -1730,7 +1733,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 76,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4039),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6475),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mamak"
@@ -1739,7 +1742,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 77,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4040),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6476),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sincan"
@@ -1748,7 +1751,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 78,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4041),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6477),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kazan"
@@ -1757,7 +1760,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 79,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4042),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6478),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akyurt"
@@ -1766,7 +1769,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 80,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4043),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6480),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Etimesgut"
@@ -1775,7 +1778,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 81,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4044),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6482),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Evren"
@@ -1784,7 +1787,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 82,
                             CityID = 6,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4045),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6483),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pursaklar"
@@ -1793,7 +1796,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 83,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4046),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6484),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akseki"
@@ -1802,7 +1805,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 84,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4047),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6485),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alanya"
@@ -1811,7 +1814,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 85,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4048),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6486),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Elmalı"
@@ -1820,7 +1823,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 86,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4049),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6487),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Finike"
@@ -1829,7 +1832,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 87,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4051),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6489),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gazipaşa"
@@ -1838,7 +1841,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 88,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4052),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6490),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gündoğmuş"
@@ -1847,7 +1850,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 89,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4053),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6491),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kaş"
@@ -1856,7 +1859,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 90,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4054),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6493),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Korkuteli"
@@ -1865,7 +1868,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 91,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4055),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6494),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kumluca"
@@ -1874,7 +1877,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 92,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4056),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6495),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Manavgat"
@@ -1883,7 +1886,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 93,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4057),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6496),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Serik"
@@ -1892,7 +1895,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 94,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4059),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6497),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Demre"
@@ -1901,7 +1904,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 95,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4060),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6498),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İbradı"
@@ -1910,7 +1913,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 96,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4061),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6499),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kemer"
@@ -1919,7 +1922,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 97,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4062),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6500),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aksu"
@@ -1928,7 +1931,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 98,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4063),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6501),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Döşemealtı"
@@ -1937,7 +1940,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 99,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4064),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6502),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kepez"
@@ -1946,7 +1949,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 100,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4065),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6503),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Konyaaltı"
@@ -1955,7 +1958,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 101,
                             CityID = 7,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4066),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6504),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Muratpaşa"
@@ -1964,7 +1967,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 102,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4068),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6505),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ardanuç"
@@ -1973,7 +1976,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 103,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4069),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6507),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arhavi"
@@ -1982,7 +1985,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 104,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4070),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6508),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Artvin Merkez"
@@ -1991,7 +1994,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 105,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4071),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6509),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Borçka"
@@ -2000,7 +2003,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 106,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4072),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6510),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hopa"
@@ -2009,7 +2012,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 107,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4073),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6511),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şavşat"
@@ -2018,7 +2021,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 108,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4074),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6512),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yusufeli"
@@ -2027,7 +2030,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 109,
                             CityID = 8,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4075),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6513),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Murgul"
@@ -2036,7 +2039,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 110,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4077),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6514),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozdoğan"
@@ -2045,7 +2048,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 111,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4078),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6515),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çine"
@@ -2054,7 +2057,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 112,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4079),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6516),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Germencik"
@@ -2063,7 +2066,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 113,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4080),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6517),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karacasu"
@@ -2072,7 +2075,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 114,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4081),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6518),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Koçarlı"
@@ -2081,7 +2084,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 115,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4082),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6519),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kuşadası"
@@ -2090,7 +2093,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 116,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4083),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6520),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kuyucak"
@@ -2099,7 +2102,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 117,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4084),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6521),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nazilli"
@@ -2108,7 +2111,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 118,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4085),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6522),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Söke"
@@ -2117,7 +2120,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 119,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4086),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6523),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sultanhisar"
@@ -2126,7 +2129,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 120,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4087),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6524),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenipazar"
@@ -2135,7 +2138,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 121,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4088),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6525),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Buharkent"
@@ -2144,7 +2147,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 122,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4089),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6562),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İncirliova"
@@ -2153,7 +2156,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 123,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4090),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6563),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karpuzlu"
@@ -2162,7 +2165,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 124,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4092),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6564),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köşk"
@@ -2171,7 +2174,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 125,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4093),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6566),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Didim"
@@ -2180,7 +2183,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 126,
                             CityID = 9,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4094),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6567),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Efeler"
@@ -2189,7 +2192,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 127,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4095),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6568),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayvalık"
@@ -2198,7 +2201,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 128,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4096),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6569),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Balya"
@@ -2207,7 +2210,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 129,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4097),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6570),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bandırma"
@@ -2216,7 +2219,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 130,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4098),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6571),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bigadiç"
@@ -2225,7 +2228,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 131,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4099),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6572),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Burhaniye"
@@ -2234,7 +2237,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 132,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4100),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6573),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dursunbey"
@@ -2243,7 +2246,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 133,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4101),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6574),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Edremit"
@@ -2252,7 +2255,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 134,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4103),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6575),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erdek"
@@ -2261,7 +2264,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 135,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4104),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6576),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gönen"
@@ -2270,7 +2273,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 136,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4105),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6577),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Havran"
@@ -2279,7 +2282,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 137,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4106),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6579),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İvrindi"
@@ -2288,7 +2291,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 138,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4107),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6580),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kepsut"
@@ -2297,7 +2300,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 139,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4108),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6581),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Manyas"
@@ -2306,7 +2309,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 140,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4109),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6585),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Savaştepe"
@@ -2315,7 +2318,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 141,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4110),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6586),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sındırgı"
@@ -2324,7 +2327,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 142,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4111),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6587),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Susurluk"
@@ -2333,7 +2336,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 143,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4112),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6588),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Marmara"
@@ -2342,7 +2345,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 144,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4113),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6589),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gömeç"
@@ -2351,7 +2354,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 145,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4115),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6590),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altıeylül"
@@ -2360,7 +2363,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 146,
                             CityID = 10,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4144),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6591),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karesi"
@@ -2369,7 +2372,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 147,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4145),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6592),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bilecik"
@@ -2378,7 +2381,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 148,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4146),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6593),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozüyük"
@@ -2387,7 +2390,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 149,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4147),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6594),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölpazarı"
@@ -2396,7 +2399,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 150,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4148),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6595),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Osmaneli"
@@ -2405,7 +2408,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 151,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4149),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6596),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazaryeri"
@@ -2414,7 +2417,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 152,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4150),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6597),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Söğüt"
@@ -2423,7 +2426,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 153,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4151),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6598),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenipazar"
@@ -2432,7 +2435,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 154,
                             CityID = 11,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4152),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6599),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İnhisar"
@@ -2441,7 +2444,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 155,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4153),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6601),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bingöl"
@@ -2450,7 +2453,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 156,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4154),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6602),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Genç"
@@ -2459,7 +2462,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 157,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4155),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6603),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karlıova"
@@ -2468,7 +2471,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 158,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4156),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6604),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kiğı"
@@ -2477,7 +2480,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 159,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4157),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6605),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Solhan"
@@ -2486,7 +2489,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 160,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4159),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6606),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Adaklı"
@@ -2495,7 +2498,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 161,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4160),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6607),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yayladere"
@@ -2504,7 +2507,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 162,
                             CityID = 12,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4161),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6608),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yedisu"
@@ -2513,7 +2516,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 163,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4162),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6609),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Adilcevaz"
@@ -2522,7 +2525,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 164,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4163),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6610),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ahlat"
@@ -2531,7 +2534,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 165,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4164),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6611),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bitlis"
@@ -2540,7 +2543,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 166,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4165),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6612),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hizan"
@@ -2549,7 +2552,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 167,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4167),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6613),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mutki"
@@ -2558,7 +2561,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 168,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4168),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6614),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tatvan"
@@ -2567,7 +2570,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 169,
                             CityID = 13,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4169),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6616),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güroymak"
@@ -2576,7 +2579,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 170,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4170),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6617),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bolu"
@@ -2585,7 +2588,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 171,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4171),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6618),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gerede"
@@ -2594,7 +2597,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 172,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4172),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6619),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Göynük"
@@ -2603,7 +2606,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 173,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4173),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6620),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kıbrıscık"
@@ -2612,7 +2615,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 174,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4174),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6621),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mengen"
@@ -2621,7 +2624,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 175,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4175),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6622),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mudurnu"
@@ -2630,7 +2633,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 176,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4176),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6623),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seben"
@@ -2639,7 +2642,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 177,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4177),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6624),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dörtdivan"
@@ -2648,7 +2651,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 178,
                             CityID = 14,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4178),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6625),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeniçağa"
@@ -2657,7 +2660,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 179,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4179),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6626),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ağlasun"
@@ -2666,7 +2669,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 180,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4180),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6627),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bucak"
@@ -2675,7 +2678,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 181,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4181),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6628),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Burdur"
@@ -2684,7 +2687,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 182,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4182),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6629),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölhisar"
@@ -2693,7 +2696,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 183,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4183),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6630),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tefenni"
@@ -2702,7 +2705,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 184,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4184),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6631),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeşilova"
@@ -2711,7 +2714,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 185,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4185),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6632),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karamanlı"
@@ -2720,7 +2723,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 186,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4186),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6633),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kemer"
@@ -2729,7 +2732,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 187,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4188),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6634),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınyayla"
@@ -2738,7 +2741,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 188,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4189),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6635),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çavdır"
@@ -2747,7 +2750,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 189,
                             CityID = 15,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4190),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6636),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çeltikçi"
@@ -2756,7 +2759,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 190,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4191),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6637),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gemlik"
@@ -2765,7 +2768,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 191,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4192),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6638),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İnegöl"
@@ -2774,7 +2777,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 192,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4193),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6639),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İznik"
@@ -2783,7 +2786,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 193,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4194),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6640),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karacabey"
@@ -2792,7 +2795,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 194,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4195),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6641),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keles"
@@ -2801,7 +2804,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 195,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4196),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6642),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mudanya"
@@ -2810,7 +2813,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 196,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4197),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6643),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mustafakemalpaşa"
@@ -2819,7 +2822,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 197,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4198),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6644),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Orhaneli"
@@ -2828,7 +2831,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 198,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4199),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6645),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Orhangazi"
@@ -2837,7 +2840,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 199,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4201),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6647),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenişehir"
@@ -2846,7 +2849,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 200,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4202),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6648),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Büyükorhan"
@@ -2855,7 +2858,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 201,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4203),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6649),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Harmancık"
@@ -2864,7 +2867,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 202,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4204),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6650),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nilüfer"
@@ -2873,7 +2876,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 203,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4205),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6651),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Osmangazi"
@@ -2882,7 +2885,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 204,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4206),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6652),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yıldırım"
@@ -2891,7 +2894,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 205,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4207),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6653),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gürsu"
@@ -2900,7 +2903,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 206,
                             CityID = 16,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4208),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6654),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kestel"
@@ -2909,7 +2912,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 207,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4209),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6655),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayvacık"
@@ -2918,7 +2921,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 208,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4210),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6656),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayramiç"
@@ -2927,7 +2930,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 209,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4211),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6657),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Biga"
@@ -2936,7 +2939,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 210,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4212),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6658),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozcaada"
@@ -2945,7 +2948,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 211,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4213),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6659),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çan"
@@ -2954,7 +2957,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 212,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4214),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6660),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çanakkale"
@@ -2963,7 +2966,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 213,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4215),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6662),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eceabat"
@@ -2972,7 +2975,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 214,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4216),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6663),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ezine"
@@ -2981,7 +2984,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 215,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4217),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6664),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gelibolu"
@@ -2990,7 +2993,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 216,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4218),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6665),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gökçeada"
@@ -2999,7 +3002,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 217,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4219),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6666),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Lapseki"
@@ -3008,7 +3011,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 218,
                             CityID = 17,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4220),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6667),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenice"
@@ -3017,7 +3020,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 219,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4221),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6668),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çankırı"
@@ -3026,7 +3029,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 220,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4222),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6669),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çerkeş"
@@ -3035,7 +3038,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 221,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4224),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6670),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eldivan"
@@ -3044,7 +3047,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 222,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4225),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6671),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ilgaz"
@@ -3053,7 +3056,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 223,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4226),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6672),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kurşunlu"
@@ -3062,7 +3065,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 224,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4227),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6673),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Orta"
@@ -3071,7 +3074,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 225,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4228),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6674),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şabanözü"
@@ -3080,7 +3083,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 226,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4229),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6676),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yapraklı"
@@ -3089,7 +3092,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 227,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4230),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6677),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Atkaracalar"
@@ -3098,7 +3101,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 228,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4231),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6678),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kızılırmak"
@@ -3107,7 +3110,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 229,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4232),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6679),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayramören"
@@ -3116,7 +3119,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 230,
                             CityID = 18,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4233),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6680),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Korgun"
@@ -3125,7 +3128,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 231,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4235),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6681),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alaca"
@@ -3134,7 +3137,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 232,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4236),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6682),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayat"
@@ -3143,7 +3146,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 233,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4237),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6683),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -3152,7 +3155,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 234,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4238),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6684),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İskilip"
@@ -3161,7 +3164,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 235,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4239),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6685),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kargı"
@@ -3170,7 +3173,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 236,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4240),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6686),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mecitözü"
@@ -3179,7 +3182,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 237,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4241),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6687),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ortaköy"
@@ -3188,7 +3191,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 238,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4242),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6688),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Osmancık"
@@ -3197,7 +3200,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 239,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4243),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6689),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sungurlu"
@@ -3206,7 +3209,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 240,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4244),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6690),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Boğazkale"
@@ -3215,7 +3218,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 241,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4245),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6691),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uğurludağ"
@@ -3224,7 +3227,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 242,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4246),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6692),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dodurga"
@@ -3233,7 +3236,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 243,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4247),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6693),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Laçin"
@@ -3242,7 +3245,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 244,
                             CityID = 19,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4248),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6694),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Oğuzlar"
@@ -3251,7 +3254,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 245,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4249),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6695),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Acıpayam"
@@ -3260,7 +3263,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 246,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4250),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6696),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Buldan"
@@ -3269,7 +3272,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 247,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4251),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6697),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çal"
@@ -3278,7 +3281,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 248,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4252),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6698),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çameli"
@@ -3287,7 +3290,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 249,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4253),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6699),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çardak"
@@ -3296,7 +3299,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 250,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4254),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6728),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çivril"
@@ -3305,7 +3308,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 251,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4255),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6729),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güney"
@@ -3314,7 +3317,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 252,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4256),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6730),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kale"
@@ -3323,7 +3326,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 253,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4258),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6731),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarayköy"
@@ -3332,7 +3335,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 254,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4260),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6732),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tavas"
@@ -3341,7 +3344,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 255,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4261),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6733),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Babadağ"
@@ -3350,7 +3353,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 256,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4262),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6734),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bekilli"
@@ -3359,7 +3362,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 257,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4263),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6735),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Honaz"
@@ -3368,7 +3371,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 258,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4264),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6737),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Serinhisar"
@@ -3377,7 +3380,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 259,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4265),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6738),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pamukkale"
@@ -3386,7 +3389,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 260,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4293),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6739),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Baklan"
@@ -3395,7 +3398,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 261,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4294),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6740),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beyağaç"
@@ -3404,7 +3407,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 262,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4295),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6741),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozkurt"
@@ -3413,7 +3416,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 263,
                             CityID = 20,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4297),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6742),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkezefendi"
@@ -3422,7 +3425,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 264,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4298),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6743),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bismil"
@@ -3431,7 +3434,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 265,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4299),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6744),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çermik"
@@ -3440,7 +3443,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 266,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4300),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6745),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çınar"
@@ -3449,7 +3452,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 267,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4301),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6746),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çüngüş"
@@ -3458,7 +3461,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 268,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4302),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6747),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dicle"
@@ -3467,7 +3470,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 269,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4303),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6748),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ergani"
@@ -3476,7 +3479,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 270,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4304),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6749),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hani"
@@ -3485,7 +3488,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 271,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4305),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6750),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hazro"
@@ -3494,7 +3497,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 272,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4306),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6751),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kulp"
@@ -3503,7 +3506,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 273,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4307),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6752),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Lice"
@@ -3512,7 +3515,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 274,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4308),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6753),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Silvan"
@@ -3521,7 +3524,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 275,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4309),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6754),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eğil"
@@ -3530,7 +3533,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 276,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4310),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6755),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kocaköy"
@@ -3539,7 +3542,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 277,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4311),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6756),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bağlar"
@@ -3548,7 +3551,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 278,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4312),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6757),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kayapınar"
@@ -3557,7 +3560,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 279,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4313),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6758),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sur"
@@ -3566,7 +3569,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 280,
                             CityID = 21,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4314),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6759),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenişehir"
@@ -3575,7 +3578,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 281,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4315),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6760),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -3584,7 +3587,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 282,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4317),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6762),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Enez"
@@ -3593,7 +3596,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 283,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4318),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6763),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Havsa"
@@ -3602,7 +3605,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 284,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4319),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6764),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İpsala"
@@ -3611,7 +3614,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 285,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4321),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6765),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keşan"
@@ -3620,7 +3623,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 286,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4322),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6766),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Lalapaşa"
@@ -3629,7 +3632,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 287,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4323),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6767),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Meriç"
@@ -3638,7 +3641,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 288,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4324),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6768),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uzunköprü"
@@ -3647,7 +3650,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 289,
                             CityID = 22,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4325),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6769),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Süloğlu"
@@ -3656,7 +3659,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 290,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4326),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6770),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ağın"
@@ -3665,7 +3668,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 291,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4327),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6771),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Baskil"
@@ -3674,7 +3677,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 292,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4328),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6772),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -3683,7 +3686,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 293,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4329),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6773),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karakoçan"
@@ -3692,7 +3695,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 294,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4330),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6774),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keban"
@@ -3701,7 +3704,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 295,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4331),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6775),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Maden"
@@ -3710,7 +3713,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 296,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4332),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6776),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Palu"
@@ -3719,7 +3722,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 297,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4333),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6777),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sivrice"
@@ -3728,7 +3731,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 298,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4334),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6778),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arıcak"
@@ -3737,7 +3740,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 299,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4336),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6779),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kovancılar"
@@ -3746,7 +3749,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 300,
                             CityID = 23,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4337),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6780),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alacakaya"
@@ -3755,7 +3758,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 301,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4338),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6781),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çayırlı"
@@ -3764,7 +3767,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 302,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4339),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6782),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -3773,7 +3776,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 303,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4340),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6783),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İliç"
@@ -3782,7 +3785,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 304,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4341),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6784),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kemah"
@@ -3791,7 +3794,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 305,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4342),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6785),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kemaliye"
@@ -3800,7 +3803,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 306,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4343),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6786),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Refahiye"
@@ -3809,7 +3812,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 307,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4344),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6787),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tercan"
@@ -3818,7 +3821,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 308,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4345),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6788),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Üzümlü"
@@ -3827,7 +3830,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 309,
                             CityID = 24,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4346),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6789),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Otlukbeli"
@@ -3836,7 +3839,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 310,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4347),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6790),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aşkale"
@@ -3845,7 +3848,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 311,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4348),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6791),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çat"
@@ -3854,7 +3857,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 312,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4349),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6792),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hınıs"
@@ -3863,7 +3866,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 313,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4350),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6793),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Horasan"
@@ -3872,7 +3875,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 314,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4352),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6794),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İspir"
@@ -3881,7 +3884,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 315,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4353),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6795),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karayazı"
@@ -3890,7 +3893,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 316,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4354),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6796),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Narman"
@@ -3899,7 +3902,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 317,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4355),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6797),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Oltu"
@@ -3908,7 +3911,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 318,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4356),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6799),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Olur"
@@ -3917,7 +3920,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 319,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4357),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6800),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pasinler"
@@ -3926,7 +3929,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 320,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4358),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6801),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şenkaya"
@@ -3935,7 +3938,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 321,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4359),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6802),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tekman"
@@ -3944,7 +3947,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 322,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4360),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6803),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tortum"
@@ -3953,7 +3956,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 323,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4361),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6804),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karaçoban"
@@ -3962,7 +3965,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 324,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4363),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6805),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uzundere"
@@ -3971,7 +3974,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 325,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4364),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6806),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazaryolu"
@@ -3980,7 +3983,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 326,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4365),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6807),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aziziye"
@@ -3989,7 +3992,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 327,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4366),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6808),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köprüköy"
@@ -3998,7 +4001,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 328,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4367),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6810),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Palandöken"
@@ -4007,7 +4010,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 329,
                             CityID = 25,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4368),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6811),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yakutiye"
@@ -4016,7 +4019,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 330,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4369),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6812),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çifteler"
@@ -4025,7 +4028,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 331,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4370),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6813),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mahmudiye"
@@ -4034,7 +4037,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 332,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4371),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6814),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mihalıççık"
@@ -4043,7 +4046,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 333,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4372),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6815),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıcakaya"
@@ -4052,7 +4055,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 334,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4373),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6816),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seyitgazi"
@@ -4061,7 +4064,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 335,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4374),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6817),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sivrihisar"
@@ -4070,7 +4073,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 336,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4375),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6818),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alpu"
@@ -4079,7 +4082,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 337,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4376),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6819),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beylikova"
@@ -4088,7 +4091,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 338,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4377),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6820),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İnönü"
@@ -4097,7 +4100,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 339,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4378),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6821),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Günyüzü"
@@ -4106,7 +4109,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 340,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4379),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6822),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Han"
@@ -4115,7 +4118,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 341,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4380),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6823),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mihalgazi"
@@ -4124,7 +4127,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 342,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4381),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6824),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Odunpazarı"
@@ -4133,7 +4136,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 343,
                             CityID = 26,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4382),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6825),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tepebaşı"
@@ -4142,7 +4145,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 344,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4384),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6826),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Araban"
@@ -4151,7 +4154,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 345,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4385),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6827),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İslahiye"
@@ -4160,7 +4163,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 346,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4386),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6829),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nizip"
@@ -4169,7 +4172,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 347,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4387),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6831),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Oğuzeli"
@@ -4178,7 +4181,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 348,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4388),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6832),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yavuzeli"
@@ -4187,7 +4190,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 349,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4389),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6833),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şahinbey"
@@ -4196,7 +4199,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 350,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4390),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6834),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şehitkamil"
@@ -4205,7 +4208,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 351,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4391),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6835),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karkamış"
@@ -4214,7 +4217,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 352,
                             CityID = 27,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4392),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6836),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nurdağı"
@@ -4223,7 +4226,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 353,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4393),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6837),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alucra"
@@ -4232,7 +4235,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 354,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4394),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6838),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bulancak"
@@ -4241,7 +4244,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 355,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4395),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6839),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dereli"
@@ -4250,7 +4253,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 356,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4397),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6840),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Espiye"
@@ -4259,7 +4262,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 357,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4398),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6841),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eynesil"
@@ -4268,7 +4271,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 358,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4399),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6842),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -4277,7 +4280,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 359,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4400),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6843),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Görele"
@@ -4286,7 +4289,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 360,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4402),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6845),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keşap"
@@ -4295,7 +4298,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 361,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4403),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6846),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şebinkarahisar"
@@ -4304,7 +4307,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 362,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4404),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6847),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tirebolu"
@@ -4313,7 +4316,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 363,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4405),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6848),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Piraziz"
@@ -4322,7 +4325,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 364,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4406),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6849),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yağlıdere"
@@ -4331,7 +4334,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 365,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4407),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6850),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamoluk"
@@ -4340,7 +4343,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 366,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4408),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6851),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çanakçı"
@@ -4349,7 +4352,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 367,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4409),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6852),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğankent"
@@ -4358,7 +4361,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 368,
                             CityID = 28,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4410),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6853),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güce"
@@ -4367,7 +4370,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 369,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4411),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6854),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -4376,7 +4379,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 370,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4412),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6855),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kelkit"
@@ -4385,7 +4388,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 371,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4413),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6856),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şiran"
@@ -4394,7 +4397,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 372,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4414),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6857),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Torul"
@@ -4403,7 +4406,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 373,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4442),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6858),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köse"
@@ -4412,7 +4415,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 374,
                             CityID = 29,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4444),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6859),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kürtün"
@@ -4421,7 +4424,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 375,
                             CityID = 30,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4445),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6860),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çukurca"
@@ -4430,7 +4433,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 376,
                             CityID = 30,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4446),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6861),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -4439,7 +4442,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 377,
                             CityID = 30,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4447),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6862),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şemdinli"
@@ -4448,7 +4451,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 378,
                             CityID = 30,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4448),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6910),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yüksekova"
@@ -4457,7 +4460,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 379,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4449),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6912),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınözü"
@@ -4466,7 +4469,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 380,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4450),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6913),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dörtyol"
@@ -4475,7 +4478,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 381,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4451),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6914),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hassa"
@@ -4484,7 +4487,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 382,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4452),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6915),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İskenderun"
@@ -4493,7 +4496,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 383,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4453),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6916),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kırıkhan"
@@ -4502,7 +4505,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 384,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4454),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6917),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Reyhanlı"
@@ -4511,7 +4514,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 385,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4455),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6918),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Samandağ"
@@ -4520,7 +4523,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 386,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4456),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6919),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yayladağı"
@@ -4529,7 +4532,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 387,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4457),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6920),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erzin"
@@ -4538,7 +4541,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 388,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4459),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6922),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Belen"
@@ -4547,7 +4550,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 389,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4460),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6923),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kumlu"
@@ -4556,7 +4559,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 390,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4461),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6924),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Antakya"
@@ -4565,7 +4568,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 391,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4462),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6925),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arsuz"
@@ -4574,7 +4577,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 392,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4463),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6926),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Defne"
@@ -4583,7 +4586,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 393,
                             CityID = 31,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4464),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6928),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Payas"
@@ -4592,7 +4595,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 394,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4465),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6930),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Atabey"
@@ -4601,7 +4604,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 395,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4466),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6931),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eğirdir"
@@ -4610,7 +4613,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 396,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4467),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6932),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gelendost"
@@ -4619,7 +4622,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 397,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4468),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6933),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -4628,7 +4631,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 398,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4469),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6934),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keçiborlu"
@@ -4637,7 +4640,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 399,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4470),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6935),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Senirkent"
@@ -4646,7 +4649,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 400,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4471),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6936),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sütçüler"
@@ -4655,7 +4658,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 401,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4472),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6937),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şarkikaraağaç"
@@ -4664,7 +4667,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 402,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4473),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6938),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uluborlu"
@@ -4673,7 +4676,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 403,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4475),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6939),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yalvaç"
@@ -4682,7 +4685,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 404,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4476),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6940),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aksu"
@@ -4691,7 +4694,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 405,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4477),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6941),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gönen"
@@ -4700,7 +4703,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 406,
                             CityID = 32,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4478),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6943),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenişarbademli"
@@ -4709,7 +4712,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 407,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4480),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6944),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Anamur"
@@ -4718,7 +4721,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 408,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4481),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6945),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erdemli"
@@ -4727,7 +4730,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 409,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4482),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6946),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gülnar"
@@ -4736,7 +4739,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 410,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4483),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6947),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mut"
@@ -4745,7 +4748,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 411,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4484),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6948),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Silifke"
@@ -4754,7 +4757,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 412,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4485),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6949),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tarsus"
@@ -4763,7 +4766,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 413,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4486),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6950),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aydıncık"
@@ -4772,7 +4775,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 414,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4487),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6951),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozyazı"
@@ -4781,7 +4784,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 415,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4488),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6953),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamlıyayla"
@@ -4790,7 +4793,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 416,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4489),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6954),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akdeniz"
@@ -4799,7 +4802,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 417,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4490),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6955),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mezitli"
@@ -4808,7 +4811,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 418,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4491),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6957),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Toroslar"
@@ -4817,7 +4820,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 419,
                             CityID = 33,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4492),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6958),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenişehir"
@@ -4826,7 +4829,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 420,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4493),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6959),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Adalar"
@@ -4835,7 +4838,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 421,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4494),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6960),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bakırköy"
@@ -4844,7 +4847,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 422,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4495),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6961),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beşiktaş"
@@ -4853,7 +4856,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 423,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4496),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6963),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beykoz"
@@ -4862,7 +4865,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 424,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4497),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6965),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beyoğlu"
@@ -4871,7 +4874,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 425,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4498),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6966),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çatalca"
@@ -4880,7 +4883,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 426,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4499),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6967),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eyüp"
@@ -4889,7 +4892,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 427,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4500),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6969),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Fatih"
@@ -4898,7 +4901,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 428,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4501),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6970),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gaziosmanpaşa"
@@ -4907,7 +4910,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 429,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4502),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6971),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kadıköy"
@@ -4916,7 +4919,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 430,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4503),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6972),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kartal"
@@ -4925,7 +4928,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 431,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4504),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6974),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıyer"
@@ -4934,7 +4937,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 432,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4506),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6975),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Silivri"
@@ -4943,7 +4946,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 433,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4507),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6976),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şile"
@@ -4952,7 +4955,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 434,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4508),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6977),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şişli"
@@ -4961,7 +4964,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 435,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4509),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6978),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Üsküdar"
@@ -4970,7 +4973,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 436,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4510),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6979),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Zeytinburnu"
@@ -4979,7 +4982,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 437,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4511),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6980),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Büyükçekmece"
@@ -4988,7 +4991,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 438,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4513),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6982),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kağıthane"
@@ -4997,7 +5000,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 439,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4514),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6983),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Küçükçekmece"
@@ -5006,7 +5009,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 440,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4515),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6984),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pendik"
@@ -5015,7 +5018,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 441,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4516),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6985),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ümraniye"
@@ -5024,7 +5027,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 442,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4517),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6986),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayrampaşa"
@@ -5033,7 +5036,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 443,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4518),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6988),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Avcılar"
@@ -5042,7 +5045,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 444,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4519),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6989),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bağcılar"
@@ -5051,7 +5054,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 445,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4520),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6990),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bahçelievler"
@@ -5060,7 +5063,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 446,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4521),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6991),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güngören"
@@ -5069,7 +5072,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 447,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4522),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6992),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Maltepe"
@@ -5078,7 +5081,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 448,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4523),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6993),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sultanbeyli"
@@ -5087,7 +5090,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 449,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4524),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6996),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tuzla"
@@ -5096,7 +5099,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 450,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4528),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6998),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Esenler"
@@ -5105,7 +5108,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 451,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4529),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(6999),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arnavutköy"
@@ -5114,7 +5117,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 452,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4530),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7000),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ataşehir"
@@ -5123,7 +5126,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 453,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4531),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7001),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başakşehir"
@@ -5132,7 +5135,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 454,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4532),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7002),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beylikdüzü"
@@ -5141,7 +5144,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 455,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4533),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7003),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çekmeköy"
@@ -5150,7 +5153,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 456,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4534),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7004),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Esenyurt"
@@ -5159,7 +5162,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 457,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4535),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7005),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sancaktepe"
@@ -5168,7 +5171,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 458,
                             CityID = 34,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4536),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7006),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sultangazi"
@@ -5177,7 +5180,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 459,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4537),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7007),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aliağa"
@@ -5186,7 +5189,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 460,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4538),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7008),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayındır"
@@ -5195,7 +5198,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 461,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4539),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7010),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bergama"
@@ -5204,7 +5207,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 462,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4541),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7011),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bornova"
@@ -5213,7 +5216,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 463,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4542),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7012),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çeşme"
@@ -5222,7 +5225,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 464,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4543),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7013),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dikili"
@@ -5231,7 +5234,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 465,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4544),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7014),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Foça"
@@ -5240,7 +5243,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 466,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4545),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7015),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karaburun"
@@ -5249,7 +5252,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 467,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4547),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7016),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karşıyaka"
@@ -5258,7 +5261,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 468,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4548),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7017),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kemalpaşa"
@@ -5267,7 +5270,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 469,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4549),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7019),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kınık"
@@ -5276,7 +5279,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 470,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4550),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7020),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kiraz"
@@ -5285,7 +5288,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 471,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4551),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7021),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Menemen"
@@ -5294,7 +5297,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 472,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4552),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7022),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ödemiş"
@@ -5303,7 +5306,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 473,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4553),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7024),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seferihisar"
@@ -5312,7 +5315,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 474,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4554),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7025),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Selçuk"
@@ -5321,7 +5324,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 475,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4555),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7026),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tire"
@@ -5330,7 +5333,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 476,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4556),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7028),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Torbalı"
@@ -5339,7 +5342,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 477,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4557),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7029),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Urla"
@@ -5348,7 +5351,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 478,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4558),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7030),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beydağ"
@@ -5357,7 +5360,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 479,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4559),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7031),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Buca"
@@ -5366,7 +5369,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 480,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4560),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7032),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Konak"
@@ -5375,7 +5378,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 481,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4561),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7033),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Menderes"
@@ -5384,7 +5387,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 482,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4562),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7034),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Balçova"
@@ -5393,7 +5396,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 483,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4563),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7035),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çiğli"
@@ -5402,7 +5405,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 484,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4564),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7036),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gaziemir"
@@ -5411,7 +5414,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 485,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4565),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7037),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Narlıdere"
@@ -5420,7 +5423,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 486,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4566),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7038),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güzelbahçe"
@@ -5429,7 +5432,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 487,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4594),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7039),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bayraklı"
@@ -5438,7 +5441,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 488,
                             CityID = 35,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4596),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7040),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karabağlar"
@@ -5447,7 +5450,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 489,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4597),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7041),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arpaçay"
@@ -5456,7 +5459,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 490,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4598),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7042),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Digor"
@@ -5465,7 +5468,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 491,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4599),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7043),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kağızman"
@@ -5474,7 +5477,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 492,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4600),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7044),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -5483,7 +5486,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 493,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4602),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7045),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıkamış"
@@ -5492,7 +5495,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 494,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4603),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7046),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Selim"
@@ -5501,7 +5504,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 495,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4604),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7047),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Susuz"
@@ -5510,7 +5513,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 496,
                             CityID = 36,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4605),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7048),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akyaka"
@@ -5519,7 +5522,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 497,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4606),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7054),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Abana"
@@ -5528,7 +5531,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 498,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4607),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7055),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Araç"
@@ -5537,7 +5540,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 499,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4608),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7056),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Azdavay"
@@ -5546,7 +5549,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 500,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4610),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7057),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozkurt"
@@ -5555,7 +5558,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 501,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4611),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7058),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Cide"
@@ -5564,7 +5567,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 502,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4612),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7059),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çatalzeytin"
@@ -5573,7 +5576,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 503,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4613),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7060),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Daday"
@@ -5582,7 +5585,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 504,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4614),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7061),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Devrekani"
@@ -5591,7 +5594,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 505,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4615),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7090),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İnebolu"
@@ -5600,7 +5603,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 506,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4616),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7092),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -5609,7 +5612,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 507,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4617),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7093),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Küre"
@@ -5618,7 +5621,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 508,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4618),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7094),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Taşköprü"
@@ -5627,7 +5630,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 509,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4619),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7095),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tosya"
@@ -5636,7 +5639,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 510,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4620),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7096),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İhsangazi"
@@ -5645,7 +5648,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 511,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4622),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7097),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pınarbaşı"
@@ -5654,7 +5657,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 512,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4623),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7098),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şenpazar"
@@ -5663,7 +5666,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 513,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4624),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7099),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ağlı"
@@ -5672,7 +5675,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 514,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4625),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7100),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğanyurt"
@@ -5681,7 +5684,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 515,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4626),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7101),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hanönü"
@@ -5690,7 +5693,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 516,
                             CityID = 37,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4627),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7102),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seydiler"
@@ -5699,7 +5702,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 517,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4629),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7103),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bünyan"
@@ -5708,7 +5711,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 518,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4630),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7105),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Develi"
@@ -5717,7 +5720,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 519,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4631),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7106),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Felahiye"
@@ -5726,7 +5729,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 520,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4632),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7107),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İncesu"
@@ -5735,7 +5738,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 521,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4633),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7108),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pınarbaşı"
@@ -5744,7 +5747,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 522,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4634),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7109),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıoğlan"
@@ -5753,7 +5756,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 523,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4636),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7110),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarız"
@@ -5762,7 +5765,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 524,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4637),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7111),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tomarza"
@@ -5771,7 +5774,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 525,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4638),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7112),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yahyalı"
@@ -5780,7 +5783,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 526,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4639),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7113),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeşilhisar"
@@ -5789,7 +5792,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 527,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4640),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7115),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akkışla"
@@ -5798,7 +5801,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 528,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4641),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7116),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Talas"
@@ -5807,7 +5810,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 529,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4642),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7117),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kocasinan"
@@ -5816,7 +5819,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 530,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4643),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7119),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Melikgazi"
@@ -5825,7 +5828,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 531,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4644),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7120),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hacılar"
@@ -5834,7 +5837,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 532,
                             CityID = 38,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4646),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7121),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Özvatan"
@@ -5843,7 +5846,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 533,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4647),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7122),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Babaeski"
@@ -5852,7 +5855,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 534,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4648),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7124),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Demirköy"
@@ -5861,7 +5864,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 535,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4649),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7125),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -5870,7 +5873,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 536,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4650),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7126),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kofçaz"
@@ -5879,7 +5882,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 537,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4651),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7127),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Lüleburgaz"
@@ -5888,7 +5891,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 538,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4652),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7129),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pehlivanköy"
@@ -5897,7 +5900,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 539,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4653),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7130),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pınarhisar"
@@ -5906,7 +5909,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 540,
                             CityID = 39,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4654),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7131),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Vize"
@@ -5915,7 +5918,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 541,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4655),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7132),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çiçekdağı"
@@ -5924,7 +5927,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 542,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4656),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7133),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kaman"
@@ -5933,7 +5936,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 543,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4657),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7134),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -5942,7 +5945,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 544,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4658),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7135),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mucur"
@@ -5951,7 +5954,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 545,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4660),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7137),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akpınar"
@@ -5960,7 +5963,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 546,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4661),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7138),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akçakent"
@@ -5969,7 +5972,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 547,
                             CityID = 40,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4662),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7139),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Boztepe"
@@ -5978,7 +5981,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 548,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4663),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7140),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gebze"
@@ -5987,7 +5990,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 549,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4664),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7141),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölcük"
@@ -5996,7 +5999,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 550,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4665),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7142),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kandıra"
@@ -6005,7 +6008,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 551,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4666),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7143),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karamürsel"
@@ -6014,7 +6017,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 552,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4667),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7144),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Körfez"
@@ -6023,7 +6026,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 553,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4669),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7146),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derince"
@@ -6032,7 +6035,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 554,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4670),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7147),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başiskele"
@@ -6041,7 +6044,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 555,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4671),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7148),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çayırova"
@@ -6050,7 +6053,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 556,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4672),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7149),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Darıca"
@@ -6059,7 +6062,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 557,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4673),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7150),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dilovası"
@@ -6068,7 +6071,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 558,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4674),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7152),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İzmit"
@@ -6077,7 +6080,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 559,
                             CityID = 41,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4675),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7153),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kartepe"
@@ -6086,7 +6089,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 560,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4676),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7154),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akşehir"
@@ -6095,7 +6098,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 561,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4677),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7155),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beyşehir"
@@ -6104,7 +6107,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 562,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4678),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7156),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozkır"
@@ -6113,7 +6116,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 563,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4679),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7157),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Cihanbeyli"
@@ -6122,7 +6125,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 564,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4680),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7158),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çumra"
@@ -6131,7 +6134,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 565,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4681),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7159),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğanhisar"
@@ -6140,7 +6143,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 566,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4683),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7160),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Konya"
@@ -6149,7 +6152,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 567,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4684),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7161),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hadim"
@@ -6158,7 +6161,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 568,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4685),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7162),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ilgın"
@@ -6167,7 +6170,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 569,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4686),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7163),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kadınhanı"
@@ -6176,7 +6179,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 570,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4687),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7164),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karapınar"
@@ -6185,7 +6188,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 571,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4688),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7165),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kulu"
@@ -6194,7 +6197,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 572,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4689),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7166),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarayönü"
@@ -6203,7 +6206,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 573,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4690),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7167),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seydişehir"
@@ -6212,7 +6215,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 574,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4691),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7168),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yunak"
@@ -6221,7 +6224,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 575,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4692),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7169),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akören"
@@ -6230,7 +6233,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 576,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4693),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7170),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınekin"
@@ -6239,7 +6242,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 577,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4694),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7171),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derebucak"
@@ -6248,7 +6251,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 578,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4695),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7172),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hüyük"
@@ -6257,7 +6260,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 579,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4697),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7173),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karatay"
@@ -6266,7 +6269,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 580,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4698),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7174),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Meram"
@@ -6275,7 +6278,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 581,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4699),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7175),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Selçuklu"
@@ -6284,7 +6287,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 582,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4700),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7176),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Taşkent"
@@ -6293,7 +6296,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 583,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4702),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7177),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ahırlı"
@@ -6302,7 +6305,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 584,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4703),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7179),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çeltik"
@@ -6311,7 +6314,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 585,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4704),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7180),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derbent"
@@ -6320,7 +6323,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 586,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4705),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7181),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Emirgazi"
@@ -6329,7 +6332,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 587,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4706),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7182),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güneysınır"
@@ -6338,7 +6341,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 588,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4707),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7183),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Halkapınar"
@@ -6347,7 +6350,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 589,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4708),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7184),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tuzlukçu"
@@ -6356,7 +6359,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 590,
                             CityID = 42,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4709),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7185),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yalıhüyük"
@@ -6365,7 +6368,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 591,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4710),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7186),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altıntaş"
@@ -6374,7 +6377,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 592,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4711),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7187),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Domaniç"
@@ -6383,7 +6386,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 593,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4712),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7189),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Emet"
@@ -6392,7 +6395,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 594,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4713),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7190),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gediz"
@@ -6401,7 +6404,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 595,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4714),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7191),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -6410,7 +6413,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 596,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4715),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7192),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Simav"
@@ -6419,7 +6422,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 597,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4716),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7193),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tavşanlı"
@@ -6428,7 +6431,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 598,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4717),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7194),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aslanapa"
@@ -6437,7 +6440,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 599,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4718),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7195),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dumlupınar"
@@ -6446,7 +6449,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 600,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4770),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7196),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hisarcık"
@@ -6455,7 +6458,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 601,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4772),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7197),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şaphane"
@@ -6464,7 +6467,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 602,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4773),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7198),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çavdarhisar"
@@ -6473,7 +6476,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 603,
                             CityID = 43,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4774),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7200),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazarlar"
@@ -6482,7 +6485,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 604,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4775),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7201),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akçadağ"
@@ -6491,7 +6494,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 605,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4776),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7201),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arapgir"
@@ -6500,7 +6503,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 606,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4778),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7202),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arguvan"
@@ -6509,7 +6512,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 607,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4780),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7204),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Darende"
@@ -6518,7 +6521,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 608,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4782),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7205),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğanşehir"
@@ -6527,7 +6530,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 609,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4783),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7206),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hekimhan"
@@ -6536,7 +6539,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 610,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4784),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7207),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pütürge"
@@ -6545,7 +6548,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 611,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4785),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7208),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeşilyurt"
@@ -6554,7 +6557,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 612,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4786),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7210),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Battalgazi"
@@ -6563,7 +6566,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 613,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4788),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7211),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğanyol"
@@ -6572,7 +6575,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 614,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4789),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7212),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kale"
@@ -6581,7 +6584,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 615,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4790),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7213),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kuluncak"
@@ -6590,7 +6593,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 616,
                             CityID = 44,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4791),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7214),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yazıhan"
@@ -6599,7 +6602,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 617,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4792),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7216),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akhisar"
@@ -6608,7 +6611,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 618,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4793),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7217),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alaşehir"
@@ -6617,7 +6620,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 619,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4794),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7218),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Demirci"
@@ -6626,7 +6629,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 620,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4795),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7219),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gördes"
@@ -6635,7 +6638,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 621,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4796),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7220),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kırkağaç"
@@ -6644,7 +6647,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 622,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4797),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7221),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kula"
@@ -6653,7 +6656,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 623,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4798),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7222),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Salihli"
@@ -6662,7 +6665,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 624,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4799),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7223),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıgöl"
@@ -6671,7 +6674,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 625,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4801),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7224),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saruhanlı"
@@ -6680,7 +6683,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 626,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4802),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7226),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Selendi"
@@ -6689,7 +6692,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 627,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4803),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7230),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Soma"
@@ -6698,7 +6701,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 628,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4804),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7231),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Turgutlu"
@@ -6707,7 +6710,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 629,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4805),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7232),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ahmetli"
@@ -6716,7 +6719,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 630,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4806),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7233),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölmarmara"
@@ -6725,7 +6728,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 631,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4807),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7234),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köprübaşı"
@@ -6734,7 +6737,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 632,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4808),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7235),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şehzadeler"
@@ -6743,7 +6746,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 633,
                             CityID = 45,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4809),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7263),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yunusemre"
@@ -6752,7 +6755,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 634,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4810),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7264),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Afşin"
@@ -6761,7 +6764,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 635,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4811),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7265),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Andırın"
@@ -6770,7 +6773,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 636,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4812),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7266),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Elbistan"
@@ -6779,7 +6782,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 637,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4813),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7267),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Göksun"
@@ -6788,7 +6791,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 638,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4814),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7268),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazarcık"
@@ -6797,7 +6800,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 639,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4815),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7269),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Türkoğlu"
@@ -6806,7 +6809,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 640,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4816),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7271),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çağlayancerit"
@@ -6815,7 +6818,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 641,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4817),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7272),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ekinözü"
@@ -6824,7 +6827,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 642,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4818),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7273),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nurhak"
@@ -6833,7 +6836,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 643,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4820),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7274),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dulkadiroğlu"
@@ -6842,7 +6845,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 644,
                             CityID = 46,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4821),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7275),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Onikişubat"
@@ -6851,7 +6854,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 645,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4822),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7276),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derik"
@@ -6860,7 +6863,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 646,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4823),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7277),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kızıltepe"
@@ -6869,7 +6872,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 647,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4824),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7278),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mazıdağı"
@@ -6878,7 +6881,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 648,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4826),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7279),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Midyat"
@@ -6887,7 +6890,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 649,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4827),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7280),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nusaybin"
@@ -6896,7 +6899,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 650,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4828),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7281),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ömerli"
@@ -6905,7 +6908,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 651,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4829),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7282),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Savur"
@@ -6914,7 +6917,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 652,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4830),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7283),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dargeçit"
@@ -6923,7 +6926,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 653,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4831),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7288),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeşilli"
@@ -6932,7 +6935,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 654,
                             CityID = 47,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4832),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7289),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Artuklu"
@@ -6941,7 +6944,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 655,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4833),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7291),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bodrum"
@@ -6950,7 +6953,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 656,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4834),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7292),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Datça"
@@ -6959,7 +6962,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 657,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4835),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7293),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Fethiye"
@@ -6968,7 +6971,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 658,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4836),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7294),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köyceğiz"
@@ -6977,7 +6980,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 659,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4837),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7295),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Marmaris"
@@ -6986,7 +6989,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 660,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4838),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7296),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Milas"
@@ -6995,7 +6998,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 661,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4839),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7297),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ula"
@@ -7004,7 +7007,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 662,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4840),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7298),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yatağan"
@@ -7013,7 +7016,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 663,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4841),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7299),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dalaman"
@@ -7022,7 +7025,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 664,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4842),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7301),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ortaca"
@@ -7031,7 +7034,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 665,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4843),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7303),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kavaklıdere"
@@ -7040,7 +7043,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 666,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4844),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7304),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Menteşe"
@@ -7049,7 +7052,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 667,
                             CityID = 48,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4846),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7305),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Seydikemer"
@@ -7058,7 +7061,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 668,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4847),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7306),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bulanık"
@@ -7067,7 +7070,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 669,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4848),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7307),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Malazgirt"
@@ -7076,7 +7079,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 670,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4849),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7308),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Muş Merkez"
@@ -7085,7 +7088,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 671,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4850),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7309),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Varto"
@@ -7094,7 +7097,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 672,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4851),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7310),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hasköy"
@@ -7103,7 +7106,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 673,
                             CityID = 49,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4852),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7312),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Korkut"
@@ -7112,7 +7115,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 674,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4854),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7313),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Avanos"
@@ -7121,7 +7124,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 675,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4855),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7314),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derinkuyu"
@@ -7130,7 +7133,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 676,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4856),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7315),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gülşehir"
@@ -7139,7 +7142,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 677,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4857),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7316),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hacıbektaş"
@@ -7148,7 +7151,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 678,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4858),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7317),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kozaklı"
@@ -7157,7 +7160,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 679,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4859),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7318),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -7166,7 +7169,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 680,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4860),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7319),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ürgüp"
@@ -7175,7 +7178,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 681,
                             CityID = 50,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4861),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7320),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Acıgöl"
@@ -7184,7 +7187,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 682,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4862),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7321),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bor"
@@ -7193,7 +7196,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 683,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4863),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7322),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamardı"
@@ -7202,7 +7205,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 684,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4864),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7323),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -7211,7 +7214,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 685,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4865),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7324),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ulukışla"
@@ -7220,7 +7223,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 686,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4866),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7326),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altunhisar"
@@ -7229,7 +7232,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 687,
                             CityID = 51,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4867),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7327),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çiftlik"
@@ -7238,7 +7241,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 688,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4868),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7328),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akkuş"
@@ -7247,7 +7250,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 689,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4869),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7329),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aybastı"
@@ -7256,7 +7259,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 690,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4871),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7330),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Fatsa"
@@ -7265,7 +7268,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 691,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4872),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7331),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölköy"
@@ -7274,7 +7277,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 692,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4873),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7332),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Korgan"
@@ -7283,7 +7286,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 693,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4874),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7334),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kumru"
@@ -7292,7 +7295,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 694,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4875),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7335),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mesudiye"
@@ -7301,7 +7304,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 695,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4876),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7336),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Perşembe"
@@ -7310,7 +7313,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 696,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4877),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7337),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ulubey"
@@ -7319,7 +7322,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 697,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4878),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7338),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ünye"
@@ -7328,7 +7331,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 698,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4879),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7339),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gülyalı"
@@ -7337,7 +7340,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 699,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4880),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7340),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gürgentepe"
@@ -7346,7 +7349,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 700,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4881),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7341),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamaş"
@@ -7355,7 +7358,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 701,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4882),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7342),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çatalpınar"
@@ -7364,7 +7367,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 702,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4883),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7343),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çaybaşı"
@@ -7373,7 +7376,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 703,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4884),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7344),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İkizce"
@@ -7382,7 +7385,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 704,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4886),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7345),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kabadüz"
@@ -7391,7 +7394,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 705,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4887),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7346),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kabataş"
@@ -7400,7 +7403,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 706,
                             CityID = 52,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4888),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7347),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınordu"
@@ -7409,7 +7412,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 707,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4889),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7348),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ardeşen"
@@ -7418,7 +7421,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 708,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4890),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7350),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çamlıhemşin"
@@ -7427,7 +7430,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 709,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4891),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7351),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çayeli"
@@ -7436,7 +7439,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 710,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4892),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7352),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Fındıklı"
@@ -7445,7 +7448,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 711,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4893),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7353),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İkizdere"
@@ -7454,7 +7457,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 712,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4894),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7354),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kalkandere"
@@ -7463,7 +7466,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 713,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4923),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7355),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazar"
@@ -7472,7 +7475,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 714,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4924),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7356),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Rize Merkez"
@@ -7481,7 +7484,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 715,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4925),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7357),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güneysu"
@@ -7490,7 +7493,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 716,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4926),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7358),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Derepazarı"
@@ -7499,7 +7502,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 717,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4927),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7359),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hemşin"
@@ -7508,7 +7511,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 718,
                             CityID = 53,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4928),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7360),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İyidere"
@@ -7517,7 +7520,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 719,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4929),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7361),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akyazı"
@@ -7526,7 +7529,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 720,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4930),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7362),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Geyve"
@@ -7535,7 +7538,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 721,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4931),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7363),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hendek"
@@ -7544,7 +7547,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 722,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4932),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7365),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karasu"
@@ -7553,7 +7556,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 723,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4933),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7366),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kaynarca"
@@ -7562,7 +7565,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 724,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4935),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7367),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sapanca"
@@ -7571,7 +7574,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 725,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4936),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7368),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kocaali"
@@ -7580,7 +7583,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 726,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4937),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7369),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pamukova"
@@ -7589,7 +7592,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 727,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4938),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7370),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Taraklı"
@@ -7598,7 +7601,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 728,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4939),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7371),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ferizli"
@@ -7607,7 +7610,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 729,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4940),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7372),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karapürçek"
@@ -7616,7 +7619,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 730,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4941),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7373),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Söğütlü"
@@ -7625,7 +7628,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 731,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4942),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7374),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Adapazarı"
@@ -7634,7 +7637,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 732,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4943),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7375),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arifiye"
@@ -7643,7 +7646,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 733,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4944),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7376),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erenler"
@@ -7652,7 +7655,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 734,
                             CityID = 54,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4946),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7377),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Serdivan"
@@ -7661,7 +7664,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 735,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4947),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7378),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alaçam"
@@ -7670,7 +7673,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 736,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4948),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7379),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bafra"
@@ -7679,7 +7682,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 737,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4949),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7380),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çarşamba"
@@ -7688,7 +7691,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 738,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4950),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7382),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Havza"
@@ -7697,7 +7700,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 739,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4951),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7383),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kavak"
@@ -7706,7 +7709,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 740,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4953),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7384),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ladik"
@@ -7715,7 +7718,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 741,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4954),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7385),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Terme"
@@ -7724,7 +7727,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 742,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4955),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7386),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Vezirköprü"
@@ -7733,7 +7736,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 743,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4956),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7387),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Asarcık"
@@ -7742,7 +7745,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 744,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4957),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7388),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "43604"
@@ -7751,7 +7754,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 745,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4958),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7389),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Salıpazarı"
@@ -7760,7 +7763,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 746,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4959),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7390),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tekkeköy"
@@ -7769,7 +7772,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 747,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4960),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7391),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayvacık"
@@ -7778,7 +7781,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 748,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4961),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7392),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yakakent"
@@ -7787,7 +7790,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 749,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4962),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7393),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Atakum"
@@ -7796,7 +7799,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 750,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4963),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7394),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Canik"
@@ -7805,7 +7808,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 751,
                             CityID = 55,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4964),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7395),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İlkadım"
@@ -7814,7 +7817,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 752,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4965),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7396),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Baykan"
@@ -7823,7 +7826,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 753,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4966),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7397),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eruh"
@@ -7832,7 +7835,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 754,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4967),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7398),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kurtalan"
@@ -7841,7 +7844,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 755,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4969),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7399),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pervari"
@@ -7850,7 +7853,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 756,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4970),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7400),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -7859,7 +7862,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 757,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4971),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7401),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şirvan"
@@ -7868,7 +7871,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 758,
                             CityID = 56,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4972),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7402),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tillo"
@@ -7877,7 +7880,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 759,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4973),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7403),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayancık"
@@ -7886,7 +7889,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 760,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4974),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7430),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Boyabat"
@@ -7895,7 +7898,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 761,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4975),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7432),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Durağan"
@@ -7904,7 +7907,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 762,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4976),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7433),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erfelek"
@@ -7913,7 +7916,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 763,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4977),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7434),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gerze"
@@ -7922,7 +7925,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 764,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4979),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7435),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -7931,7 +7934,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 765,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4980),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7436),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Türkeli"
@@ -7940,7 +7943,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 766,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4981),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7437),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dikmen"
@@ -7949,7 +7952,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 767,
                             CityID = 57,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4982),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7438),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saraydüzü"
@@ -7958,7 +7961,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 768,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4983),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7440),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Divriği"
@@ -7967,7 +7970,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 769,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4984),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7441),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gemerek"
@@ -7976,7 +7979,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 770,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4985),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7442),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gürün"
@@ -7985,7 +7988,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 771,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4986),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7443),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hafik"
@@ -7994,7 +7997,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 772,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4988),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7444),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İmranlı"
@@ -8003,7 +8006,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 773,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4989),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7445),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kangal"
@@ -8012,7 +8015,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 774,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4990),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7446),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Koyulhisar"
@@ -8021,7 +8024,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 775,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4991),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7447),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -8030,7 +8033,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 776,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4992),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7448),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Suşehri"
@@ -8039,7 +8042,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 777,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4993),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7449),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şarkışla"
@@ -8048,7 +8051,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 778,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4994),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7450),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yıldızeli"
@@ -8057,7 +8060,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 779,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4995),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7451),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Zara"
@@ -8066,7 +8069,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 780,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4996),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7452),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akıncılar"
@@ -8075,7 +8078,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 781,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4998),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7453),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınyayla"
@@ -8084,7 +8087,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 782,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(4999),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7454),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Doğanşar"
@@ -8093,7 +8096,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 783,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5000),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7455),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölova"
@@ -8102,7 +8105,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 784,
                             CityID = 58,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5001),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7456),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ulaş"
@@ -8111,7 +8114,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 785,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5002),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7457),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çerkezköy"
@@ -8120,7 +8123,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 786,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5003),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7458),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çorlu"
@@ -8129,7 +8132,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 787,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5004),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7459),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hayrabolu"
@@ -8138,7 +8141,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 788,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5005),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7460),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Malkara"
@@ -8147,7 +8150,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 789,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5006),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7461),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Muratlı"
@@ -8156,7 +8159,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 790,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5007),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7462),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saray"
@@ -8165,7 +8168,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 791,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5008),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7463),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şarköy"
@@ -8174,7 +8177,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 792,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5009),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7464),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Marmaraereğlisi"
@@ -8183,7 +8186,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 793,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5010),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7465),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ergene"
@@ -8192,7 +8195,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 794,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5012),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7467),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kapaklı"
@@ -8201,7 +8204,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 795,
                             CityID = 59,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5013),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7468),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Süleymanpaşa"
@@ -8210,7 +8213,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 796,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5014),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7469),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Almus"
@@ -8219,7 +8222,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 797,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5015),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7470),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Artova"
@@ -8228,7 +8231,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 798,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5016),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7471),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erbaa"
@@ -8237,7 +8240,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 799,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5017),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7472),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Niksar"
@@ -8246,7 +8249,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 800,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5018),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7473),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Reşadiye"
@@ -8255,7 +8258,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 801,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5019),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7474),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tokat Merkez"
@@ -8264,7 +8267,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 802,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5020),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7475),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Turhal"
@@ -8273,7 +8276,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 803,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5021),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7476),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Zile"
@@ -8282,7 +8285,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 804,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5022),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7477),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pazar"
@@ -8291,7 +8294,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 805,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5024),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7478),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yeşilyurt"
@@ -8300,7 +8303,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 806,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5025),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7480),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başçiftlik"
@@ -8309,7 +8312,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 807,
                             CityID = 60,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5026),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7481),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sulusaray"
@@ -8318,7 +8321,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 808,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5027),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7482),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akçaabat"
@@ -8327,7 +8330,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 809,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5028),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7483),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Araklı"
@@ -8336,7 +8339,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 810,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5029),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7484),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Arsin"
@@ -8345,7 +8348,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 811,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5030),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7485),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çaykara"
@@ -8354,7 +8357,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 812,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5031),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7486),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Maçka"
@@ -8363,7 +8366,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 813,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5032),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7487),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Of"
@@ -8372,7 +8375,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 814,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5033),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7488),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sürmene"
@@ -8381,7 +8384,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 815,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5034),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7489),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tonya"
@@ -8390,7 +8393,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 816,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5035),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7490),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Vakfıkebir"
@@ -8399,7 +8402,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 817,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5036),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7491),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yomra"
@@ -8408,7 +8411,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 818,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5037),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7492),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beşikdüzü"
@@ -8417,7 +8420,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 819,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5038),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7493),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şalpazarı"
@@ -8426,7 +8429,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 820,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5039),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7494),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çarşıbaşı"
@@ -8435,7 +8438,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 821,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5040),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7495),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Dernekpazarı"
@@ -8444,7 +8447,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 822,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5041),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7496),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Düzköy"
@@ -8453,7 +8456,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 823,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5042),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7497),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hayrat"
@@ -8462,7 +8465,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 824,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5044),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7498),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Köprübaşı"
@@ -8471,7 +8474,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 825,
                             CityID = 61,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5045),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7499),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ortahisar"
@@ -8480,7 +8483,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 826,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5046),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7500),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çemişgezek"
@@ -8489,7 +8492,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 827,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5075),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7502),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hozat"
@@ -8498,7 +8501,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 828,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5076),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7503),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Mazgirt"
@@ -8507,7 +8510,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 829,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5078),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7504),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Nazımiye"
@@ -8516,7 +8519,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 830,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5079),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7505),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ovacık"
@@ -8525,7 +8528,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 831,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5080),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7506),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pertek"
@@ -8534,7 +8537,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 832,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5081),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7508),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Pülümür"
@@ -8543,7 +8546,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 833,
                             CityID = 62,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5082),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7509),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -8552,7 +8555,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 834,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5083),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7510),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akçakale"
@@ -8561,7 +8564,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 835,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5084),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7511),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Birecik"
@@ -8570,7 +8573,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 836,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5085),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7512),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bozova"
@@ -8579,7 +8582,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 837,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5086),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7513),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ceylanpınar"
@@ -8588,7 +8591,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 838,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5087),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7514),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Halfeti"
@@ -8597,7 +8600,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 839,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5088),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7515),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hilvan"
@@ -8606,7 +8609,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 840,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5089),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7516),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Siverek"
@@ -8615,7 +8618,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 841,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5090),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7517),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Suruç"
@@ -8624,7 +8627,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 842,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5091),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7518),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Viranşehir"
@@ -8633,7 +8636,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 843,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5092),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7519),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Harran"
@@ -8642,7 +8645,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 844,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5093),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7520),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eyyübiye"
@@ -8651,7 +8654,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 845,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5094),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7521),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Haliliye"
@@ -8660,7 +8663,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 846,
                             CityID = 63,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5095),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7522),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karaköprü"
@@ -8669,7 +8672,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 847,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5096),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7523),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Banaz"
@@ -8678,7 +8681,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 848,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5098),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7524),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eşme"
@@ -8687,7 +8690,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 849,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5099),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7525),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karahallı"
@@ -8696,7 +8699,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 850,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5100),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7526),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sivaslı"
@@ -8705,7 +8708,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 851,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5101),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7527),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ulubey"
@@ -8714,7 +8717,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 852,
                             CityID = 64,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5102),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7528),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uşak Merkez"
@@ -8723,7 +8726,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 853,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5103),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7529),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başkale"
@@ -8732,7 +8735,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 854,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5105),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7530),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çatak"
@@ -8741,7 +8744,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 855,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5106),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7531),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Erciş"
@@ -8750,7 +8753,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 856,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5107),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7533),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gevaş"
@@ -8759,7 +8762,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 857,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5108),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7534),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gürpınar"
@@ -8768,7 +8771,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 858,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5109),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7535),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Muradiye"
@@ -8777,7 +8780,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 859,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5110),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7536),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Özalp"
@@ -8786,7 +8789,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 860,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5111),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7537),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bahçesaray"
@@ -8795,7 +8798,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 861,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5112),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7538),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çaldıran"
@@ -8804,7 +8807,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 862,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5113),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7539),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Edremit"
@@ -8813,7 +8816,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 863,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5114),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7540),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saray"
@@ -8822,7 +8825,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 864,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5115),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7541),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İpekyolu"
@@ -8831,7 +8834,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 865,
                             CityID = 65,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5116),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7542),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tuşba"
@@ -8840,7 +8843,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 866,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5117),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7543),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akdağmadeni"
@@ -8849,7 +8852,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 867,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5118),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7545),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Boğazlıyan"
@@ -8858,7 +8861,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 868,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5119),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7546),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çayıralan"
@@ -8867,7 +8870,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 869,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5120),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7547),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çekerek"
@@ -8876,7 +8879,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 870,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5121),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7548),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıkaya"
@@ -8885,7 +8888,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 871,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5122),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7549),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sorgun"
@@ -8894,7 +8897,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 872,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5123),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7550),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Şefaatli"
@@ -8903,7 +8906,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 873,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5124),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7551),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yerköy"
@@ -8912,7 +8915,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 874,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5125),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7552),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yozgat Merkez"
@@ -8921,7 +8924,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 875,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5126),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7553),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aydıncık"
@@ -8930,7 +8933,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 876,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5128),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7554),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çandır"
@@ -8939,7 +8942,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 877,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5129),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7555),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kadışehri"
@@ -8948,7 +8951,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 878,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5130),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7556),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Saraykent"
@@ -8957,7 +8960,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 879,
                             CityID = 66,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5131),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7557),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenifakılı"
@@ -8966,7 +8969,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 880,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5132),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7558),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çaycuma"
@@ -8975,7 +8978,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 881,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5133),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7560),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Devrek"
@@ -8984,7 +8987,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 882,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5134),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7561),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ereğli"
@@ -8993,7 +8996,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 883,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5135),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7562),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9002,7 +9005,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 884,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5136),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7563),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Alaplı"
@@ -9011,7 +9014,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 885,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5138),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7564),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gökçebey"
@@ -9020,7 +9023,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 886,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5139),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7565),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kilimli"
@@ -9029,7 +9032,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 887,
                             CityID = 67,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5140),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7566),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kozlu"
@@ -9038,7 +9041,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 888,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5141),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7627),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9047,7 +9050,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 889,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5142),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7629),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ortaköy"
@@ -9056,7 +9059,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 890,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5143),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7631),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ağaçören"
@@ -9065,7 +9068,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 891,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5144),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7632),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güzelyurt"
@@ -9074,7 +9077,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 892,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5145),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7633),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıyahşi"
@@ -9083,7 +9086,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 893,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5146),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7634),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eskil"
@@ -9092,7 +9095,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 894,
                             CityID = 68,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5147),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7635),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gülağaç"
@@ -9101,7 +9104,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 895,
                             CityID = 69,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5149),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7636),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9110,7 +9113,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 896,
                             CityID = 69,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5150),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7637),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aydıntepe"
@@ -9119,7 +9122,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 897,
                             CityID = 69,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5151),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7638),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Demirözü"
@@ -9128,7 +9131,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 898,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5152),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7639),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ermenek"
@@ -9137,7 +9140,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 899,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5153),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7640),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9146,7 +9149,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 900,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5154),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7641),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ayrancı"
@@ -9155,7 +9158,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 901,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5155),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7642),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kazımkarabekir"
@@ -9164,7 +9167,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 902,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5156),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7643),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Başyayla"
@@ -9173,7 +9176,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 903,
                             CityID = 70,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5158),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7644),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sarıveliler"
@@ -9182,7 +9185,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 904,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5160),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7645),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Delice"
@@ -9191,7 +9194,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 905,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5161),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7646),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Keskin"
@@ -9200,7 +9203,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 906,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5162),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7647),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9209,7 +9212,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 907,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5163),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7648),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sulakyurt"
@@ -9218,7 +9221,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 908,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5164),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7649),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bahşili"
@@ -9227,7 +9230,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 909,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5165),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7650),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Balışeyh"
@@ -9236,7 +9239,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 910,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5166),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7652),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çelebi"
@@ -9245,7 +9248,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 911,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5167),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7653),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karakeçili"
@@ -9254,7 +9257,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 912,
                             CityID = 71,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5168),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7654),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yahşihan"
@@ -9263,7 +9266,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 913,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5169),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7655),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9272,7 +9275,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 914,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5170),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7656),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beşiri"
@@ -9281,7 +9284,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 915,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5172),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7657),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gercüş"
@@ -9290,7 +9293,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 916,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5173),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7658),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kozluk"
@@ -9299,7 +9302,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 917,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5174),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7659),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sason"
@@ -9308,7 +9311,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 918,
                             CityID = 72,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5176),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7660),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hasankeyf"
@@ -9317,7 +9320,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 919,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5177),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7661),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Beytüşşebap"
@@ -9326,7 +9329,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 920,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5178),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7662),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Cizre"
@@ -9335,7 +9338,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 921,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5179),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7664),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "İdil"
@@ -9344,7 +9347,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 922,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5180),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7665),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Silopi"
@@ -9353,7 +9356,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 923,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5181),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7666),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9362,7 +9365,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 924,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5182),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7667),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Uludere"
@@ -9371,7 +9374,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 925,
                             CityID = 73,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5183),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7668),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Güçlükonak"
@@ -9380,7 +9383,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 926,
                             CityID = 74,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5184),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7669),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9389,7 +9392,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 927,
                             CityID = 74,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5185),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7670),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kurucaşile"
@@ -9398,7 +9401,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 928,
                             CityID = 74,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5186),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7671),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ulus"
@@ -9407,7 +9410,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 929,
                             CityID = 74,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5187),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7672),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Amasra"
@@ -9416,7 +9419,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 930,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5188),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7673),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9425,7 +9428,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 931,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5190),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7674),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çıldır"
@@ -9434,7 +9437,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 932,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5191),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7675),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Göle"
@@ -9443,7 +9446,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 933,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5192),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7676),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hanak"
@@ -9452,7 +9455,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 934,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5193),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7677),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Posof"
@@ -9461,7 +9464,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 935,
                             CityID = 75,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5194),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7678),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Damal"
@@ -9470,7 +9473,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 936,
                             CityID = 76,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5195),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7679),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Aralık"
@@ -9479,7 +9482,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 937,
                             CityID = 76,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5196),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7680),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9488,7 +9491,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 938,
                             CityID = 76,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5197),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7681),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Tuzluca"
@@ -9497,7 +9500,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 939,
                             CityID = 76,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5198),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7682),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Karakoyunlu"
@@ -9506,7 +9509,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 940,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5225),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7683),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9515,7 +9518,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 941,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5227),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7684),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Altınova"
@@ -9524,7 +9527,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 942,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5228),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7685),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Armutlu"
@@ -9533,7 +9536,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 943,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5229),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7686),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çınarcık"
@@ -9542,7 +9545,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 944,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5230),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7687),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çiftlikköy"
@@ -9551,7 +9554,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 945,
                             CityID = 77,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5232),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7688),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Termal"
@@ -9560,7 +9563,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 946,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5233),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7689),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eflani"
@@ -9569,7 +9572,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 947,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5234),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7690),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Eskipazar"
@@ -9578,7 +9581,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 948,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5235),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7691),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9587,7 +9590,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 949,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5236),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7693),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Ovacık"
@@ -9596,7 +9599,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 950,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5237),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7694),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Safranbolu"
@@ -9605,7 +9608,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 951,
                             CityID = 78,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5238),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7695),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yenice"
@@ -9614,7 +9617,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 952,
                             CityID = 79,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5239),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7696),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9623,7 +9626,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 953,
                             CityID = 79,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5240),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7697),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Elbeyli"
@@ -9632,7 +9635,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 954,
                             CityID = 79,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5241),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7698),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Musabeyli"
@@ -9641,7 +9644,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 955,
                             CityID = 79,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5242),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7700),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Polateli"
@@ -9650,7 +9653,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 956,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5243),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7701),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Bahçe"
@@ -9659,7 +9662,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 957,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5244),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7702),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kadirli"
@@ -9668,7 +9671,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 958,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5245),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7703),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9677,7 +9680,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 959,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5246),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7704),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Düziçi"
@@ -9686,7 +9689,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 960,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5247),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7705),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Hasanbeyli"
@@ -9695,7 +9698,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 961,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5248),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7706),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Sumbas"
@@ -9704,7 +9707,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 962,
                             CityID = 80,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5249),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7708),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Toprakkale"
@@ -9713,7 +9716,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 963,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5250),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7709),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Akçakoca"
@@ -9722,7 +9725,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 964,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5251),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7710),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Merkez"
@@ -9731,7 +9734,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 965,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5252),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7711),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Yığılca"
@@ -9740,7 +9743,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 966,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5253),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7712),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Cumayeri"
@@ -9749,7 +9752,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 967,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5254),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7713),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gölyaka"
@@ -9758,7 +9761,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 968,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5255),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7715),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Çilimli"
@@ -9767,7 +9770,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 969,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5257),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7716),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Gümüşova"
@@ -9776,7 +9779,7 @@ namespace Agora.DAL.Migrations
                         {
                             ID = 970,
                             CityID = 81,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 119, DateTimeKind.Local).AddTicks(5258),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(7717),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Status = 1,
                             TownName = "Kaynaşlı"
@@ -9853,8 +9856,7 @@ namespace Agora.DAL.Migrations
 
                     b.Property<string>("UserName")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("ID");
 
@@ -9867,9 +9869,9 @@ namespace Agora.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 117, DateTimeKind.Local).AddTicks(155),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 914, DateTimeKind.Local).AddTicks(3742),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Password = "$2a$11$g.prX7JrmBFJZTUw4nOLz.wpOm.uSbC/ParSuP50Ieg8JADLGW4tu",
+                            Password = "$2a$11$dxX.8FvsIgI.lj8RXb9QmuZHshv05pTBVELlZ6Mf/irJGFE.eWBVm",
                             Role = 1,
                             Status = 1,
                             UserName = "admin"
@@ -9877,9 +9879,9 @@ namespace Agora.DAL.Migrations
                         new
                         {
                             ID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 118, DateTimeKind.Local).AddTicks(76),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 915, DateTimeKind.Local).AddTicks(3040),
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Password = "$2a$11$g.prX7JrmBFJZTUw4nOLz.wpOm.uSbC/ParSuP50Ieg8JADLGW4tu",
+                            Password = "$2a$11$dxX.8FvsIgI.lj8RXb9QmuZHshv05pTBVELlZ6Mf/irJGFE.eWBVm",
                             Role = 1,
                             Status = 1,
                             UserName = "esra"
@@ -9936,7 +9938,7 @@ namespace Agora.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 118, DateTimeKind.Local).AddTicks(8942),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(1494),
                             Gender = 1,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NameSurname = "Admin",
@@ -9947,7 +9949,7 @@ namespace Agora.DAL.Migrations
                         new
                         {
                             ID = 2,
-                            CreatedDate = new DateTime(2022, 7, 5, 13, 27, 23, 118, DateTimeKind.Local).AddTicks(9943),
+                            CreatedDate = new DateTime(2022, 7, 7, 13, 16, 55, 916, DateTimeKind.Local).AddTicks(2466),
                             Gender = 1,
                             ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NameSurname = "Esra Yorulmaz salman",
@@ -9988,19 +9990,11 @@ namespace Agora.DAL.Migrations
 
             modelBuilder.Entity("Agora.MODEL.Entities.Product", b =>
                 {
-                    b.HasOne("Agora.MODEL.Entities.Town", "Town")
-                        .WithMany("Products")
-                        .HasForeignKey("TownID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Agora.MODEL.Entities.User", "User")
                         .WithMany("Products")
-                        .HasForeignKey("TownID")
+                        .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Town");
 
                     b.Navigation("User");
                 });
@@ -10095,11 +10089,6 @@ namespace Agora.DAL.Migrations
                     b.Navigation("ProductPictures");
 
                     b.Navigation("Transfer");
-                });
-
-            modelBuilder.Entity("Agora.MODEL.Entities.Town", b =>
-                {
-                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("Agora.MODEL.Entities.Transfer", b =>

@@ -16,6 +16,5 @@ namespace Agora.MODEL.Entities
         //relation property
         public virtual City City { get; set; }
 
-        public virtual List<Product> Products { get; set; }
     }
 }

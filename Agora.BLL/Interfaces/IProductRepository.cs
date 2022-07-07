@@ -11,6 +11,6 @@ namespace Agora.BLL.Interfaces
     public  interface IProductRepository:IRepository<Product>
     {
 
-        void AddProduct(ProductDto Product);
+        void AddProduct(ProductDto Product, List<String> ImageUrlList);
     }
 }

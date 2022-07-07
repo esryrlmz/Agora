@@ -18,12 +18,16 @@ namespace Agora.DAL.Initializer
             modelBuilder.Entity<User>().HasKey(k => k.ID);
             modelBuilder.Entity<User>().HasData(
                new User() { ID = 1, UserName = "admin", Password = pwd, Role = MODEL.Enums.Role.Admin  },
-               new User() { ID = 2, UserName = "esra", Password = pwd, Role = MODEL.Enums.Role.Admin }
+               new User() { ID = 2, UserName = "esra", Password = pwd, Role = MODEL.Enums.Role.Admin },
+               new User() { ID = 3, UserName = "Btlkc", Password = pwd, Role = MODEL.Enums.Role.Uye },
+               new User() { ID = 4, UserName = "mstfyrlmz", Password = pwd, Role = MODEL.Enums.Role.Uye }
              );
             modelBuilder.Entity<UserDetail>().HasKey(k => k.ID);
             modelBuilder.Entity<UserDetail>().HasData(
                 new UserDetail() { ID = 1, NameSurname = "Admin", Phone = "00000000000", Gender = Gender.Female, UserID=1 },
-                new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Phone="05432563636", Gender=Gender.Female, UserID=2}
+                new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Phone="05432563636", Gender=Gender.Female, UserID=2},
+                new UserDetail() { ID = 3, NameSurname = "Betül Koca", Phone = "02545896363", Gender = Gender.Female, UserID = 3 },
+                new UserDetail() { ID = 4, NameSurname = "Mustafa Yorulmaz", Phone = "05477898989", Gender = Gender.Male, UserID = 4 }
             );
             modelBuilder.Entity<Category>().HasKey(k => k.ID);
             modelBuilder.Entity<Category>().HasData(

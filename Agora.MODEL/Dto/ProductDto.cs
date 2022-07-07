@@ -9,6 +9,10 @@ namespace Agora.MODEL.Dto
 {
     public class ProductDto
     {
+        public ProductDto()
+        {
+            SubCategoryID = 0;
+        }
         public int CategoryID { get; set; }
         public int SubCategoryID { get; set; }
         public string ShortName { get; set; }
@@ -17,6 +21,7 @@ namespace Agora.MODEL.Dto
         public bool IsCargo { get; set; }
         public bool IsHandDeliver { get; set; }
         public int UserID { get; set; }
+
 
         public List<ProductPicture> Pictures { get; set; }
 
