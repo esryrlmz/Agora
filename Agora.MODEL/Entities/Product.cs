@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Agora.MODEL.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,12 +14,15 @@ namespace Agora.MODEL.Entities
             IsActive = true;
             IsCargo = false;
             IsHandDeliver = true;
+            ProductStatus = ProductStatus.Ownerless;
         }
         public string ShortName { get; set; }
         public string Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsCargo { get; set; }
         public bool IsHandDeliver { get; set; }
+
+        public ProductStatus ProductStatus { get; set; }
 
         //fk
         public int UserID { get; set; }

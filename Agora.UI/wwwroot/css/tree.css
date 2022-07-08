@@ -39,7 +39,7 @@
 /* (B3) ADD EXPAND/COLLAPSE ICON  */
 .section {
     position: relative;
-    padding-left: 35px !important;
+    /*padding-left: 35px !important;*/
     color: black !important;
 }
 

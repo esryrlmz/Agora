@@ -12,5 +12,9 @@ namespace Agora.BLL.Interfaces
     {
 
         void AddProduct(ProductDto Product, List<String> ImageUrlList);
+        List<Product> ProductList();
+        List<ProductPicture> GetProductImages(int id);
+
+        Product GetFullProduct(int id);
     }
 }

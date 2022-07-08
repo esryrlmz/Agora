@@ -22,19 +22,30 @@
                                 </tr>
                             </thead>
                             <tbody>
+                               @for (int i = 0; i < Model.Count(); i++)
+                                {
                                 <tr class="odd gradeA">
-                                    <td>1 </td>
-                                    <td><a href="#"> Betül Koca</a></td>
-                                    <td>Çanta</td>
-                                    <td>02.02.2022</td>
-                                    <td>Rezerve</td>
-                                    <td>
-                                      <a  class="btn btn-primary" asp-controller="Product" asp-area="Management" asp-action="Product"><i class="fa fa-eye" aria-hidden="true"></i> </a>
-                                     <a  class="btn btn-info" asp-controller="Product" asp-area="Management" asp-action="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
-                                     <a  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    <td>@(i+1) </td>
+                                    <td><a href="#"> @Model[i].User.UserDetail.NameSurname</a></td>
+                                    <td>@Model[i].ShortName</td>
+                                    <td>@Model[i].CreatedDate</td>
+                                     <td>@if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){<span>Rezerve Edildi</span>}
+                                            else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Adopted) {
+                                                 if(@Model[i].IsCargo){ <span>Kargo ile Transfer Edildi</span>}
+                                                else if(@Model[i].IsHandDeliver) { <span> Elden Teslim Edildi</span>}
+                                                else{<span> Transfer Şekli Bilinmiyor</span>}
+                                            }
+                                            else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Cancel) {<span>Transfer İptal Edildi</span>}
+                                            else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Ownerless) {<span>Yayında</span>}
+                                            else {<span>Pasif Durumda</span>}
+                                     </td>
+                                      <td>
+                                      <a  class="btn btn-primary" asp-controller="Product" asp-area="Management" asp-action="Product" asp-route-id="@Model[i].ID"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+                                     <a  class="btn btn-info" asp-controller="Product" asp-area="Management" asp-action="Edit" asp-route-id="@Model[i].ID"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
+                                     <a  class="btn btn-danger" asp-controller="Product" asp-area="Management" asp-action="Delete" asp-route-id="@Model[i].ID"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                      </td>
                                 </tr>
-  
+                                 }
                             </tbody>
                         </table>
                     </div>

@@ -10,6 +10,5 @@ namespace Agora.MODEL.Enums
     {
         Rezerved=1, Ownerless=2, Adopted=3, Cancel= 4
 
-            //Rezerved = rezerve edildi, Ownerless = sahipsiz rezerve edilebilir, Adopted = sahiplendirildi, cancel: transfer ital edildi
     }
 }

@@ -3,6 +3,8 @@ using Agora.BLL.Interfaces;
 using Agora.DAL.Context;
 using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
+using Agora.MODEL.Enums;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,5 +59,24 @@ namespace Agora.BLL.Concrete
            
           
         }
+
+        public List<Product> ProductList()
+        {
+            return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true).Include(x => x.User).ThenInclude(y=>y.UserDetail).ToList(); 
+        }
+
+        public Product GetFullProduct(int id)
+        {
+           return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true)
+                .Include(x => x.ProductCategories).ThenInclude(y => y.Category)
+                .Include(x => x.User).ThenInclude(y => y.UserDetail).FirstOrDefault();
+
+        }
+        public List<ProductPicture> GetProductImages(int id)
+        {
+            return _db.ProductPictures.Where(x => x.ProductID == id).ToList();
+
+        }
+
     }
 }

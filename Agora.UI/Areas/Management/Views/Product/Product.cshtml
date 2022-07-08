@@ -1,4 +1,4 @@
-﻿
+﻿@model (Product, List<ProductPicture>)
 <div class="container-fluid">
 
 <div class="row">
@@ -12,31 +12,39 @@
             <div class="list-group-item">
                 <div class="row">
                     <div class="col-lg-4"> <b> Kategori </b></div>
-                    <div class="col-lg-8">  Çanta </div>
+                    <div class="col-lg-8">  @Model.Item1.ProductCategories[0].Category.CategoryName </div>
                 </div>
             </div>
             <div class="list-group-item">
                 <div class="row">
                     <div class="col-lg-4"> <b> Ürün Adı </b></div>
-                    <div class="col-lg-8">  Siyah Çanta </div>
+                    <div class="col-lg-8"> @Model.Item1.ShortName </div>
                 </div>
             </div>
             <div class="list-group-item">
                 <div class="row">
                     <div class="col-lg-4"> <b> Açıklama</b></div>
-                    <div class="col-lg-8">  Siyah renk deri sırt çantası </div>
+                    <div class="col-lg-8">  @Model.Item1.Description </div>
                 </div>
             </div>
             <div class="list-group-item">
                 <div class="row">
                     <div class="col-lg-4"> <b> Eklenme Tarihi</b></div>
-                    <div class="col-lg-8">  03.02.2022 </div>
+                    <div class="col-lg-8">  @Model.Item1.CreatedDate </div>
                 </div>
             </div>
             <div class="list-group-item">
                 <div class="row">
-                    <div class="col-lg-4"> <b> Transfer Durumu</b></div>
-                    <div class="col-lg-8">  Yayında </div>
+                    <div class="col-lg-4"> <b> Ürün Durumu</b></div>
+                    <div class="col-lg-8">  @if(@Model.Item1.ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){<span>Rezerve Edildi</span>}
+                                            else if(@Model.Item1.ProductStatus==Agora.MODEL.Enums.ProductStatus.Adopted) {
+                                                if(@Model.Item1.IsCargo){ <span>Kargo ile Transfer Edildi</span>}
+                                                else if(@Model.Item1.IsHandDeliver) { <span> Elden Teslim Edildi</span>}
+                                                else{<span> Transfer Şekli Bilinmiyor</span>}
+                                            }
+                                            else if(@Model.Item1.ProductStatus==Agora.MODEL.Enums.ProductStatus.Cancel) {<span>Transfer İptal Edildi</span>}
+                                            else if(@Model.Item1.ProductStatus==Agora.MODEL.Enums.ProductStatus.Ownerless) {<span>Yayında</span>}
+                                            else {<span>Pasif Durumda</span>} </div>
                 </div>
             </div>
         </div>
@@ -54,25 +62,25 @@
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Ad Soyad </b></div>
-                            <div class="col-lg-8">  Esra Yorulmaz </div>
+                            <div class="col-lg-8">  @Model.Item1.User.UserDetail.NameSurname </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Telefon</b></div>
-                            <div class="col-lg-8">  05434762972 </div>
+                            <div class="col-lg-8"> @Model.Item1.User.UserDetail.Phone </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Email</b></div>
-                            <div class="col-lg-8">  esryrlmz@gmail.com </div>
+                            <div class="col-lg-8"> @Model.Item1.User.UserDetail.Email </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"><b>  İl/İlce</b></div>
-                            <div class="col-lg-8">  İstanbul/Eyüp </div>
+                            <div class="col-lg-8">  @Model.Item1.User.UserDetail.Country/@Model.Item1.User.UserDetail.Towner </div>
                         </div>
                     </div>
                                                
@@ -86,45 +94,63 @@
 
 
 <div class="row">
-     <div class="col-lg-8">
+     <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <i class="fa fa-truck fa-fw"></i> Ürüne Ait Görseller
             </div>
             <div class="panel-body">
-           <div id="myCarousel" class="carousel slide" >
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                <div class="item active">
-                    @*img tagındaki style width ve height değerlerini kaldırdım*@
-                    <img src="/images/canta1.jpg"  class="img-responsive ">
-                </div>
-                <div class="item">
-                    @*img tagındaki style width ve height değerlerini kaldırdım*@
-                    <img src="/images/canta2.jpg" class="img-responsive" >
-                </div>
-                <div class="item">
-                    @*img tagındaki style width ve height değerlerini kaldırdım*@
-                    <img src="/images/canta3.jpg" class="img-responsive" >
-                </div>
-                </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-                </a>  
+                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item  active">
+                            <img src="@Model.Item2[0].PictureUrl"  >
+                        </div>
+                        @for (int i = 1; i <= @Model.Item2.Count-1; i++)
+                        {
+                           <div class="item ">
+                            <img src="@Model.Item2[i].PictureUrl"  >
+                          </div>                  
+                        }
+
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+               
+
             </div>
             </div>
         </div>
      </div>
-      <div class="col-lg-4"></div>
+      <div class="col-lg-6"></div>
 
 </div>
- </div>
+
+<style>
+    .carousel-inner img {
+    max-width: 100vw;
+    max-height: 400px;
+    margin: auto;
+}
+.carousel-inner{
+     min-height: 400px;
+      max-height: 400px;
+}
+
+ </style>

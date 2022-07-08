@@ -1,4 +1,5 @@
 ﻿using Agora.MODEL.Entities;
+using Agora.MODEL.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,10 @@ namespace Agora.MODEL.Dto
         public ProductDto()
         {
             SubCategoryID = 0;
+            IsActive = true;
+            IsCargo = false;
+            IsHandDeliver = false;
+            ProductStatus = ProductStatus.Ownerless;
         }
         public int CategoryID { get; set; }
         public int SubCategoryID { get; set; }
@@ -21,6 +26,7 @@ namespace Agora.MODEL.Dto
         public bool IsCargo { get; set; }
         public bool IsHandDeliver { get; set; }
         public int UserID { get; set; }
+        public ProductStatus ProductStatus { get; set; }
 
 
         public List<ProductPicture> Pictures { get; set; }

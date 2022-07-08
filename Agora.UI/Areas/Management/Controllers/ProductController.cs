@@ -36,13 +36,14 @@ namespace Agora.UI.Areas.Management.Controllers
         }
         public IActionResult ProductList()
         {
-            return View();
+            return View(_repoProduct.ProductList());
         }
 
-        public IActionResult Product()
+        public IActionResult Product(int id)
         {
-
-            return View(new Product());
+            Product product = _repoProduct.GetFullProduct(id);
+            List<ProductPicture> productPictures = _repoProduct.GetProductImages(id);
+            return View((product, productPictures));
         }
         public IActionResult Create()
         {
@@ -63,17 +64,27 @@ namespace Agora.UI.Areas.Management.Controllers
             _repoProduct.AddProduct(Product, ImageUrlList);
             return RedirectToAction("ProductList");
         }
-        public IActionResult Edit()
+       
+        
+        
+        
+        
+        public IActionResult Edit(int id)
         {
 
             return View(new Product());
         }
 
-        public IActionResult Delete()
+        public IActionResult Delete(int id)
         {
 
             return RedirectToAction("ProductList");
         }
+
+
+
+
+
 
         //Return cloudinary image path list
         [System.Obsolete]

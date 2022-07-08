@@ -24,10 +24,10 @@ namespace Agora.DAL.Initializer
              );
             modelBuilder.Entity<UserDetail>().HasKey(k => k.ID);
             modelBuilder.Entity<UserDetail>().HasData(
-                new UserDetail() { ID = 1, NameSurname = "Admin", Phone = "00000000000", Gender = Gender.Female, UserID=1 },
-                new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Phone="05432563636", Gender=Gender.Female, UserID=2},
-                new UserDetail() { ID = 3, NameSurname = "Betül Koca", Phone = "02545896363", Gender = Gender.Female, UserID = 3 },
-                new UserDetail() { ID = 4, NameSurname = "Mustafa Yorulmaz", Phone = "05477898989", Gender = Gender.Male, UserID = 4 }
+                new UserDetail() { ID = 1, NameSurname = "Admin", Phone = "00000000000", Email = "admin@gmail.com", Country = "Çorum" ,Towner= "Bayat", Gender = Gender.Female, UserID=1 },
+                new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Email="esra@gmail.com", Phone="05432563636", Country = "Adana",Towner = "Ceyhan" ,Gender = Gender.Female, UserID=2},
+                new UserDetail() { ID = 3, NameSurname = "Betül Koca", Phone = "02545896363", Email = "betul@gmail.com" , Country = "İstanbul", Towner = "Fatih", Gender = Gender.Female, UserID = 3 },
+                new UserDetail() { ID = 4, NameSurname = "Mustafa Yorulmaz", Phone = "05477898989", Email = "betul@gmail.com", Country = "İstanbul", Towner = "Fatih", Gender = Gender.Male, UserID = 4 }
             );
             modelBuilder.Entity<Category>().HasKey(k => k.ID);
             modelBuilder.Entity<Category>().HasData(
@@ -43,7 +43,10 @@ namespace Agora.DAL.Initializer
                new Category() { ID = 10, CategoryName = "Ev Textil" },
                new Category() { ID = 11, CategoryName = "Halı", CategoryID = 10 },
                new Category() { ID = 12, CategoryName = "Perde, Nevresim", CategoryID = 10 },
-               new Category() { ID = 13, CategoryName = "Ayakkabı - Çanta" }
+               new Category() { ID = 13, CategoryName = "Ayakkabı - Çanta" },
+               new Category() { ID = 14, CategoryName = "Ev Mobilyası" },
+               new Category() { ID = 15, CategoryName = "Masa", CategoryID = 14 },
+               new Category() { ID = 16, CategoryName = "Sandalye", CategoryID = 14 }
            );
 
             // il bilgisi
