@@ -67,9 +67,8 @@ namespace Agora.BLL.Concrete
 
         public Product GetFullProduct(int id)
         {
-           return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true)
-                .Include(x => x.ProductCategories).ThenInclude(y => y.Category)
-                .Include(x => x.User).ThenInclude(y => y.UserDetail).FirstOrDefault();
+           return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true&& x.ID==id)
+                .Include(x => x.ProductCategories).ThenInclude(y => y.Category).FirstOrDefault();
 
         }
         public List<ProductPicture> GetProductImages(int id)

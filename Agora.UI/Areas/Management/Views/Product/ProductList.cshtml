@@ -26,7 +26,7 @@
                                 {
                                 <tr class="odd gradeA">
                                     <td>@(i+1) </td>
-                                    <td><a href="#"> @Model[i].User.UserDetail.NameSurname</a></td>
+                                    <td><a asp-controller="User" asp-area="Management" asp-action="UserProfile" asp-route-id="@Model[i].User.ID"> @Model[i].User.UserDetail.NameSurname</a></td>
                                     <td>@Model[i].ShortName</td>
                                     <td>@Model[i].CreatedDate</td>
                                      <td>@if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){<span>Rezerve Edildi</span>}

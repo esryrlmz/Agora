@@ -98,5 +98,19 @@ namespace Agora.BLL.Concrete
                 }).ToList();
         }
 
+        public User UserProfile(int id)
+        {
+           return _db.Users.Where(x => x.Status != DataStatus.Deleted&& x.ID==id).Include(x => x.UserDetail).FirstOrDefault();
+        }
+
+        public List<Product> TakeProductsUser(int id)
+        {
+            return _db.Products.Include(x=>x.Transfer).Where(x => x.Status != DataStatus.Deleted&& x.Transfer.UserID==id).OrderByDescending(y => y.CreatedDate).ToList();
+        }
+        public List<Product> SendProductsUser(int id)
+        {
+           return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.UserID == id).OrderByDescending(y=>y.CreatedDate).ToList();
+        }
+
     }
 }

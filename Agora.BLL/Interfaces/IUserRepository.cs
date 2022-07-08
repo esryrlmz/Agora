@@ -19,5 +19,8 @@ namespace Agora.BLL.Interfaces
         void UpdateUser(User user);
 
         List<OnlyUser> OnlyUserList();
+        User UserProfile(int id);
+        List<Product> TakeProductsUser(int id);
+        List<Product> SendProductsUser(int id);
     }
 }

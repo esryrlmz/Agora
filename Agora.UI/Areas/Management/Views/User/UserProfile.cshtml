@@ -1,0 +1,141 @@
+﻿@model (User,  List<Product>,  List<Product>)
+
+<div class="container-fluid">
+
+                                      <div class="row">
+                                      <div class="col-lg-12">
+                                         <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                               Kullanıcı Bilgileri
+                                           </div>
+   
+                                         <div class="panel-body">
+                                        <!-- /.panel-heading -->
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                           <div class="panel-body">
+                                             <div class="list-group">
+                                                <div class="list-group-item">
+                                                   <div class="row">
+                                                       <div class="col-lg-4"> <b> Ad Soyad </b></div>
+                                                        <div class="col-lg-8">  @Model.Item1.UserDetail.NameSurname </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                         <div class="col-lg-4"> <b>  NickName </b></div>
+                                                           <div class="col-lg-8">  @Model.Item1.UserName </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                         <div class="col-lg-4"> <b> Telefon</b></div>
+                                                          <div class="col-lg-8"> @Model.Item1.UserDetail.Phone </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                               <div class="panel-body">
+                                                <div class="list-group">
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                     <div class="col-lg-4"> <b> Email</b></div>
+                                                      <div class="col-lg-8"> @Model.Item1.UserDetail.Email </div>
+                                                   </div>
+                                                </div>
+                                                 <div class="list-group-item">
+                                                  <div class="row">
+                                                      <div class="col-lg-4"><b>  İl/İlce</b></div>
+                                                      <div class="col-lg-8">  @Model.Item1.UserDetail.Country/@Model.Item1.UserDetail.Towner </div>
+                                                  </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                  <div class="row">
+                                                       <div class="col-lg-4"><b> Cinsiyet</b></div>
+                                                        <div class="col-lg-8">  @Model.Item1.UserDetail.Gender </div>
+                                                  </div>
+                                                </div>
+                                                </div>
+                                               </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     </div>
+                                 </div>
+                                </div>
+<div class="row">
+     
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-truck fa-fw"></i> Sahiplendiği Ürünler(@Model.Item3.Count)
+            </div>
+            <div class="panel-body">
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="row">
+                      <div class="col-lg-1"> <b> # </b></div>
+                    <div class="col-lg-3"> <b> Ürün Adı </b> </div>
+                     <div class="col-lg-3"><b> Eklenme Tarihi </b> </div>
+                     <div class="col-lg-3"><b> Açıklama</b> </div>
+                     <div class="col-lg-2"><b> Ayrıntılar </b> </div>
+                </div>
+            </div>
+             @for (int i = 0; i < @Model.Item3.Count; i++)
+            {
+                <div class="list-group-item">
+                <div class="row">
+                    <div class="col-lg-1"> @(i+1) </div>
+                    <div class="col-lg-3"> @Model.Item3[i].ShortName </div>
+                       <div class="col-lg-3"> @Model.Item3[i].CreatedDate </div>
+                     <div class="col-lg-3">  @Model.Item3[i].Description </div>
+                     <div class="col-lg-2"> <a  class="btn btn-primary" asp-controller="Product" asp-area="Management" asp-action="Product" asp-route-id="@Model.Item3[i].ID"><i class="fa fa-eye" aria-hidden="true"></i> </a></div>
+                </div>
+              </div> 
+            }
+        </div>
+
+            </div>
+        </div>
+    </div>
+
+       <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-truck fa-fw"></i> Yayınladığı Ürünler(@Model.Item2.Count)
+            </div>
+            <div class="panel-body">
+            <div class="list-group">
+            <div class="list-group-item">
+                <div class="row">
+                      <div class="col-lg-1"> <b> # </b></div>
+                    <div class="col-lg-3"> <b> Ürün Adı </b> </div>
+                     <div class="col-lg-3"><b> Eklenme Tarihi </b> </div>
+                     <div class="col-lg-3"><b> Açıklama</b> </div>
+                     <div class="col-lg-2"><b> Ayrıntılar </b> </div>
+                </div>
+            </div>
+            @for (int i = 0; i < @Model.Item2.Count; i++)
+            {
+              <div class="list-group-item">
+                <div class="row">
+                    <div class="col-lg-1"> @(i+1) </div>
+                    <div class="col-lg-3"> @Model.Item2[i].ShortName </div>
+                      <div class="col-lg-3"> @Model.Item2[i].CreatedDate </div>
+                     <div class="col-lg-3">  @Model.Item2[i].Description </div>
+                     <div class="col-lg-2"> <a  class="btn btn-primary" asp-controller="Product" asp-area="Management" asp-action="Product" asp-route-id="@Model.Item2[i].ID"><i class="fa fa-eye" aria-hidden="true"></i> </a></div>
+                </div>
+              </div>         
+            }
+        </div>
+        </div>
+    </div>
+
+    </div>
+
+   </div>
+
+
+</div>

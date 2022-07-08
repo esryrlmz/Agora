@@ -42,8 +42,9 @@ namespace Agora.UI.Areas.Management.Controllers
         public IActionResult Product(int id)
         {
             Product product = _repoProduct.GetFullProduct(id);
+            User user = _repoUser.UserProfile(product.UserID);
             List<ProductPicture> productPictures = _repoProduct.GetProductImages(id);
-            return View((product, productPictures));
+            return View((product, productPictures, user));
         }
         public IActionResult Create()
         {

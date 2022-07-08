@@ -98,6 +98,14 @@ namespace Agora.UI.Areas.Management.Controllers
             User user = new User();     
             return View(user);
         }
+
+        public IActionResult UserProfile(int id)
+        {
+            User user = _repoUser.UserProfile(id);
+            List<Product> takeProducts = _repoUser.TakeProductsUser(id);
+            List<Product> sendProducts = _repoUser.SendProductsUser(id);
+            return View((user, takeProducts, sendProducts));
+        }
         public IActionResult LogAuth()
         {
             return RedirectToAction("Index", "Home");

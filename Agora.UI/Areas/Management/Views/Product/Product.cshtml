@@ -1,4 +1,4 @@
-﻿@model (Product, List<ProductPicture>)
+﻿@model (Product, List<ProductPicture>,User)
 <div class="container-fluid">
 
 <div class="row">
@@ -62,25 +62,25 @@
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Ad Soyad </b></div>
-                            <div class="col-lg-8">  @Model.Item1.User.UserDetail.NameSurname </div>
+                            <div class="col-lg-8">  @Model.Item3.UserDetail.NameSurname </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Telefon</b></div>
-                            <div class="col-lg-8"> @Model.Item1.User.UserDetail.Phone </div>
+                            <div class="col-lg-8"> @Model.Item3.UserDetail.Phone </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"> <b> Email</b></div>
-                            <div class="col-lg-8"> @Model.Item1.User.UserDetail.Email </div>
+                            <div class="col-lg-8"> @Model.Item3.UserDetail.Email </div>
                         </div>
                     </div>
                     <div class="list-group-item">
                         <div class="row">
                             <div class="col-lg-4"><b>  İl/İlce</b></div>
-                            <div class="col-lg-8">  @Model.Item1.User.UserDetail.Country/@Model.Item1.User.UserDetail.Towner </div>
+                            <div class="col-lg-8"> @Model.Item3.UserDetail.Country/@Model.Item3.UserDetail.Towner </div>
                         </div>
                     </div>
                                                
@@ -137,8 +137,9 @@
             </div>
             </div>
         </div>
+         <div class="col-lg-6"></div>
      </div>
-      <div class="col-lg-6"></div>
+     
 
 </div>
 
