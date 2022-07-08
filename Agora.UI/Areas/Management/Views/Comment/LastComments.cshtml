@@ -23,24 +23,34 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @for (int i = 0; i < @Model.Count(); i++)
+                                {
                                 <tr class="odd gradeA">
-                                    <td>1 </td>
-                                    <td> Betül Koca</a></td>
-                                    <td>Burada ürün onaylıysa check butonu kalkacak, onaysızsa yer alacak bir if gerekiyor</td>
-                                    <td>02.02.2022</td>
-                                    <td><a href="#"> Çanta</a></td>
-                                    <td>Yayında</td>
+                                    <td>@(i+1) </td>
+                                    <td> @Model[i].NameSurname</td>
+                                    <td>@Model[i].Interpretation</td>
+                                    <td>@Model[i].CreatedDate</td>
+                                    <td><a asp-controller="Product" asp-area="Management" asp-action="Product" asp-route-id="@Model[i].Product.ID"> @Model[i].Product.ShortName</a></td>
+                                    <td>@if (@Model[i].IsCheck==true){ <span>Yayında</span>  }
+                                        else{<span>Yayında Değil</span>}
+                                     </td>
                                     <td>
-                                     <a  class="btn btn-info" asp-controller="Comment" asp-area="Management" asp-action="Edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </a>
-                                     <a  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                     <a  class="btn btn-success" ><i class="fa fa-check-square-o" aria-hidden="true"></i> </a>
+                                     <a  class="btn btn-danger" asp-controller="Comment" asp-area="Management" asp-action="CommentDelete" asp-route-id="@Model[i].ID"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                           @if (@Model[i].IsCheck==true){
+                                                <a  class="btn btn-success" asp-controller="Comment" asp-area="Management" asp-action="CommentIsPasive" asp-route-id="@Model[i].ID"><i class="fa fa-check-square-o" aria-hidden="true"></i> </a>
+                                            }
+                                            else
+                                            {
+                                                <a  class="btn btn-primary" asp-controller="Comment" asp-area="Management" asp-action="CommentIsActive" asp-route-id="@Model[i].ID"><i class="fa fa-window-close-o" aria-hidden="true"></i> </a>
+                                            }
+
                                      </td>
                                 </tr>
-  
+                                  }
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.table-responsive -->
+                    <!-- Burada ürün onaylıysa check butonu kalkacak, onaysızsa yer alacak bir if gerekiyor -->
                                     
                 </div>
                 <!-- /.panel-body -->

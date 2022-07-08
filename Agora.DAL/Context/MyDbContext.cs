@@ -39,6 +39,6 @@ namespace Agora.DAL.Context
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductPicture> ProductPictures { get; set; }
         public DbSet<Transfer> Transfers { get; set; }
-        public DbSet<Transfer> Comments { get; set; }
+        public DbSet<Comment> Comments { get; set; }
     }
 }
