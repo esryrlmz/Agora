@@ -20,18 +20,21 @@ namespace Agora.UI.Areas.Management.Controllers
         ICategoryRepository _repoCategory;
         IUserRepository _repoUser;
         IConfiguration _configuration;
+        ICommentRepository _repoComment;
         [System.Obsolete]
         private IHostingEnvironment Environment;
 
         [System.Obsolete]
         public ProductController(IProductRepository repoProduct,
             ICategoryRepository repoCategory,IUserRepository repoUser,
-            IConfiguration configuration, IHostingEnvironment environment)
+            IConfiguration configuration, IHostingEnvironment environment,
+            ICommentRepository repoComment)
         {
             _repoProduct = repoProduct;
             _repoCategory = repoCategory;
             _repoUser = repoUser;
             _configuration = configuration;
+            _repoComment = repoComment;
             Environment = environment;
         }
         public IActionResult ProductList()
@@ -44,7 +47,8 @@ namespace Agora.UI.Areas.Management.Controllers
             Product product = _repoProduct.GetFullProduct(id);
             User user = _repoUser.UserProfile(product.UserID);
             List<ProductPicture> productPictures = _repoProduct.GetProductImages(id);
-            return View((product, productPictures, user));
+            List<Comment> commentlist = _repoComment.ProductComments(id);
+            return View((product, productPictures, user, commentlist));
         }
         public IActionResult Create()
         {

@@ -1,8 +1,8 @@
-﻿@model (Product, List<ProductPicture>,User)
+﻿@model (Product, List<ProductPicture>,User, List<Comment>)
 <div class="container-fluid">
 
 <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <i class="fa fa-truck fa-fw"></i> Ürün Bilgileri
@@ -52,7 +52,7 @@
     </div>
 
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-6">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <i class="fa fa-truck fa-fw"></i> Ürün Sahibi
@@ -137,7 +137,40 @@
             </div>
             </div>
         </div>
-         <div class="col-lg-6"></div>
+         <div class="col-lg-6">
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+                <i class="fa fa-weixin fa-fw"></i> Ürüne Ait Yorumlar
+            </div>
+             <div class="panel-body">
+                 @foreach (Comment com in @Model.Item4)
+                    {  
+                       <div class="card w-75">
+                          <div class="card-body">
+                            <h5 class="card-title"><b>@com.NameSurname</b>
+                                
+                                <span style=" float:right" >
+                                @if(@com.IsCheck)
+                                {
+                                   <span style="color:darkgreen;font-weight:bold">Aktif</span>
+                                }
+                                else
+                                {
+                                   <span style="color:darkred;font-weight:bold">Pasif</span>
+                                }
+                                <b>   /   @com.CreatedDate</b>
+                    
+                               
+                                </span>
+                             </h5>
+                            <p class="card-text">@com.Interpretation</p>
+                          </div>
+                        </div>
+                        <hr />
+                  }
+              </div>
+         </div>
      </div>
      
 

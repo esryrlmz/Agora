@@ -12,5 +12,6 @@ namespace Agora.BLL.Interfaces
         public List<Comment> CommentList();
         void CommentUpdate(int id, bool check);
         void CommentDelete(int id);
+        List<Comment> ProductComments(int productID);
     }
 }

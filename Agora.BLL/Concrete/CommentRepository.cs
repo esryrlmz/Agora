@@ -37,5 +37,10 @@ namespace Agora.BLL.Concrete
         {
             Delete(id);
         }
+
+        public List<Comment> ProductComments(int productID)
+        {
+            return _db.Comments.Where(x => x.Status != DataStatus.Deleted && x.ProductID==productID).OrderByDescending(X => X.ID).ToList();
+        }
     }
 }
