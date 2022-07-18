@@ -40,7 +40,7 @@
                                         {
                                             <input type="checkbox" id="@categori.ID" />
                                         }
-                                        <label for="@categori.ID"> @categori.CategoryName / ( @categori.Childs.Count())
+                                        <label for="@categori.ID">@categori.CategoryName / ( @categori.Childs.Count())
                                             @if (@categori.Childs.Count() == 0)
                                             {
                                                 <a asp-area="Management" asp-controller="Category" asp-action="Delete" asp-route-id="@categori.ID">

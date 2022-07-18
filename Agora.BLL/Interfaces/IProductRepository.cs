@@ -16,5 +16,9 @@ namespace Agora.BLL.Interfaces
         List<ProductPicture> GetProductImages(int id);
 
         Product GetFullProduct(int id);
+        Category GetProductCategory(int id);
+        void updateProductCategory(int productID, int CategoryID);
+        void UpdateProductPicture(ProductPicture picture);
+        void updateProduct(Product product);
     }
 }

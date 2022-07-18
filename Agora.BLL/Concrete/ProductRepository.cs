@@ -67,8 +67,16 @@ namespace Agora.BLL.Concrete
 
         public Product GetFullProduct(int id)
         {
-           return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true&& x.ID==id)
-                .Include(x => x.ProductCategories).ThenInclude(y => y.Category).FirstOrDefault();
+            Product product= _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true&& x.ID==id).FirstOrDefault();    
+            product.ProductCategories = _db.ProductCategories.Where(z => z.ProductID == id).ToList();
+            int CategoriID = _db.ProductCategories.Where(z => z.ProductID == id).FirstOrDefault().CategoryID;
+            product.ProductCategories.First().Category= new Category()
+            {
+                ID = (int)_db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().ID,// ALT KATEGORİ
+                CategoryID = (int?)_db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().CategoryID,//üst kategori
+                CategoryName = _db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().CategoryName
+            };
+            return product;
 
         }
         public List<ProductPicture> GetProductImages(int id)
@@ -76,6 +84,45 @@ namespace Agora.BLL.Concrete
             return _db.ProductPictures.Where(x => x.ProductID == id).ToList();
 
         }
+        
+        public Category GetProductCategory(int id)
+        {
+            int CategoriID = _db.ProductCategories.Where(z => z.ProductID == id).FirstOrDefault().CategoryID;
+            return new Category()
+            {
+                ID = (int)_db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().ID,// ALT KATEGORİ
+                CategoryID = (int?)_db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().CategoryID,//üst kategori
+                CategoryName = _db.Categories.Where(z => z.ID == CategoriID).FirstOrDefault().CategoryName
+            };
+        }
+        
+        public void updateProductCategory(int productID, int CategoryID)
+        {
+            ProductCategory pc = _db.ProductCategories.Where(x => x.ProductID == productID).FirstOrDefault();
+            if (pc.CategoryID!= CategoryID)
+            {
+                pc.CategoryID= CategoryID;
+                _db.Update(pc);
+                _db.SaveChanges();
+            }
+            
+        }
 
+        public void updateProduct(Product product)
+        {
+            Product prd = GetById(product.ID);
+            prd.ShortName=product.ShortName;
+            prd.Description=product.Description;
+            prd.IsActive=product.IsActive;
+            _db.Update(prd);
+            _db.SaveChanges();
+
+        }
+
+        public void UpdateProductPicture(ProductPicture picture)
+        {
+            _db.Update(picture);
+            _db.SaveChanges();
+        }
     }
 }

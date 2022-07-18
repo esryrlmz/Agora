@@ -18,8 +18,10 @@ namespace Agora.MODEL.Dto
             IsHandDeliver = false;
             ProductStatus = ProductStatus.Ownerless;
         }
+        public int ProductID { get; set; }
         public int CategoryID { get; set; }
         public int SubCategoryID { get; set; }
+        public string CategoryName { get; set; }
         public string ShortName { get; set; }
         public string Description { get; set; }
         public bool IsActive { get; set; }
