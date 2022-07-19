@@ -46,7 +46,8 @@ namespace Agora.DAL.Initializer
                new Category() { ID = 13, CategoryName = "Ayakkabı - Çanta" },
                new Category() { ID = 14, CategoryName = "Ev Mobilyası" },
                new Category() { ID = 15, CategoryName = "Masa", CategoryID = 14 },
-               new Category() { ID = 16, CategoryName = "Sandalye", CategoryID = 14 }
+               new Category() { ID = 16, CategoryName = "Sandalye", CategoryID = 14 },
+               new Category() { ID = 17, CategoryName = "Mutfak Araç Gereç" }
            );
 
             // il bilgisi
