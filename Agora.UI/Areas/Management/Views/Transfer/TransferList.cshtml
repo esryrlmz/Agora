@@ -1,4 +1,4 @@
-﻿ @model List<Transfer>
+﻿ @model List<TransferDto>
 
 
 
@@ -27,22 +27,37 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                  @for (int i = 0; i < Model.Count(); i++)
+                                              {
                                                 <tr class="odd gradeA">
-                                                    <td>1 </td>
-                                                    <td>Betül Koca</td>
-                                                    <td>Nuh SALMAN</td>
-                                                    <td>Geyikli mah, yavuz sok. No:7</td>
-                                                    <td>İstanbul</td>
-                                                    <td>Eyüp</td>
-                                                    <td>04.07.2022</td>
+                                                    <td>@(i+1) </td>
+                                                    <td> <a asp-controller="User" asp-area="Management" asp-action="UserProfile" asp-route-id="@Model[i].ProductUserId">@Model[i].ProductUserName</a></td>
+                                                    <td><a asp-controller="User" asp-area="Management" asp-action="UserProfile" asp-route-id="@Model[i].TransferUserId">@Model[i].TransferUserName</a></td>
+                                                    <td>@Model[i].Adress</td>
+                                                    <td>@Model[i].ProductCity</td>
+                                                    <td>@Model[i].ProductTown</td>
+                                                    <td>@Model[i].TransferDate</td>
                                                    
-                                                    <td>Rezerve Edildi</td>
+                                                    <td>
+                                                        @if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){<span>Rezerve Edildi</span>}
+                                                        else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Adopted) {
+                                                            if(@Model[i].IsCargo){ <span>Kargo ile Transfer Edildi</span>}
+                                                            else if(@Model[i].IsHandDeliver) { <span> Elden Teslim Edildi</span>}
+                                                            else{<span> Transfer Şekli Bilinmiyor</span>}
+                                                        }
+                                                        else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Cancel) {<span>Transfer İptal Edildi</span>}
+                                                        else if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Ownerless) {<span>Yayında</span>}
+                                                        else {<span>Pasif Durumda</span>}
+
+                                                    </td>
                                                      <td>
-											          <a  class="btn btn-info" asp-controller="Transfer" asp-area="Management" asp-action="ShowTransfer"><i class="fa fa-eye" aria-hidden="true"></i> </a>
-                                                      <a  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
-													</td>
+											          <a  class="btn btn-info" asp-controller="Transfer" asp-area="Management" asp-action="ShowTransfer" asp-route-id="@Model[i].TransferID"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+                                                      @if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){
+                                                      <a  class="btn btn-danger" asp-controller="Transfer" asp-area="Management" asp-action="TransferCancel" asp-route-id="@Model[i].TransferID" data-toggle="tooltip" data-placement="right" title="Iptal Et"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+                                                      }
+                                                  </td>
                                                 </tr>
-  
+                                                 }
                                             </tbody>
                                         </table>
                                     </div>

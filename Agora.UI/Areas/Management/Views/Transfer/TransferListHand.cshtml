@@ -1,4 +1,4 @@
-﻿@model  List<Transfer>
+﻿ @model List<TransferDto>
 
   <div class="container-fluid">
                     <div class="row">
@@ -19,27 +19,26 @@
                                                     <th>Adres</th>
                                                     <th>İl</th>
                                                     <th>İlce</th>
-                                                    <th>Açıklama</th>
                                                     <th>Tarih</th>
                                                     <th>İşlemler</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
+                                                 @for (int i = 0; i < Model.Count(); i++)
+                                              {
                                                 <tr class="odd gradeA">
-                                                    <td>1 </td>
-                                                    <td>Betül Koca</td>
-                                                    <td>Nuh SALMAN</td>
-                                                    <td>Geyikli mah, yavuz sok. No:7</td>
-                                                    <td>İstanbul</td>
-                                                    <td>Eyüp</td>
-                                                    <td>Hafta içi teslim edilebilir</td>
-                                                    <td>04.07.2022</td>
-
+                                                    <td>@(i+1) </td>
+                                                    <td> <a asp-controller="User" asp-area="Management" asp-action="UserProfile" asp-route-id="@Model[i].ProductUserId">@Model[i].ProductUserName</a></td>
+                                                    <td><a asp-controller="User" asp-area="Management" asp-action="UserProfile" asp-route-id="@Model[i].TransferUserId">@Model[i].TransferUserName</a></td>
+                                                    <td>@Model[i].Adress</td>
+                                                    <td>@Model[i].ProductCity</td>
+                                                    <td>@Model[i].ProductTown</td>
+                                                    <td>@Model[i].TransferDate</td>
                                                      <td>
-                                                        <a  class="btn btn-info" asp-controller="Transfer" asp-area="Management" asp-action="ShowTransfer"><i class="fa fa-eye" aria-hidden="true"></i> </a>
-                                                      <a  class="btn btn-danger"><i class="fa fa-trash" aria-hidden="true"></i></a>
-													</td>
+											          <a  class="btn btn-info" asp-controller="Transfer" asp-area="Management" asp-action="ShowTransfer" asp-route-id="@Model[i].TransferID"><i class="fa fa-eye" aria-hidden="true"></i> </a>
+                                                     </td>
                                                 </tr>
+                                                 }
                                                 
                                            
 

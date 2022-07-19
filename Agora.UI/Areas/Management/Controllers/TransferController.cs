@@ -1,4 +1,6 @@
-﻿using Agora.MODEL.Entities;
+﻿using Agora.BLL.Interfaces;
+using Agora.MODEL.Dto;
+using Agora.MODEL.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -7,35 +9,48 @@ namespace Agora.UI.Areas.Management.Controllers
     [Area("Management")]
     public class TransferController : Controller
     {
+        ITransferRepository _repoTransfer;
+        IProductRepository _repoProduct;
+        public TransferController(ITransferRepository repoTransfer, IProductRepository repoProduct)
+        {
+            _repoTransfer = repoTransfer;
+            _repoProduct=repoProduct;
+        }
         public IActionResult TransferList()
         {
-            List<Transfer> transfers = new List<Transfer>();
+            List<TransferDto> transfers = _repoTransfer.AllTransferList();
             return View(transfers);
         }
         public IActionResult TransferListCargo()
         {
-            List<Transfer> transfers = new List<Transfer>();
+            List<TransferDto> transfers = _repoTransfer.AllTransferList(x => x.Product.IsCargo == true);
             return View(transfers);
         }
         public IActionResult TransferListHand()
         {
-            List<Transfer> transfers = new List<Transfer>();
+           List < TransferDto > transfers = _repoTransfer.AllTransferList(x => x.Product.IsHandDeliver == true);
             return View(transfers);
         }
-        public IActionResult Transfer()
+       
+        public IActionResult ShowTransfer(int id)
         {
-            Transfer transfer = new Transfer();
-            return View(transfer);
+            Transfer transfer = _repoTransfer.GetTransfer(id);
+            List<ProductPicture> pictures = _repoProduct.GetProductImages(transfer.ProductID);
+            Cargo cargo = _repoTransfer.GetCargo(id);
+            return View((transfer, pictures, cargo));
         }
-        public IActionResult ShowTransfer()
+
+
+
+
+        public IActionResult TransferCancel(int id)
         {
-            Transfer transfer = new Transfer();
-            return View(transfer);
-        }
-        public IActionResult Edit()
-        {
-            Transfer transfer = new Transfer();
-            return View(transfer);
+            // kargo ve el transferleri gerçekleşmiş olacagından iptal edilemez silinemez
+            //product durumunu yayında olarak güncelle
+            _repoProduct.updateProductStatus(_repoTransfer.GetById(id).ProductID, MODEL.Enums.ProductStatus.Ownerless);
+            // transfer bilgisini kaldır
+            _repoTransfer.HardDelete(id);
+            return RedirectToAction("TransferList");
         }
     }
 }

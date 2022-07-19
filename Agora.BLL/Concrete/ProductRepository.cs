@@ -124,5 +124,11 @@ namespace Agora.BLL.Concrete
             _db.Update(picture);
             _db.SaveChanges();
         }
+        public void updateProductStatus(int id, ProductStatus ps)
+        {
+            Product prd = GetById(id);
+            prd.ProductStatus = ps;
+            Update(prd);
+        }
     }
 }

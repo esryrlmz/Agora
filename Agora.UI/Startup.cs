@@ -28,6 +28,7 @@ namespace Agora.UI
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICommentRepository, CommentRepository>();
+            services.AddScoped<ITransferRepository, TransferRepository>();
 
 
             services.AddScoped<IRepository<City>, Repository<City>>();

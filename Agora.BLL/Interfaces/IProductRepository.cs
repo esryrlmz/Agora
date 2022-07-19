@@ -1,5 +1,6 @@
 ﻿using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
+using Agora.MODEL.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,6 @@ namespace Agora.BLL.Interfaces
         void updateProductCategory(int productID, int CategoryID);
         void UpdateProductPicture(ProductPicture picture);
         void updateProduct(Product product);
+        void updateProductStatus(int id, ProductStatus ps);
     }
 }
