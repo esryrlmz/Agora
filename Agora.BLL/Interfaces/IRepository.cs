@@ -24,5 +24,9 @@ namespace Agora.BLL.Interfaces
         List<T> GetByFilter(Expression<Func<T, bool>> exp);
 
         bool Any(Expression<Func<T, bool>> exp);
+        int Count();
+
+        int Count(Expression<Func<T, bool>> exp);
+        
     }
 }

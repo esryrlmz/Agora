@@ -74,8 +74,15 @@ namespace Agora.BLL.Base
             table.Add(item);
             Save();
         }
+        public int Count()
+        {
+           return table.Where(x => x.Status != DataStatus.Deleted).Count();
+        }
+        public int Count(Expression<Func<T, bool>> exp)
+        {
+            return table.Where(x => x.Status != DataStatus.Deleted).Where(exp).Count();
+        }
 
 
-        
     }
 }
