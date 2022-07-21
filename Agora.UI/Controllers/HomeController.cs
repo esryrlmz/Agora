@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Agora.MODEL.Dto;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Agora.UI.Controllers
 {
@@ -6,7 +7,11 @@ namespace Agora.UI.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            ViewBag.City = 0;
+            ViewBag.Town = 0;
+            ViewBag.UstKategoriID = 0;
+            ViewBag.AltKategoriID = 0;
+            return View( );
         }
         public IActionResult About()
         {
