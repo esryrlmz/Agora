@@ -1,6 +1,7 @@
 ﻿using Agora.BLL.Interfaces;
 using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
+using Agora.UI.Helper;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
 using Microsoft.AspNetCore.Hosting;
@@ -62,57 +63,12 @@ namespace Agora.UI.Controllers
             {
                 Product.CategoryID = Product.SubCategoryID;
             }
-           // Product.UserID=oturum açan kişinin IDSİ
-           // List<string> ImageUrlList = LocalUpload(Product.Pictures);
-          //  _repoProduct.AddProduct(Product, ImageUrlList);
+
+            // Product.UserID=oturum açan kişinin IDSİ
+             // CloudinaryImage cimage = new CloudinaryImage();
+            // List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
+            //  _repoProduct.AddProduct(Product, ImageUrlList);
             return RedirectToAction("MyProducts");
-        }
-        //Return cloudinary image path list
-        [System.Obsolete]
-        public List<string> LocalUpload(List<ProductPicture> ImageList)
-        {
-
-            List<string> ClooudinaryUrlList = new List<string>();
-
-            string path = Path.Combine(Environment.WebRootPath, "Uploads");
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-
-            foreach (ProductPicture postedFile in ImageList)
-            {
-                string fileName = Path.GetFileName(postedFile.Image.FileName);
-                FileStream stream = new FileStream(Path.Combine(path, fileName), FileMode.Create);
-                using (stream)
-                {
-                    postedFile.Image.CopyTo(stream);
-
-                }
-
-                WebRequest aa = System.Net.WebRequest.Create(stream.Name);
-                string ClodinaryPath = CloudinaryUploadImage(aa.RequestUri.AbsolutePath);
-                ClooudinaryUrlList.Add(ClodinaryPath);
-                RemoveLocalFile(aa.RequestUri.AbsolutePath);
-
-            }
-            return ClooudinaryUrlList;
-        }
-        public void RemoveLocalFile(string FilePath)
-        {
-            FileInfo fi = new FileInfo(FilePath);
-            fi.Delete();
-        }
-        public string CloudinaryUploadImage(string filename)
-        {
-            Account account = new Account(_configuration["Cloudinary:CloudName"], _configuration["Cloudinary:APIKey"], _configuration["Cloudinary:APISecret"]);
-            Cloudinary cloudinary = new Cloudinary(account);
-            var uploadParams = new ImageUploadParams()
-            {
-                File = new FileDescription(filename)
-            };
-            var uploadResult = cloudinary.Upload(uploadParams);
-            return uploadResult.SecureUrl.AbsoluteUri;
         }
 
         public JsonResult SubCategoriList(string CategoryId)
