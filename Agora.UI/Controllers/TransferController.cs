@@ -2,17 +2,17 @@
 
 namespace Agora.UI.Controllers
 {
-    public class ProductController : Controller
+    public class TransferController : Controller
     {
-        public IActionResult ProductList()
+        public IActionResult TakeTransfer()
         {
             return View();
         }
-        public IActionResult NewProduct()
+        public IActionResult GiveTransfer()
         {
             return View();
         }
-        public IActionResult MyProducts()
+        public IActionResult NewTransfer()
         {
             return View();
         }

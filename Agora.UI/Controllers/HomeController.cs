@@ -8,5 +8,18 @@ namespace Agora.UI.Controllers
         {
             return View();
         }
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult HowToGive()
+        {
+            return View();
+        }
+        public IActionResult HowToTake()
+        {
+            return View();
+        }
+
     }
 }

@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="~/css/theme.css" type="text/css">
+ 
 
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info">
-    <div class="container"> <a class="navbar-brand text-primary" href="#">
+    <div class="container"> <a class="navbar-brand text-primary"  asp-controller="Home" asp-action="Index">
         <i class="fa d-inline fa-lg fa-circle-o"></i>
         <b class="text-body"> PAZAR YERİ UYGULAMASI</b>
       </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar5">
@@ -21,12 +22,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar5">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item"> <a class="nav-link" href="#">Yeni Eklenenler</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Hesabım <br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Duyurular<br></a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Hakkımızda<br></a> </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarurun" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Ürünler
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarurun">
+                  <a class="dropdown-item"  asp-controller="Product" asp-action="ProductList">Yeni Eklenenler</a>
+                  <a class="dropdown-item" asp-controller="Product" asp-action="NewProduct">Ürün Yükle</a>
+                  <a class="dropdown-item" asp-controller="Product" asp-action="MyProducts">Yayınladığım Ürünler</a>
+                </div>
+          </li>
+           <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Transferler
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" asp-controller="Transfer" asp-action="TakeTransfer">Aldıklarım</a>
+                  <a class="dropdown-item" asp-controller="Transfer" asp-action="GiveTransfer">Verdiklerim</a>
+                  <a class="dropdown-item" asp-controller="Transfer" asp-action="NewTransfer">Transfer Talebi</a>
+                </div>
+          </li>
+          <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="About">Hakkımızda<br></a> </li>
+          <li class="nav-item"> <a class="nav-link " asp-area="Management" asp-controller="Home" asp-action="Index"><i class="fa fa-user-secret fa-lg" aria-hidden="true"></i>  Admin Panel<br></a> </li>
         </ul>
-        <a class="btn navbar-btn ml-md-2 btn-outline-dark"> <i class="fa fa-lock fa-fw fa-1x py-1"></i> Giriş <br></a>
+        <a class="btn navbar-btn ml-md-2 btn-outline-dark" asp-controller="Auth" asp-action="LogIn"> <i class="fa fa-lock fa-fw fa-1x py-1"></i> Giriş <br></a>
+         <a class="btn navbar-btn ml-md-2 btn-outline-dark" asp-controller="Auth" asp-action="LogAuth"> <i class="fa  fa-sign-out fa-fw fa-1x py-1"></i> Çıkış <br></a>
       </div>
     </div>
   </nav>
@@ -36,7 +56,13 @@
 <div class="py-3">
     <div class="container">
       <div class="row ">
+          
           <div class="col-md-3 bg-light">
+               <div class="mb-3"></div>
+              <div class="mb-3">
+                  <h3> İhtiyacın Nedir?</h3>
+                  <p class="mb-4">Asağıdan Ürünleri Aratabilirsin...</p>
+              </div>
           <form >
               <div class="form-inline my-3">
             <div class="input-group">
@@ -124,7 +150,7 @@
         </div>
         <div class="p-4 col-md-3">
           <h2 class="mb-4">Yapabileceğiniz İşlemler</h2>
-          <ul class="list-unstyled"> <a href="#" class="text-dark">Bende Elimdeki Fazla Eşyaları Eklemek İstiyorum?</a> <br><br> <a href="#" class="text-dark">Ürünleri Nasıl Temin Edebilirim?</a>  </ul>
+          <ul class="list-unstyled"> <a asp-controller="Home" asp-action="HowToGive" class="text-dark">Bende Elimdeki Fazla Eşyaları Eklemek İstiyorum?</a> <br><br> <a asp-controller="Home" asp-action="HowToTake" class="text-dark">Ürünleri Nasıl Temin Edebilirim?</a>  </ul>
         </div>
         <div class="p-4 col-md-3">
           <h2 class="mb-4">İletişim Bilgileri<br></h2>

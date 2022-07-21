@@ -12,5 +12,9 @@ namespace Agora.UI.Controllers
         {
             return RedirectToAction("Index","Home");
         }
+        public IActionResult SignUp()
+        {
+            return View();
+        }
     }
 }
