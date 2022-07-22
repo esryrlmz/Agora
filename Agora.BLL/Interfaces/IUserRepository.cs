@@ -11,7 +11,7 @@ namespace Agora.BLL.Interfaces
 {
     public interface IUserRepository:IRepository<User>
     {
-        void AddUserDto(UserDto item);
+        UserDto AddUserDto(UserDto item);
 
         List<User> UserList(Role role);
         User GetUser(int userId);

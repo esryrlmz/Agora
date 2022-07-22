@@ -65,7 +65,7 @@ namespace Agora.UI.Controllers
             }
 
             // Product.UserID=oturum açan kişinin IDSİ
-             // CloudinaryImage cimage = new CloudinaryImage();
+            // CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
             // List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
             //  _repoProduct.AddProduct(Product, ImageUrlList);
             return RedirectToAction("MyProducts");

@@ -23,10 +23,6 @@ namespace Agora.UI.Helper
             _configuration = configuration;
             _environment = environment;
         }
-        public CloudinaryImage()
-        {
-            
-        }
 
         [System.Obsolete]
         public List<string> LocalUpload(List<ProductPicture> ImageList)

@@ -27,29 +27,43 @@ namespace Agora.BLL.Concrete
             if ( _db.Users.Where(x => x.UserName == user.UserName).FirstOrDefault() == null) { durum = false; } else { durum = true; };
             return durum;
         }
-        public void AddUserDto(UserDto item)
+        public UserDto AddUserDto(UserDto item)
         {
-            User user = new User()
+            if (_db.UserDetails.Where(x => x.Email == item.Email).FirstOrDefault() != null)
             {
-                UserName = item.UserName,
-                Password = BCrypt.Net.BCrypt.HashPassword(item.Password),
-                Role = item.Role
-            };
-            _db.Users.Add(user);
-            _db.SaveChanges();
-            int user_id = user.ID;
-            UserDetail userDetail = new UserDetail()
+                item.StatusMessage = "Email Sistemimize Kayıtlıdır!";
+
+            }
+            else if (Any(x => x.UserName == item.UserName))
             {
-                Gender = item.Gender,
-                NameSurname = item.NameSurname,
-                Phone = item.Phone,
-                Email = item.Email,
-                Country = _db.Cities.Find(Convert.ToInt32(item.Country)).CityName,
-                Towner = _db.Towns.Find(Convert.ToInt32(item.Towner)).TownName,
-                UserID = user_id
-            };
-            _db.UserDetails.Add(userDetail);
-            _db.SaveChanges();
+                item.StatusMessage = "Kullanıcı Adı Sistemimize Kayıtlıdır!";
+            }
+            else
+            {
+                item.StatusMessage = null;
+                User user = new User()
+                {
+                    UserName = item.UserName,
+                    Password = BCrypt.Net.BCrypt.HashPassword(item.Password),
+                    Role = item.Role
+                };
+                _db.Users.Add(user);
+                _db.SaveChanges();
+                int user_id = user.ID;
+                UserDetail userDetail = new UserDetail()
+                {
+                    Gender = item.Gender,
+                    NameSurname = item.NameSurname,
+                    Phone = item.Phone,
+                    Email = item.Email,
+                    Country = _db.Cities.Find(Convert.ToInt32(item.Country)).CityName,
+                    Towner = _db.Towns.Find(Convert.ToInt32(item.Towner)).TownName,
+                    UserID = user_id
+                };
+                _db.UserDetails.Add(userDetail);
+                _db.SaveChanges();
+            }
+            return item;
 
         }
 

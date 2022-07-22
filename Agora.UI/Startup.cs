@@ -10,6 +10,8 @@ using Microsoft.Extensions.Hosting;
 using Agora.BLL.Concrete;
 using Agora.BLL.Base;
 using Agora.MODEL.Entities;
+using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace Agora.UI
 {

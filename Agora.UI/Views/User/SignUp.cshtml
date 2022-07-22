@@ -1,0 +1,93 @@
+﻿@model (UserDto userDto, List<City> illist)
+   <link rel="stylesheet" href="~/css/style.css">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="form-block">
+                  <div class="mb-4">
+                  <h3> Aramıza Katılmak İstermisin?</h3>
+                  <p class="mb-4">Ücretsiz Alışveriş Yapabilmek İçin Lütfen Aaşağıdaki Bilgilerinle Üye Olabilirsin...</p>
+                </div>
+                <form method="post" asp-controller="User"  asp-action="SignUp"  role="form">
+                  <div class="form-group first mb-2 ">
+                    <label >Kullanici Adi</label>
+                    <input type="text" class="form-control"  asp-for="userDto.UserName" >
+                    <span asp-validation-for="userDto.UserName" class="text-danger"></span>
+                  </div>
+                  <div class="form-group first mb-2 ">
+                    <label >E-Mail</label>
+                    <input type="text" class="form-control"  asp-for="userDto.Email" />
+                    <span asp-validation-for="userDto.Email" class="text-danger"></span>
+                  </div>
+                  <div class="form-group   mb-2 ">
+                    <label >Şifre</label>
+                    <input type="password" class="form-control"   asp-for="userDto.Password"/>
+                     <span asp-validation-for="userDto.Password" class="text-danger"></span>
+                  </div>
+                   <div class="form-group  mb-2">
+                    <label > Ad Soyad</label>
+                   <input type="text"  class="form-control" asp-for="userDto.NameSurname"/>
+                      <span asp-validation-for="userDto.NameSurname" class="text-danger"></span>
+                  </div>
+                   <div class="form-group  mb-2">
+                    <label > Telefon</label>
+                      <input type="text"  class="form-control" asp-for="userDto.Phone" placeholder="5__ ___ __ __" />
+                      <span asp-validation-for="userDto.Phone" class="text-danger"></span>
+                  </div>
+                   <div class="form-group  mb-2">
+                    <label >Bulunduğun İl</label>
+                    <select  class="form-control" asp-for="userDto.Country" id=cityList asp-items="@(new SelectList(@Model.Item2,"ID","CityName"))"></select>
+                     <span asp-validation-for="userDto.Country" class="text-danger"></span>
+                  </div>
+                   <div class="form-group  mb-4">
+                    <label >Bulunduğun İlce</label>
+                     <select asp-for="userDto.Towner" id="townList" class="form-control" ></select>
+                  </div>
+                  <div class="form-group mb-4">
+                   <label>Cinsiyet</label>
+						<div class="form-group ">
+                            <label class="radio-inline">
+                                <input asp-for="userDto.Gender" type="radio"  id="optionsRadiosInline1" value="1" checked>Kadın
+                            </label>
+                            <label class="radio-inline">
+                                <input asp-for="userDto.Gender" type="radio"  id="optionsRadiosInline2" value="2">Erkek
+                            </label>
+                                                    
+                        </div>	
+                   </div>
+                  
+                 
+
+                  <input type="submit" value="Üye Ol" class="btn btn-pill text-white btn-block btn-primary">
+
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#cityList").change(function() {
+        var id = $('#cityList option:selected').val();
+        $.ajax("/Management/User/LoadTownlist/", {
+            data: { cityId: id}, 
+            timeout: 500,
+            success: function (data) {
+                var select_data = '';
+                $.each(data, function(index, value) { 
+                    select_data += '<option value="'+ value.id +'">'+ value.townName +'</option>';
+                });
+                $('#townList').html(select_data);
+            }
+        });
+    });
+});
+
+
+</script>

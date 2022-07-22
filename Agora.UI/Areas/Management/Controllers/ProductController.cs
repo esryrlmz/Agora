@@ -67,7 +67,7 @@ namespace Agora.UI.Areas.Management.Controllers
             {
                 Product.CategoryID = Product.SubCategoryID;
             }
-            CloudinaryImage cimage = new CloudinaryImage();
+            CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
             List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
             _repoProduct.AddProduct(Product, ImageUrlList);
             return RedirectToAction("ProductList");
@@ -125,7 +125,7 @@ namespace Agora.UI.Areas.Management.Controllers
                      List < ProductPicture > pictures = new List<ProductPicture>();
                      if (picture.Image!=null)
                      {
-                         CloudinaryImage cimage = new CloudinaryImage();
+                         CloudinaryImage cimage = new CloudinaryImage(_configuration, Environment);
                          cimage.CloudinaryDestroyImage(picture.PictureUrl);
                          pictures.Add(picture);
                          List<string> ImageUrl = cimage.LocalUpload(pictures);

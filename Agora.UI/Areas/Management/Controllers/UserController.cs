@@ -44,18 +44,54 @@ namespace Agora.UI.Areas.Management.Controllers
         }
 
         [HttpPost]
-        public IActionResult createUser([Bind(Prefix="Item1")] UserDto userDto)
+        public IActionResult NewUser([Bind(Prefix="Item1")] UserDto userDto)
         {
-            _repoUser.AddUserDto(userDto);
-            if(userDto.Role == Role.Admin) {
-              return  RedirectToAction("AdminList"); }
-            else{
-                return RedirectToAction("UserList");}
-            
+           
+            List<City> CityList = _repoCity.GetActives();
+            if (!ModelState.IsValid)
+            {
+                return View((userDto, CityList));
+            }
+            UserDto userdto = _repoUser.AddUserDto(userDto);
+            if (userdto.StatusMessage != null)
+            {
+                ViewBag.CssClassName = "danger";
+                ViewBag.Message = userdto.StatusMessage;
+                return View((userDto, CityList));
+            }
+            else
+            {
+                TempData["CssClassName"] = "success";
+                TempData["Message"] = "Üye Kaydı Başarıyla Tamamlanmıştır";
+                return RedirectToAction("UserList","User");
+            }
+        }
+        [HttpPost]
+        public IActionResult NewAdmin([Bind(Prefix = "Item1")] UserDto userDto)
+        {
+            List<City> CityList = _repoCity.GetActives();
+            if (!ModelState.IsValid)
+            {
+                return View((userDto, CityList));
+            }
+            UserDto userdto = _repoUser.AddUserDto(userDto);
+            if (userdto.StatusMessage != null)
+            {
+                ViewBag.CssClassName = "danger";
+                ViewBag.Message = userdto.StatusMessage;
+                return View((userDto, CityList));
+            }
+            else
+            {
+                TempData["CssClassName"] = "success";
+                TempData["Message"] = "Admin Üye Kaydı Başarıyla Tamamlanmıştır";
+                return RedirectToAction("AdminList", "User");
+            }
+
         }
 
-        //buraya parametre olarak verilen değişken xxx ise arayüzde asp-route-xxx olmalı!
-        public IActionResult GetUser(int id)
+            //buraya parametre olarak verilen değişken xxx ise arayüzde asp-route-xxx olmalı!
+            public IActionResult GetUser(int id)
         {
             User user = _repoUser.GetUser(id);
             UserDetail userdetail = _repoUser.GetUserDetail(id);
@@ -76,11 +112,21 @@ namespace Agora.UI.Areas.Management.Controllers
         }
         public IActionResult AdminList()
         {
+            if (TempData["Message"] != null)
+            {
+                ViewBag.CssClassName = TempData["CssClassName"];
+                ViewBag.Message = TempData["Message"];
+            }
             List<User> users = _repoUser.UserList(Role.Admin);
             return View(users);
         }
         public IActionResult UserList()
         {
+            if (TempData["Message"] != null)
+            {
+                ViewBag.CssClassName = TempData["CssClassName"];
+                ViewBag.Message = TempData["Message"];
+            }
             List<User> users = _repoUser.UserList(Role.Uye);
             return View(users);
         }
