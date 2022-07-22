@@ -4,6 +4,7 @@ using Agora.MODEL.Entities;
 using Agora.UI.Helper;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -51,6 +52,8 @@ namespace Agora.UI.Controllers
         {
             return View();
         }
+
+        [Authorize]
         public IActionResult NewProduct()
         {
             return View((new ProductDto(), _repoCategory.GetAllCategory()));

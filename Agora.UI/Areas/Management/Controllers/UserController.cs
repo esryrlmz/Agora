@@ -5,10 +5,14 @@ using Agora.BLL.Interfaces;
 using Agora.MODEL.Dto;
 using System;
 using Agora.MODEL.Enums;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
+    [Authorize]
     public class UserController : Controller
     {
 
@@ -152,11 +156,13 @@ namespace Agora.UI.Areas.Management.Controllers
             List<Product> sendProducts = _repoUser.SendProductsUser(id);
             return View((user, takeProducts, sendProducts));
         }
-        public IActionResult LogAuth()
+   
+        public async Task<IActionResult> LogAuth()
         {
+            await HttpContext.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
 
-        
+
     }
 }

@@ -82,7 +82,7 @@ namespace Agora.BLL.Base
         {
             return table.Where(x => x.Status != DataStatus.Deleted).Where(exp).Count();
         }
-
+      
 
     }
 }

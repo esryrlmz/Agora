@@ -27,6 +27,7 @@ namespace Agora.BLL.Interfaces
         int Count();
 
         int Count(Expression<Func<T, bool>> exp);
-        
+
+
     }
 }

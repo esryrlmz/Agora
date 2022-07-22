@@ -1,5 +1,6 @@
 ﻿using Agora.BLL.Interfaces;
 using Agora.MODEL.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
+    [Authorize]
     public class CategoryController : Controller
     {
         ICategoryRepository _repoCategory;

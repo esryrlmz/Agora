@@ -22,5 +22,6 @@ namespace Agora.BLL.Interfaces
         User UserProfile(int id);
         List<Product> TakeProductsUser(int id);
         List<Product> SendProductsUser(int id);
+        User IsUserLogin(string UsernameOrMail);
     }
 }

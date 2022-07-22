@@ -12,6 +12,7 @@ using Agora.BLL.Base;
 using Agora.MODEL.Entities;
 using System.Web.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace Agora.UI
 {
@@ -36,9 +37,19 @@ namespace Agora.UI
             services.AddScoped<IRepository<City>, Repository<City>>();
             services.AddScoped<IRepository< Town>, Repository<Town>>();
             services.AddScoped<IRepository<UserDetail>, Repository<UserDetail>>();
+           
 
 
             services.AddControllersWithViews();
+
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
+                options =>
+                {
+                    options.LoginPath = "/Auth/Login";
+                    options.Cookie.Name = "UserDetail";
+                    options.AccessDeniedPath = "/Auth/Login";
+                }
+                );
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -49,7 +60,9 @@ namespace Agora.UI
             }
             app.UseStaticFiles();
             app.UseRouting();
-
+            app.UseAuthentication();//üstte olacak
+            app.UseAuthorization();
+         
             app.UseEndpoints(endpoints =>
             {
                  endpoints.MapControllerRoute(

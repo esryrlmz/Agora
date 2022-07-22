@@ -75,8 +75,7 @@ namespace Agora.BLL.Concrete
         }
         public User GetUser(int userId)
         {
-            User user = _db.Users.Where(x => x.Status != DataStatus.Deleted && x.ID == userId).FirstOrDefault();
-            return user;
+            return GetById(userId);
         }
         public UserDetail GetUserDetail(int userId)
         {
@@ -124,6 +123,13 @@ namespace Agora.BLL.Concrete
         public List<Product> SendProductsUser(int id)
         {
            return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.UserID == id).OrderByDescending(y=>y.CreatedDate).ToList();
+        }
+
+        public User IsUserLogin( string UsernameOrMail)
+        {
+            return _db.Users.Include(x => x.UserDetail).
+                Where(x => x.Status != DataStatus.Deleted&&(x.UserName== UsernameOrMail || x.UserDetail.Email== UsernameOrMail)).FirstOrDefault();
+
         }
 
     }

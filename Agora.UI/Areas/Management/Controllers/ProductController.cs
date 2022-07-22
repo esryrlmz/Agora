@@ -11,10 +11,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using System.Net;
 using Agora.UI.Helper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
+    [Authorize]
     public class ProductController : Controller
     {
         IProductRepository _repoProduct;

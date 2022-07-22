@@ -1,9 +1,11 @@
 ﻿using Agora.BLL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
+    [Authorize]
     public class HomeController : Controller
     {
         ITransferRepository _repoTransfer;
