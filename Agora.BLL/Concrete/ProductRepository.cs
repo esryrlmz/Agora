@@ -64,6 +64,54 @@ namespace Agora.BLL.Concrete
         {
             return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true).Include(x => x.User).ThenInclude(y=>y.UserDetail).ToList(); 
         }
+        public List<ProductCard> ProductCardListCategory(int CategoryID)
+        {// kategoriye ait yayında olan ürünler
+            List<ProductCard> plist =  _db.ProductCategories.Where(x => x.CategoryID == CategoryID)
+               .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
+               .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true&& z.Product.ProductStatus==ProductStatus.Ownerless)
+               .Select(a => new ProductCard
+               {
+                   image = a.Product.ProductPictures.First().PictureUrl,
+                   CommentCount = a.Product.Comments.Count(),
+                   ProductName = a.Product.ShortName,
+                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1,10),
+                   ProductStatus=a.Product.ProductStatus
+               }).ToList();
+            
+
+            return plist;
+        }
+        public List<ProductCard> ProductCardList()
+        {// kategoriye ait yayında olan ürünler
+            List<ProductCard> plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
+               .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true && z.ProductStatus == ProductStatus.Ownerless)
+               .Select(a => new ProductCard
+               {
+                   image = a.ProductPictures.First().PictureUrl,
+                   CommentCount = a.Comments.Count(),
+                   ProductName = a.ShortName,
+                   CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
+                   ProductStatus = a.ProductStatus
+               }).ToList();
+            return plist;
+        }
+        public List<ProductCard> ProductListCategory(int CategoryID)
+        {// kategoriye ait yayında olan ürünler
+            List<ProductCard> plist = _db.ProductCategories.Where(x => x.CategoryID == CategoryID)
+               .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
+               .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless)
+               .Select(a => new ProductCard
+               {
+                   image = a.Product.ProductPictures.First().PictureUrl,
+                   CommentCount = a.Product.Comments.Count(),
+                   ProductName = a.Product.ShortName,
+                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
+                   ProductStatus = a.Product.ProductStatus
+               }).ToList();
+
+
+            return plist;
+        }
 
         public Product GetFullProduct(int id)
         {

@@ -1,4 +1,4 @@
-﻿
+﻿@model List<ProductCard>
 
     <link rel="stylesheet" href="~/css/listcss.css" type="text/css">
 
@@ -7,162 +7,27 @@
   <div class="card-header">
     <b> YENİ EKLENENLER </b>
   </div>
+
   <div class="card-body mb-4" style="background-color: #f4f7f6;">
     <div class="row clearfix ">
-        <div class="col-lg-3 col-md-4 col-sm-12">
+          @foreach (ProductCard product in @Model)
+          {
+          <div class="col-lg-3 col-md-4 col-sm-12">
             <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product" class="img-fluid" >
+                    <div class="cp_img" >
+                        <img src="@product.image" alt="Product" class="img-fluid"  style=" display:block; margin-left: auto;  margin-right: auto; height:130;" >
                     </div>
                    <div class="product_details">
-                        <h5><a asp-controller="Product" asp-action="ViewProduct">Ayakkabı</a></h5>
+                        <h5><a asp-controller="Product" asp-action="ViewProduct">@product.ProductName</a></h5>
                         <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
+                            <li class="old_price"><small>@product.CreatedDate </small></li>
+                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> @product.CommentCount</small></li>
                         </ul>
                     </div>
                 </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="Product" class="img-fluid">
-                    </div>
-                    <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card product_item">
-                    <div class="cp_img">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="Product" class="img-fluid">
-                    </div>
-                     <div class="product_details">
-                        <h5><a href="ec-product-detail.html">Siyah Ayakkabı</a></h5>
-                        <ul class="product_price list-unstyled">
-                            <li class="old_price"><small>04-07-2018</small></li>
-                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> 45</small></li>
-                        </ul>
-                    </div>
-            </div>
-        </div>
+           </div>
+           }
+
         </div>
     </div>
       </div>

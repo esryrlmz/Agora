@@ -34,9 +34,13 @@ namespace Agora.UI.Controllers
         }
         public IActionResult ProductList(int? id)
         {
-            // if eğer id var ise kategori kapsamında productları listele
-           // eger id yok ise tüm product ları listele
-            return View();
+            List<ProductCard> ProductList;
+            if (id!=null) {
+                ProductList = _repoProduct.ProductCardListCategory(Convert.ToInt32(id));
+            }else {
+                ProductList = _repoProduct.ProductCardList();
+            }
+            return View(ProductList);
         }
 
         [HttpPost]
@@ -60,18 +64,21 @@ namespace Agora.UI.Controllers
         }
         [HttpPost]
         [Obsolete]
+        [Authorize(Policy = "UserPolicy")]
         public IActionResult Create([Bind(Prefix = "Item1")] ProductDto Product)
         {
             if (Product.SubCategoryID != 0)
             {
                 Product.CategoryID = Product.SubCategoryID;
             }
+            //oturum açan kişi
+                var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
 
-            // Product.UserID=oturum açan kişinin IDSİ
-            // CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
-            // List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
-            //  _repoProduct.AddProduct(Product, ImageUrlList);
-            return RedirectToAction("MyProducts");
+                 Product.UserID = Convert.ToInt32(luser.FindFirst("UserID").Value);
+                 CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
+                 List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
+                  _repoProduct.AddProduct(Product, ImageUrlList);
+                return RedirectToAction("MyProducts");
         }
 
         public JsonResult SubCategoriList(string CategoryId)
