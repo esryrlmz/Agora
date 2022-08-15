@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
-    [Authorize]
+    [Authorize(Policy = "AdminPolicy")]
     public class CommentController : Controller
     {
         ICommentRepository _repoComment;

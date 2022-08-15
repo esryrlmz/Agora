@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Agora.UI.Controllers
 {
+    [Authorize(Policy = "AdminPolicy")]
     public class TransferController : Controller
     {
+
         public IActionResult TakeTransfer()
         {
             return View();

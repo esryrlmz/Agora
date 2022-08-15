@@ -37,7 +37,6 @@ namespace Agora.UI
             services.AddScoped<IRepository<City>, Repository<City>>();
             services.AddScoped<IRepository< Town>, Repository<Town>>();
             services.AddScoped<IRepository<UserDetail>, Repository<UserDetail>>();
-           
 
 
             services.AddControllersWithViews();
@@ -50,6 +49,12 @@ namespace Agora.UI
                     options.AccessDeniedPath = "/Auth/Login";
                 }
                 );
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminPolicy", policy => policy.RequireClaim("role", "admin"));
+                options.AddPolicy("UserPolicy", policy => policy.RequireClaim("role", "admin","user"));
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -75,7 +75,7 @@
 $(document).ready(function() {
     $("#cityList").change(function() {
         var id = $('#cityList option:selected').val();
-        $.ajax("/Management/User/LoadTownlist/", {
+        $.ajax("/Home/LoadTownlist/", {
             data: { cityId: id}, 
             timeout: 500,
             success: function (data) {

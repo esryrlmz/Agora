@@ -16,7 +16,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
-    [Authorize]
+    [Authorize(Policy = "AdminPolicy")] 
     public class ProductController : Controller
     {
         IProductRepository _repoProduct;

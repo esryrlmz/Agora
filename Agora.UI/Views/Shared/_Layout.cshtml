@@ -1,4 +1,5 @@
-﻿
+﻿@using Agora.MODEL.Enums
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
@@ -52,10 +53,14 @@
           </li>
           }
           <li class="nav-item"> <a class="nav-link" asp-controller="Home" asp-action="About">Hakkımızda<br></a> </li>
-           @if(User.Identity.IsAuthenticated)
+           @{
+              var luser = (System.Security.Claims.ClaimsIdentity)User.Identity; 
+              if(User.Identity.IsAuthenticated&& luser.FindFirst("Role").Value==Role.Admin.ToString())
             {
               <li class="nav-item"> <a class="nav-link " asp-area="Management" asp-controller="Home" asp-action="Index"><i class="fa fa-user-secret fa-lg" aria-hidden="true"></i>  Admin Panel<br></a> </li>
             } 
+            }
+           
       </ul>
        
         @if(User.Identity.IsAuthenticated)

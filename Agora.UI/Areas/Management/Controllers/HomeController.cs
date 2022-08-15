@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Agora.UI.Areas.Management.Controllers
 {
     [Area("Management")]
-    [Authorize]
+    [Authorize(Policy = "AdminPolicy")]
     public class HomeController : Controller
     {
         ITransferRepository _repoTransfer;

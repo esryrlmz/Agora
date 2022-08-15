@@ -53,7 +53,7 @@ namespace Agora.UI.Controllers
             return View();
         }
 
-        [Authorize]
+        [Authorize(Policy = "UserPolicy")]
         public IActionResult NewProduct()
         {
             return View((new ProductDto(), _repoCategory.GetAllCategory()));
