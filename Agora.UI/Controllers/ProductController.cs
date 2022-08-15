@@ -43,12 +43,15 @@ namespace Agora.UI.Controllers
             }
             return View(ProductList);
         }
-
         [HttpPost]
-        public IActionResult ProductList(FilterDto filter)
+        public IActionResult FilterProductList( FilterDto filter)
         {
-            return View();
+            List<ProductCard> ProductList = _repoProduct.FilterProductCardList(filter);
+            return View(ProductList);
         }
+
+
+        [Authorize(Policy = "UserPolicy")]
         public IActionResult MyProducts()
         {
             var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;

@@ -1,0 +1,34 @@
+﻿@model List<ProductCard>
+
+    <link rel="stylesheet" href="~/css/listcss.css" type="text/css">
+
+<div class="container">
+  <div class="card" >
+  <div class="card-header">
+    <b> YENİ EKLENENLER </b>
+  </div>
+
+  <div class="card-body mb-4" style="background-color: #f4f7f6;">
+    <div class="row clearfix ">
+          @foreach (ProductCard product in @Model)
+          {
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card product_item">
+                    <div class="cp_img" >
+                        <img src="@product.image" alt="Product" class="img-fluid"  style=" display:block; margin-left: auto;  margin-right: auto; height:130;" >
+                    </div>
+                   <div class="product_details">
+                        <h5><a asp-controller="Product" asp-action="ViewProduct">@product.ProductName</a></h5>
+                        <ul class="product_price list-unstyled">
+                            <li class="old_price"><small>@product.CreatedDate </small></li>
+                            <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> @product.CommentCount</small></li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+           }
+
+        </div>
+    </div>
+      </div>
+    </div>

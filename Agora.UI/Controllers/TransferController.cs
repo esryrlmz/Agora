@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Agora.UI.Controllers
 {
-    [Authorize(Policy = "AdminPolicy")]
+    [Authorize(Policy = "UserPolicy")]
     public class TransferController : Controller
     {
 

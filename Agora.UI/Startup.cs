@@ -53,7 +53,7 @@ namespace Agora.UI
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdminPolicy", policy => policy.RequireClaim("role", "Admin"));
-                options.AddPolicy("UserPolicy", policy => policy.RequireClaim("role", "Admin","User"));
+                options.AddPolicy("UserPolicy", policy => policy.RequireClaim("role", "Uye","Admin"));
             });
         }
 

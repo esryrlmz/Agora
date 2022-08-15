@@ -25,5 +25,6 @@ namespace Agora.BLL.Interfaces
         List<ProductCard> ProductCardListCategory(int CategoryID);
         List<ProductCard> ProductCardList();
         List<ProductCard> MyProductCardList(int UserId);
+        List<ProductCard> FilterProductCardList(FilterDto filter);
     }
 }
