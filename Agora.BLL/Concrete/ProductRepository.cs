@@ -82,7 +82,7 @@ namespace Agora.BLL.Concrete
             return plist;
         }
         public List<ProductCard> ProductCardList()
-        {// kategoriye ait yayında olan ürünler
+        {
             List<ProductCard> plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
                .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true && z.ProductStatus == ProductStatus.Ownerless)
                .Select(a => new ProductCard
@@ -113,6 +113,21 @@ namespace Agora.BLL.Concrete
             return plist;
         }
 
+
+        public List<ProductCard> MyProductCardList(int UserId)
+        {
+            List<ProductCard> plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
+               .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true&& z.UserID==UserId)
+               .Select(a => new ProductCard
+               {
+                   image = a.ProductPictures.First().PictureUrl,
+                   CommentCount = a.Comments.Count(),
+                   ProductName = a.ShortName,
+                   CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
+                   ProductStatus = a.ProductStatus
+               }).ToList();
+            return plist;
+        }
         public Product GetFullProduct(int id)
         {
             Product product= _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true&& x.ID==id).FirstOrDefault();    

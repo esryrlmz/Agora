@@ -24,5 +24,6 @@ namespace Agora.BLL.Interfaces
         void updateProductStatus(int id, ProductStatus ps);
         List<ProductCard> ProductCardListCategory(int CategoryID);
         List<ProductCard> ProductCardList();
+        List<ProductCard> MyProductCardList(int UserId);
     }
 }

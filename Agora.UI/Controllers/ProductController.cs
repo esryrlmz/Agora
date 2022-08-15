@@ -31,6 +31,7 @@ namespace Agora.UI.Controllers
             _repoProduct = repoProduct;
             _configuration = configuration;
             Environment = environment;
+            
         }
         public IActionResult ProductList(int? id)
         {
@@ -50,7 +51,9 @@ namespace Agora.UI.Controllers
         }
         public IActionResult MyProducts()
         {
-            return View();
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            List<ProductCard> ProductList = _repoProduct.MyProductCardList(Convert.ToInt32(luser.FindFirst("UserID").Value));
+            return View(ProductList);
         }
         public IActionResult ViewProduct()
         {
@@ -72,9 +75,9 @@ namespace Agora.UI.Controllers
                 Product.CategoryID = Product.SubCategoryID;
             }
             //oturum açan kişi
-                var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
 
-                 Product.UserID = Convert.ToInt32(luser.FindFirst("UserID").Value);
+                  var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+                  Product.UserID = Convert.ToInt32(luser.FindFirst("UserID").Value);
                  CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
                  List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
                   _repoProduct.AddProduct(Product, ImageUrlList);
