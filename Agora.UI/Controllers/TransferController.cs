@@ -15,8 +15,9 @@ namespace Agora.UI.Controllers
         {
             return View();
         }
-        public IActionResult NewTransfer()
+        public IActionResult NewTransfer(int id)
         {
+            //parametre olarak product id geliyor
             return View();
         }
     }

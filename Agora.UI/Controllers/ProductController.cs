@@ -20,15 +20,17 @@ namespace Agora.UI.Controllers
         ICategoryRepository _repoCategory; 
         IProductRepository _repoProduct;
         IConfiguration _configuration;
+        ICommentRepository _repoComment;
         [System.Obsolete]
         private IHostingEnvironment Environment;
 
         [Obsolete]
         public ProductController(ICategoryRepository repoCategory, IProductRepository repoProduct,
-            IConfiguration configuration, IHostingEnvironment environment)
+            IConfiguration configuration, IHostingEnvironment environment, ICommentRepository repoComment)
         {
             _repoCategory = repoCategory;   
             _repoProduct = repoProduct;
+            _repoComment = repoComment;
             _configuration = configuration;
             Environment = environment;
             
@@ -58,11 +60,23 @@ namespace Agora.UI.Controllers
             List<ProductCard> ProductList = _repoProduct.MyProductCardList(Convert.ToInt32(luser.FindFirst("UserID").Value));
             return View(ProductList);
         }
-        public IActionResult ViewProduct()
+        public IActionResult ViewProduct(int id)
         {
-            return View();
+            Product prd = _repoProduct.GetFullProduct(id);
+            List<ProductPicture> picture = _repoProduct.GetProductImages(id);
+            List<Comment> comments = _repoComment.ProductCommentsAsc(id);
+            Comment newcomment = new Comment() { ProductID = id };
+            return View((prd,picture,comments, newcomment));
         }
-
+        [Authorize(Policy = "UserPolicy")]
+        public IActionResult AddComment([Bind(Prefix = "Item4")]  Comment comment)
+        {
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            comment.NameSurname = luser.FindFirst("NameSurname").Value;
+            comment.IsCheck = true;
+            _repoComment.Add(comment);
+            return RedirectToAction("ViewProduct" , new { id = comment.ProductID });
+        }
         [Authorize(Policy = "UserPolicy")]
         public IActionResult NewProduct()
         {

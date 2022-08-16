@@ -15,10 +15,10 @@
           <div class="col-lg-3 col-md-4 col-sm-12">
             <div class="card product_item">
                     <div class="cp_img" >
-                        <img src="@product.image" alt="Product" class="img-fluid"  style=" display:block; margin-left: auto;  margin-right: auto; height:130;" >
+                        <img src="@product.image" alt="Product" class="img-fluid"  style=" display:block; margin-left: auto;  margin-right: auto; height:140px;" >
                     </div>
                    <div class="product_details">
-                        <h5><a asp-controller="Product" asp-action="ViewProduct">@product.ProductName</a></h5>
+                        <h5><a asp-controller="Product" asp-action="ViewProduct" asp-route-id="@product.ProductID">@product.ProductName</a></h5>
                         <ul class="product_price list-unstyled">
                             <li class="old_price"><small>@product.CreatedDate </small></li>
                             <li class="new_price"><small><i class="fa fa-comments" aria-hidden="true"></i> @product.CommentCount</small></li>

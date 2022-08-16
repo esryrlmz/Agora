@@ -14,6 +14,8 @@ namespace Agora.MODEL.Dto
         public int CommentCount { get; set; }
         public string CreatedDate { get; set; }
 
+        public int ProductID { get; set; }
+
         public ProductStatus ProductStatus { get; set; }
     }
 }

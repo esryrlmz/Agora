@@ -76,7 +76,8 @@ namespace Agora.BLL.Concrete
                    CommentCount = a.Product.Comments.Count(),
                    ProductName = a.Product.ShortName,
                    CreatedDate = a.Product.CreatedDate.ToString().Substring(1,10),
-                   ProductStatus=a.Product.ProductStatus
+                   ProductStatus=a.Product.ProductStatus,
+                   ProductID=a.Product.ID
                }).ToList();
             
 
@@ -92,7 +93,8 @@ namespace Agora.BLL.Concrete
                    CommentCount = a.Comments.Count(),
                    ProductName = a.ShortName,
                    CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
-                   ProductStatus = a.ProductStatus
+                   ProductStatus = a.ProductStatus,
+                   ProductID = a.ID
                }).ToList();
             return plist;
         }
@@ -106,7 +108,8 @@ namespace Agora.BLL.Concrete
                    CommentCount = a.Comments.Count(),
                    ProductName = a.ShortName,
                    CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
-                   ProductStatus = a.ProductStatus
+                   ProductStatus = a.ProductStatus,
+                   ProductID = a.ID
                }).ToList();
             return plist;
         }
@@ -121,7 +124,8 @@ namespace Agora.BLL.Concrete
                    CommentCount = a.Product.Comments.Count(),
                    ProductName = a.Product.ShortName,
                    CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
-                   ProductStatus = a.Product.ProductStatus
+                   ProductStatus = a.Product.ProductStatus,
+                   ProductID = a.Product.ID
                }).ToList();
 
 
@@ -156,8 +160,9 @@ namespace Agora.BLL.Concrete
                   CommentCount = a.Product.Comments.Count(),
                   ProductName = a.Product.ShortName,
                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
-                  ProductStatus = a.Product.ProductStatus
-              }).ToList();
+                  ProductStatus = a.Product.ProductStatus,
+                  ProductID = a.Product.ID
+            }).ToList();
 
             return plist;
 
