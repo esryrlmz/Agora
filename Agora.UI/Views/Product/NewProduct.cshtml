@@ -22,7 +22,7 @@
                                    <div class="col-lg-4"> <label> 
                                    <b> Alt Kategorisi</b>  </label></div>
                                    <div class="col-lg-8"> 
-                                       <select class="form-control select2" asp-for="@Model.Item1.SubCategoryID"  id="SubCategoriList" placeholder="Alt Kategori Seçiniz" >
+                                       <select class="form-control select2" asp-for="@Model.Item1.SubCategoryID"  id="SubCategory" placeholder="Alt Kategori Seçiniz" >
                                            <option value="0"> Ana Kategoriye Ekle</option>
                                        </select>
                                     </div>
@@ -96,12 +96,12 @@
                 data: { CategoryId: id}, 
                 timeout: 500,
                 success: function (data) {
-                    console.log(data)
                     var select_data = '<option value="0"> Ana Kategoriye Ekle</option>';
                     $.each(data, function(index, value) { 
                         select_data += '<option value="'+ value.id +'">'+ value.categoryName +'</option>';
                     });
-                    $('#SubCategoriList').html(select_data);
+                    console.log(select_data);
+                    $('#SubCategory').html(select_data);
                 }
             });
         });
