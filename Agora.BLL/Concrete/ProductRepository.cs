@@ -73,7 +73,7 @@ namespace Agora.BLL.Concrete
                .Select(a => new ProductCard
                {
                    image = a.Product.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Product.Comments.Count(),
+                   CommentCount = a.Product.Comments.Where(x=>x.IsCheck==true && x.Status != DataStatus.Deleted).Count(),
                    ProductName = a.Product.ShortName,
                    CreatedDate = a.Product.CreatedDate.ToString().Substring(1,10),
                    ProductStatus=a.Product.ProductStatus,
@@ -90,7 +90,7 @@ namespace Agora.BLL.Concrete
                .Select(a => new ProductCard
                {
                    image = a.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Comments.Count(),
+                   CommentCount = a.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
                    ProductName = a.ShortName,
                    CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
                    ProductStatus = a.ProductStatus,
@@ -105,7 +105,7 @@ namespace Agora.BLL.Concrete
                .Select(a => new ProductCard
                {
                    image = a.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Comments.Count(),
+                   CommentCount = a.Comments.Where(x => x.IsCheck == true&& x.Status!=DataStatus.Deleted).Count(),
                    ProductName = a.ShortName,
                    CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
                    ProductStatus = a.ProductStatus,
@@ -121,7 +121,7 @@ namespace Agora.BLL.Concrete
                .Select(a => new ProductCard
                {
                    image = a.Product.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Product.Comments.Count(),
+                   CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
                    ProductName = a.Product.ShortName,
                    CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
                    ProductStatus = a.Product.ProductStatus,
@@ -157,7 +157,7 @@ namespace Agora.BLL.Concrete
             List<ProductCard> plist =  query.Select(a => new ProductCard
               {
                   image = a.Product.ProductPictures.First().PictureUrl,
-                  CommentCount = a.Product.Comments.Count(),
+                  CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
                   ProductName = a.Product.ShortName,
                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
                   ProductStatus = a.Product.ProductStatus,

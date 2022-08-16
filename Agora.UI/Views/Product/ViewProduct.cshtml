@@ -1,6 +1,15 @@
 ﻿@model (Product product, List<ProductPicture> images, List<Comment> comments, Comment newcomment)
     
 <link rel="stylesheet" href="~/css/viewproduct.css" type="text/css">
+		@if (TempData["CommentMessage"] != null)
+		{
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<strong>Teşekkürler, </strong> @TempData["CommentMessage"]
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+		}
        <div class="card">
 				<div class="wrapper row">
 					<div class="preview col-md-6">
@@ -45,8 +54,7 @@
 		<!-- Yorum yap butonuna basınca eğer oturum acmadıysa oturum açtırt, -->
 			<div class="mt-2">
 				<div class="d-flex justify-content-center row">
-					<div class="col-md-1"></div>
-					<div class="col-md-10">
+					<div class="col-md-12">
 						<div class="d-flex flex-column comment-section">
 							@foreach (Comment comment in @Model.comments)
 							{
@@ -68,11 +76,11 @@
 								<div class="mt-2 text-right">
 									<button class="btn btn-primary btn-sm shadow-none" type="submit">Yorum Yap</button>
 								</div>
+
 							</div>
 							  <input type="hidden" asp-for="@Model.newcomment.ProductID"/> 
 							</form>
 						</div>
 					</div>
-					<div class="col-md-1"></div>
 				</div>
 			</div>

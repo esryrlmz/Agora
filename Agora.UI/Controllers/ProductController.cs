@@ -73,8 +73,8 @@ namespace Agora.UI.Controllers
         {
             var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
             comment.NameSurname = luser.FindFirst("NameSurname").Value;
-            comment.IsCheck = true;
             _repoComment.Add(comment);
+            TempData["CommentMessage"] = "Yorumunuz değerlendirildikten sonra yayınlanacaktır...";
             return RedirectToAction("ViewProduct" , new { id = comment.ProductID });
         }
         [Authorize(Policy = "UserPolicy")]
