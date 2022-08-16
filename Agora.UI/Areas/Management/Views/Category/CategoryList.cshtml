@@ -16,6 +16,7 @@
                     <span style="color: #31708f"><b> KATEGORİ LİSTESİ </b></span>
                 </div>
                 <br />
+                
                 <div class="row">
                     <div class="container">
                         <div class="col-lg-1"></div>
@@ -26,10 +27,20 @@
                     </div>
                 </div>
                 <br />
+               
                 <div class="row">
                     <div class="container">
                         <div class="col-lg-1"></div>
                         <div class="col-lg-8">
+                            @if (TempData["CategoryMessage"] != null)
+		                    {
+                            <div class="alert alert-danger alert-dismissible " role="alert">
+				                <strong>Dikkat!, </strong> @TempData["CategoryMessage"]
+				                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				                <span aria-hidden="true">&times;</span>
+				                </button>
+			                 </div>
+                               }
                             <ul class="tree">
                                 @foreach (Category categori in @Model.Item1)
                                 {

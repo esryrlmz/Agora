@@ -39,5 +39,12 @@ namespace Agora.BLL.Concrete
         {
             return _db.Categories.Where(x => x.Status != DataStatus.Deleted && x.CategoryID == id).ToList();
         }
+
+        public bool HasProductForCategory(int id)
+        {
+            int productCount = _db.ProductCategories.Where(x => x.CategoryID == id)
+               .Include(z => z.Product).ToList().Count();
+            return productCount != 0 ? true : false;        
+        }
     }
 }

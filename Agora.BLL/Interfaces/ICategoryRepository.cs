@@ -14,5 +14,6 @@ namespace Agora.BLL.Interfaces
         void DeleteCategory(int id);
         void AddCategory(Category category);
         List<Category> SubCategoryList(int id);
+        bool HasProductForCategory(int id);
     }
 }

@@ -23,8 +23,15 @@ namespace Agora.UI.Areas.Management.Controllers
         }
 
         public IActionResult Delete(int id)
-        {
-            _repoCategory.DeleteCategory(id);
+        {   //kategoride üürn varsa bu kategori silinemez
+            if (!_repoCategory.HasProductForCategory(id))
+            {
+                _repoCategory.DeleteCategory(id);
+            }
+            else
+            {
+                TempData["CategoryMessage"] = "Kategori Altında ürün bulunduğu için silinemez";
+            }
             return RedirectToAction("CategoryList");
 
         }
