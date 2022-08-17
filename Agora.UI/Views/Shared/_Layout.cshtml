@@ -30,7 +30,7 @@
                   Ürünler
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarurun">
-                  <a class="dropdown-item"  asp-controller="Product" asp-action="ProductList">Yeni Eklenenler</a>
+                  <a class="dropdown-item"  asp-controller="Product" asp-action="ProductList" asp-route-id="0">Yeni Eklenenler</a>
                 @if (User.Identity.IsAuthenticated)
                 {
                     <a class="dropdown-item" asp-controller="Product" asp-action="NewProduct">Ürün Yükle</a>

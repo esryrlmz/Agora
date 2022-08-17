@@ -38,10 +38,10 @@ namespace Agora.UI.Controllers
             Environment = environment;
             
         }
-        public IActionResult ProductList(int? id)
+        public IActionResult ProductList(int id)
         {
-            List<ProductCard> ProductList;
-            if (id!=null) {
+            List<ProductCard> ProductList = new List<ProductCard>() ;
+            if (id!=0) {
                 ProductList = _repoProduct.ProductCardListCategory(Convert.ToInt32(id));
             }else {
                 ProductList = _repoProduct.ProductCardList();
