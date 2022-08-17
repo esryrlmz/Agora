@@ -38,7 +38,8 @@ namespace Agora.BLL.Concrete
                      TransferUserId = x.User.ID,
                      TransferUserName = x.User.UserDetail.NameSurname,
                      IsCargo = x.Product.IsCargo,
-                     IsHandDeliver = x.Product.IsHandDeliver
+                     IsHandDeliver = x.Product.IsHandDeliver,
+                     ProductName=x.Product.ShortName
 
                  }).OrderByDescending(X => X.TransferID).ToList();
         }
@@ -59,8 +60,9 @@ namespace Agora.BLL.Concrete
                     TransferUserId=x.User.ID,
                     TransferUserName=x.User.UserDetail.NameSurname,
                     IsCargo=x.Product.IsCargo,
-                    IsHandDeliver=x.Product.IsHandDeliver
-                    
+                    IsHandDeliver=x.Product.IsHandDeliver,
+                    ProductName = x.Product.ShortName
+
                 }).OrderByDescending(X => X.TransferID).ToList();
         }
       

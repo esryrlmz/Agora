@@ -8,6 +8,11 @@ namespace Agora.MODEL.Entities
 {
     public class Cargo:BaseEntity
     {
+        public Cargo()
+        {
+            CargoFirm = "PTT";
+            CargoTrackingNumber = "00000000000";
+        }
         public string CargoTrackingNumber { get; set; }
         public string CargoFirm { get; set; }
         public string Description { get; set; }

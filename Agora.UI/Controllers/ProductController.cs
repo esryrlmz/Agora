@@ -1,6 +1,7 @@
 ﻿using Agora.BLL.Interfaces;
 using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
+using Agora.MODEL.Enums;
 using Agora.UI.Helper;
 using CloudinaryDotNet;
 using CloudinaryDotNet.Actions;
@@ -68,7 +69,9 @@ namespace Agora.UI.Controllers
             List<ProductPicture> picture = _repoProduct.GetProductImages(id);
             List<Comment> comments = _repoComment.ProductCommentsAsc(id);
             Comment newcomment = new Comment() { ProductID = id };
-            return View((prd,picture,comments, newcomment));
+            TransferDto newtransfer = new TransferDto() { ProductId = id };
+            ViewBag.Sahibi = _repoUser.UserProfile(prd.UserID).UserDetail.NameSurname;
+            return View((prd,picture,comments, newcomment,newtransfer));
         }
         [Authorize(Policy = "UserPolicy")]
         public IActionResult AddComment([Bind(Prefix = "Item4")]  Comment comment)

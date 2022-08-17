@@ -37,6 +37,7 @@ namespace Agora.UI
             services.AddScoped<IRepository<City>, Repository<City>>();
             services.AddScoped<IRepository< Town>, Repository<Town>>();
             services.AddScoped<IRepository<UserDetail>, Repository<UserDetail>>();
+            services.AddScoped<IRepository<Cargo>, Repository<Cargo>>();
 
 
             services.AddControllersWithViews();
