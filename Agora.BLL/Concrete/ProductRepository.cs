@@ -134,25 +134,41 @@ namespace Agora.BLL.Concrete
         public List<ProductCard> FilterProductCardList(FilterDto filter)
         {
             // seçilen filtrelere göre product listele
-
+            List<ProductCard> pglist = new List<ProductCard>();
             var query = (_db.ProductCategories
                           .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
                           .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless)
                          ).AsQueryable();
 
-            if (filter.UstKategoriID!=0)
+            if (filter.City != 0)
             {
-                if (filter.AltKategoriID != 0)  {filter.UstKategoriID = filter.AltKategoriID;  }
-                query = query.Where(x => x.CategoryID == filter.UstKategoriID);
-            }
-            if (filter.City!=0)
-            {
-                query = query.Where(x => x.Product.City == _db.Cities.Where(x=>x.ID == filter.City).FirstOrDefault().CityName );
+                query = query.Where(x => x.Product.City == _db.Cities.Where(x => x.ID == filter.City).FirstOrDefault().CityName);
             }
             if (filter.Town != 0)
             {
                 query = query.Where(x => x.Product.Town == _db.Towns.Where(x => x.ID == filter.Town).FirstOrDefault().TownName);
             }
+            if (filter.UstKategoriID!=0)
+            {
+                if (filter.AltKategoriID != 0)
+                {
+                    filter.UstKategoriID = filter.AltKategoriID;
+                    query = query.Where(x => x.CategoryID == filter.UstKategoriID);
+                }
+                else
+                {
+
+                    //üst kategorinin altındaki kategoırilere bağlı ürünler için önce alt kategori ürünlerini al sonra üst kategori ürünlerini al
+                    List<int> result = _db.Categories.Where(x => x.CategoryID == filter.UstKategoriID).Select(a => a.ID).ToList();
+                    result.Add(filter.UstKategoriID);
+                    if (result.Count() > 0&& _db.ProductCategories.Where(p => result.Contains(p.CategoryID)).Count()>0)
+                    {
+                        query = query.Where(p => result.Contains(p.CategoryID));
+                    }
+                
+                }
+            }
+        
 
             List<ProductCard> plist =  query.Select(a => new ProductCard
               {
