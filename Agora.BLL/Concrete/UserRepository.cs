@@ -115,6 +115,10 @@ namespace Agora.BLL.Concrete
         {
            return _db.Users.Where(x => x.Status != DataStatus.Deleted&& x.ID==id).Include(x => x.UserDetail).FirstOrDefault();
         }
+        public User UserProfile(string email)
+        {
+            return _db.Users.Include(x => x.UserDetail).Where(x => x.Status != DataStatus.Deleted && x.UserDetail.Email == email).FirstOrDefault();
+        }
 
         public List<Product> TakeProductsUser(int id)
         {

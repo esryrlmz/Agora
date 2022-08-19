@@ -13,6 +13,8 @@ namespace Agora.UI.Controllers
         IRepository<City> _repoCity;
         IRepository<Town> _repoTown;
         IUserRepository _repoUser;
+
+
         public UserController(IRepository<City> repoCity, IRepository<Town> repoTown, IUserRepository repoUser)
         {
             _repoCity = repoCity;   
@@ -56,6 +58,36 @@ namespace Agora.UI.Controllers
             }
            
 
+        }
+        public IActionResult ResetPasswpord(string email)
+        {
+            if (TempData["Message"] != null)
+            {
+                ViewBag.CssClassName = TempData["CssClassName"];
+                ViewBag.Message = TempData["Message"];
+            }
+            CPassword cp = new CPassword();
+            cp.Mail = email;
+            return View(cp); 
+        }
+
+        [HttpPost]
+        public IActionResult ChangePassword(CPassword cp)
+        {
+            if (TempData["PasswordKod"]!=null&& cp.MailKod== TempData["PasswordKod"].ToString()&&cp.NewPassword!=null)
+            {
+                User usr = _repoUser.UserProfile(cp.Mail);
+                usr.Password = BCrypt.Net.BCrypt.HashPassword(cp.NewPassword);
+                _repoUser.Update(usr);
+                TempData["CssClassName"] = "success";
+                TempData["Message"] = "Şifreniz Başarıyla Sıfırlandı Lütfen Giriş Yapınız!";
+            }
+            else
+            {
+                TempData["CssClassName"] = "error";
+                TempData["Message"] = "Lütfen Yeniden Deneyin!";
+            }
+            return RedirectToAction("LogIn", "Auth");
         }
 
     }

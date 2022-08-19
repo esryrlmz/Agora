@@ -1,0 +1,33 @@
+﻿  @model CPassword
+    
+  <link rel="stylesheet" href="~/css/style.css">
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 ">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <div class="form-block">
+                  <div class="mb-4">
+                  <h3> Giriş Yap</h3>
+                  <p class="mb-4">Şifrenizi Sıfırlamak için Mail Adresinize Gelen Kodu ve Yeni Şifrenizi Giriniz</p>
+                </div>
+                <form method="post" asp-controller="User"  asp-action="ChangePassword"  role="form">
+                  <div class="form-group first">
+                    <label>Mail Sıfırlama Kodu :</label>
+                    <input type="text" class="form-control"   asp-for="@Model.MailKod">
+                  </div>
+                  <div class="form-group last mb-3">
+                    <label for="password">Şifre</label>
+                    <input type="password" class="form-control"   asp-for="@Model.NewPassword">
+                  </div>
+                   <input type="hidden" asp-for="@Model.Mail"/> 
+                  <input type="submit" value="SIFIRLA" class="btn btn-pill text-white btn-block btn-primary mb-2">
+
+                </form>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>

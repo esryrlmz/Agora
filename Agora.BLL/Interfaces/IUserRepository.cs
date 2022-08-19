@@ -20,6 +20,7 @@ namespace Agora.BLL.Interfaces
 
         List<OnlyUser> OnlyUserList();
         User UserProfile(int id);
+        User UserProfile(string email);
         List<Product> TakeProductsUser(int id);
         List<Product> SendProductsUser(int id);
         User IsUserLogin(string UsernameOrMail);

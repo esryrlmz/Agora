@@ -230,7 +230,6 @@ $(document).ready(function() {
                 data: { CategoryId: id}, 
                 timeout: 500,
                 success: function (data) {
-                    console.log(data)
                     var select_data = '<option value="0"> Ana Kategoriye Ekle</option>';
                     $.each(data, function(index, value) { 
                         select_data += '<option value="'+ value.id +'">'+ value.categoryName +'</option>';
