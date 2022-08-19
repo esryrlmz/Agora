@@ -22,9 +22,9 @@ namespace Agora.BLL.Interfaces
         void UpdateProductPicture(ProductPicture picture);
         void updateProduct(Product product);
         void updateProductStatus(int id, ProductStatus ps);
-        List<ProductCard> ProductCardListCategory(int CategoryID);
-        List<ProductCard> ProductCardList();
+        List<ProductCard> ProductCardListCategory(int CategoryID, int? AuthUserID = null);
+        List<ProductCard> ProductCardList(int? AuthUserID = null);
         List<ProductCard> MyProductCardList(int UserId);
-        List<ProductCard> FilterProductCardList(FilterDto filter);
+        List<ProductCard> FilterProductCardList(FilterDto filter,int? AuthUserID = null);
     }
 }

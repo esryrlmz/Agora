@@ -21,7 +21,6 @@ namespace Agora.BLL.Concrete
         {
             _db = db;
         }
-
         public void AddProduct(ProductDto product, List<String> imageUrlList)
         {
             try
@@ -65,39 +64,139 @@ namespace Agora.BLL.Concrete
         {
             return _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true).Include(x => x.User).ThenInclude(y=>y.UserDetail).ToList(); 
         }
-        public List<ProductCard> ProductCardListCategory(int CategoryID)
+     
+        
+        public List<ProductCard> ProductCardListCategory(int CategoryID,int? AuthUserID=null)
         {// kategoriye ait yayında olan ürünler
-            List<ProductCard> plist =  _db.ProductCategories.Where(x => x.CategoryID == CategoryID)
+            List<ProductCard> plist = new List<ProductCard>();
+            if (AuthUserID == null)
+            {
+               plist = _db.ProductCategories.Where(x => x.CategoryID == CategoryID)
                .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
-               .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true&& z.Product.ProductStatus==ProductStatus.Ownerless)
+               .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless)
                .Select(a => new ProductCard
                {
                    image = a.Product.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Product.Comments.Where(x=>x.IsCheck==true && x.Status != DataStatus.Deleted).Count(),
+                   CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
                    ProductName = a.Product.ShortName,
-                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1,10),
-                   ProductStatus=a.Product.ProductStatus,
-                   ProductID=a.Product.ID
+                   CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
+                   ProductStatus = a.Product.ProductStatus,
+                   ProductID = a.Product.ID
                }).ToList();
-            
+            }
+            else
+            {
+                plist = _db.ProductCategories.Where(x => x.CategoryID == CategoryID)
+              .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
+              .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless && z.Product.UserID != AuthUserID)
+              .Select(a => new ProductCard
+              {
+                  image = a.Product.ProductPictures.First().PictureUrl,
+                  CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
+                  ProductName = a.Product.ShortName,
+                  CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
+                  ProductStatus = a.Product.ProductStatus,
+                  ProductID = a.Product.ID
+              }).ToList();
+            }
 
             return plist;
         }
-        public List<ProductCard> ProductCardList()
+        public List<ProductCard> ProductCardList(int? AuthUserID = null)
         {
-            List<ProductCard> plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
-               .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true && z.ProductStatus == ProductStatus.Ownerless)
-               .Select(a => new ProductCard
-               {
-                   image = a.ProductPictures.First().PictureUrl,
-                   CommentCount = a.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
-                   ProductName = a.ShortName,
-                   CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
-                   ProductStatus = a.ProductStatus,
-                   ProductID = a.ID
-               }).ToList();
+            List<ProductCard> plist = new List<ProductCard>();
+            if (AuthUserID == null)
+            {
+                plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
+                   .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true && z.ProductStatus == ProductStatus.Ownerless)
+                   .Select(a => new ProductCard
+                   {
+                       image = a.ProductPictures.First().PictureUrl,
+                       CommentCount = a.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
+                       ProductName = a.ShortName,
+                       CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
+                       ProductStatus = a.ProductStatus,
+                       ProductID = a.ID
+                   }).ToList();
+            }
+            else
+            {
+               plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
+                  .Where(z => z.Status != DataStatus.Deleted && z.IsActive == true && z.ProductStatus == ProductStatus.Ownerless && z.UserID != AuthUserID)
+                  .Select(a => new ProductCard
+                  {
+                      image = a.ProductPictures.First().PictureUrl,
+                      CommentCount = a.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
+                      ProductName = a.ShortName,
+                      CreatedDate = a.CreatedDate.ToString().Substring(1, 10),
+                      ProductStatus = a.ProductStatus,
+                      ProductID = a.ID
+                  }).ToList();
+            }
             return plist;
         }
+
+        public List<ProductCard> FilterProductCardList(FilterDto filter, int? AuthUserID = null)
+        {
+            // seçilen filtrelere göre product listele
+            List<ProductCard> pglist = new List<ProductCard>();
+            var query = (_db.ProductCategories
+                          .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
+                          .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless)
+                         ).AsQueryable();
+
+            if (filter.City != 0)
+            {
+                query = query.Where(x => x.Product.City == _db.Cities.Where(x => x.ID == filter.City).FirstOrDefault().CityName);
+            }
+            if (filter.Town != 0)
+            {
+                query = query.Where(x => x.Product.Town == _db.Towns.Where(x => x.ID == filter.Town).FirstOrDefault().TownName);
+            }
+            if (filter.UstKategoriID != 0)
+            {
+                if (filter.AltKategoriID != 0)
+                {
+                    filter.UstKategoriID = filter.AltKategoriID;
+                    query = query.Where(x => x.CategoryID == filter.UstKategoriID);
+                }
+                else
+                {
+
+                    //üst kategorinin altındaki kategoırilere bağlı ürünler için önce alt kategori ürünlerini al sonra üst kategori ürünlerini al
+                    List<int> result = _db.Categories.Where(x => x.CategoryID == filter.UstKategoriID).Select(a => a.ID).ToList();
+                    result.Add(filter.UstKategoriID);
+                    if (result.Count() > 0 && _db.ProductCategories.Where(p => result.Contains(p.CategoryID)).Count() > 0)
+                    {
+                        query = query.Where(p => result.Contains(p.CategoryID));
+                    }
+
+                }
+            }
+           
+            if (AuthUserID != null)
+            {
+                query = query.Where(p => p.Product.UserID!=AuthUserID);
+            }
+            List<ProductCard> plist = query.Select(a => new ProductCard
+            {
+                image = a.Product.ProductPictures.First().PictureUrl,
+                CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
+                ProductName = a.Product.ShortName,
+                CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
+                ProductStatus = a.Product.ProductStatus,
+                ProductID = a.Product.ID
+            }).ToList();
+
+            return plist;
+
+        }
+
+
+
+
+
+
         public List<ProductCard> MyProductCardList(int UserId)
         {
             List<ProductCard> plist = _db.Products.Include(s => s.ProductPictures).Include(m => m.Comments)
@@ -131,62 +230,7 @@ namespace Agora.BLL.Concrete
 
             return plist;
         }
-        public List<ProductCard> FilterProductCardList(FilterDto filter)
-        {
-            // seçilen filtrelere göre product listele
-            List<ProductCard> pglist = new List<ProductCard>();
-            var query = (_db.ProductCategories
-                          .Include(z => z.Product).ThenInclude(s => s.ProductPictures).Include(m => m.Product.Comments)
-                          .Where(z => z.Product.Status != DataStatus.Deleted && z.Product.IsActive == true && z.Product.ProductStatus == ProductStatus.Ownerless)
-                         ).AsQueryable();
-
-            if (filter.City != 0)
-            {
-                query = query.Where(x => x.Product.City == _db.Cities.Where(x => x.ID == filter.City).FirstOrDefault().CityName);
-            }
-            if (filter.Town != 0)
-            {
-                query = query.Where(x => x.Product.Town == _db.Towns.Where(x => x.ID == filter.Town).FirstOrDefault().TownName);
-            }
-            if (filter.UstKategoriID!=0)
-            {
-                if (filter.AltKategoriID != 0)
-                {
-                    filter.UstKategoriID = filter.AltKategoriID;
-                    query = query.Where(x => x.CategoryID == filter.UstKategoriID);
-                }
-                else
-                {
-
-                    //üst kategorinin altındaki kategoırilere bağlı ürünler için önce alt kategori ürünlerini al sonra üst kategori ürünlerini al
-                    List<int> result = _db.Categories.Where(x => x.CategoryID == filter.UstKategoriID).Select(a => a.ID).ToList();
-                    result.Add(filter.UstKategoriID);
-                    if (result.Count() > 0&& _db.ProductCategories.Where(p => result.Contains(p.CategoryID)).Count()>0)
-                    {
-                        query = query.Where(p => result.Contains(p.CategoryID));
-                    }
-                
-                }
-            }
-        
-
-            List<ProductCard> plist =  query.Select(a => new ProductCard
-              {
-                  image = a.Product.ProductPictures.First().PictureUrl,
-                  CommentCount = a.Product.Comments.Where(x => x.IsCheck == true && x.Status != DataStatus.Deleted).Count(),
-                  ProductName = a.Product.ShortName,
-                  CreatedDate = a.Product.CreatedDate.ToString().Substring(1, 10),
-                  ProductStatus = a.Product.ProductStatus,
-                  ProductID = a.Product.ID
-            }).ToList();
-
-            return plist;
-
-        }
- 
-
-
-  
+   
         public Product GetFullProduct(int id)
         {
             Product product= _db.Products.Where(x => x.Status != DataStatus.Deleted && x.IsActive == true&& x.ID==id).FirstOrDefault();    

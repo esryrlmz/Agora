@@ -40,18 +40,39 @@ namespace Agora.UI.Controllers
         }
         public IActionResult ProductList(int id)
         {
-            List<ProductCard> ProductList = new List<ProductCard>() ;
-            if (id!=0) {
-                ProductList = _repoProduct.ProductCardListCategory(Convert.ToInt32(id));
-            }else {
-                ProductList = _repoProduct.ProductCardList();
+            List<ProductCard> ProductList = new List<ProductCard>();
+            if (User.Identity.IsAuthenticated) // oturum açtıysa kendi yüklediği ürünler listelenmesin
+            {
+                var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+                if (id != 0) {
+                    ProductList = _repoProduct.ProductCardListCategory(Convert.ToInt32(id), Convert.ToInt32(luser.FindFirst("UserID").Value));
+                }else {
+                    ProductList = _repoProduct.ProductCardList(Convert.ToInt32(luser.FindFirst("UserID").Value));
+                }
             }
+            else 
+            { 
+                if (id != 0) {
+                    ProductList = _repoProduct.ProductCardListCategory(Convert.ToInt32(id));
+                } else {
+                    ProductList = _repoProduct.ProductCardList();
+                }
+           }
             return View(ProductList);
         }
         [HttpPost]
         public IActionResult FilterProductList( FilterDto filter)
         {
-            List<ProductCard> ProductList = _repoProduct.FilterProductCardList(filter);
+            List<ProductCard> ProductList= new List<ProductCard>();
+            if (User.Identity.IsAuthenticated) // oturum açtıysa kendi yüklediği ürünler listelenmesin
+            {
+                var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+                ProductList = _repoProduct.FilterProductCardList(filter, Convert.ToInt32(luser.FindFirst("UserID").Value));
+            }
+            else
+            {
+                ProductList = _repoProduct.FilterProductCardList(filter);
+            }
             return View(ProductList);
         }
 
