@@ -27,9 +27,12 @@ namespace Agora.UI.Controllers
             List<TransferDto> transfers = _repoTransfer.AllTransferList(x => x.UserID == Convert.ToInt32(luser.FindFirst("UserID").Value));
             return View(transfers);
         }
+        [Authorize(Policy = "UserPolicy")]
         public IActionResult GiveTransfer()
         {
-            return View();
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            List<TransferDto> transfers = _repoTransfer.AllTransferList(x => x.Product.User.ID == Convert.ToInt32(luser.FindFirst("UserID").Value));
+            return View((transfers, new Cargo()));
         }
         [HttpPost]
         [Authorize(Policy = "UserPolicy")]
@@ -69,15 +72,47 @@ namespace Agora.UI.Controllers
             Cargo cargo = _repoTransfer.GetCargo(id);
             return View((transfer, pictures, cargo));
         }
+
+
+
+
+
+
         [Authorize(Policy = "UserPolicy")]
         public IActionResult TransferCancel(int id)
         {
             // kargo ve el transferleri gerçekleşmiş olacagından iptal edilemez silinemez
-            //product durumunu yayında olarak güncelle
-            _repoProduct.updateProductStatus(_repoTransfer.GetById(id).ProductID, MODEL.Enums.ProductStatus.Ownerless);
+            // product durumunu yayında olarak güncelle
+            Transfer trnsfer = _repoTransfer.GetById(id);
+            trnsfer.ProductStatus = MODEL.Enums.ProductStatus.Ownerless;
+            _repoTransfer.Update(trnsfer);
+            _repoProduct.updateProductStatus(trnsfer.ProductID, MODEL.Enums.ProductStatus.Ownerless);
             // transfer bilgisini kaldır
             _repoTransfer.HardDelete(id);
             return RedirectToAction("TakeTransfer");
+        }
+        public IActionResult TransferOnay(int id)
+        {
+            // product durumunu sahiplenildi olarak güncelle
+            Transfer trnsfer = _repoTransfer.GetById(id);
+            trnsfer.ProductStatus = MODEL.Enums.ProductStatus.Adopted;
+            _repoTransfer.Update(trnsfer);
+           _repoProduct.updateProductStatus(trnsfer.ProductID, MODEL.Enums.ProductStatus.Adopted);
+            return RedirectToAction("GiveTransfer");
+        }
+        [HttpPost]
+        public IActionResult CargoTransferOnay([Bind(Prefix = "Item2")]  Cargo cargo)
+        {
+            Transfer trnsfer = _repoTransfer.GetById(cargo.TranserID);
+            trnsfer.ProductStatus = MODEL.Enums.ProductStatus.Adopted;
+            _repoTransfer.Update(trnsfer);
+
+            _repoProduct.updateProductStatus(trnsfer.ProductID, MODEL.Enums.ProductStatus.Adopted);
+            Cargo updatecargo = _repoCargo.GetByFilter(x => x.TranserID == cargo.TranserID)[0];
+            updatecargo.CargoFirm = cargo.CargoFirm;
+            updatecargo.CargoTrackingNumber = cargo.CargoTrackingNumber;
+            _repoCargo.Update(updatecargo);
+            return RedirectToAction("GiveTransfer");
         }
 
     }

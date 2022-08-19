@@ -19,7 +19,8 @@
                                     <th>Transfer Adresi</th>
                                     <th>Transfer Türü</th>
                                     <th>Durum</th>
-                                    <th>İşlemler</th>
+                                    <th>-</th>
+                                    <th>-</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -27,8 +28,8 @@
                                 {
                                 <tr class="odd gradeA">
                                     <td>@(i+1) </td>
-                                    <td> <a href="#">@Model[i].ProductName</a></td>
-                                    <td> <a href="#"> @Model[i].ProductUserName</a></td>
+                                    <td> @Model[i].ProductName</td>
+                                    <td> @Model[i].ProductUserName</td>
                                     <td>@Model[i].Adress</td>
                                      <td>@if (@Model[i].IsCargo) { <span>Kargo</span> }else{ <span>Elden</span>; }</td>
 
@@ -43,12 +44,36 @@
                                         else {<span>Pasif Durumda</span>}
 
                                     </td>
-                                        <td>
-										<a  class="btn btn-info" asp-controller="Transfer"  asp-action="ShowTransfer" asp-route-id="@Model[i].TransferID"><i class="fa fa-eye" aria-hidden="true"></i> </a>
-                                        @if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){
-                                        <a  class="btn btn-danger" asp-controller="Transfer"  asp-action="TransferCancel" asp-route-id="@Model[i].TransferID" data-toggle="tooltip" data-placement="right" title="Iptal Et"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+										 <td><a   asp-controller="Transfer"  asp-action="ShowTransfer" asp-route-id="@Model[i].TransferID"><i class="fa fa-eye fa-lg" aria-hidden="true" style="color:darkorange"></i> </a></td>
+                                      
+                                         @if(@Model[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){
+                                           <td><a  href="#" data-toggle="modal" data-target="#CancelttransferModal"><i class="fa fa-ban fa-lg" aria-hidden="true" style="color:darkred"></i> </a>
+                                        
+                                            <div class="modal"  tabindex="-1" id="CancelttransferModal" role="dialog">
+								                <div class="modal-dialog" role="document">
+								                <div class="modal-content">
+								                    <div class="modal-header">
+									                <h5 class="modal-title" id="exampleModalLabel">TRANSFER IPTALİ</h5>
+                                                    <span></span>
+									                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                    <span aria-hidden="true">&times;</span>
+									                </button>
+								                    </div>
+								                        <div class="modal-body">
+                                                        <span> Bu transferi İPTAL ettiğinizde, Ürün yeniden aktif olarak yayınlanacaktır..</span>
+										                </div>
+										                <div class="modal-footer">
+										                <button class="btn" style="background-color: #31708f; float: right; color:#ffffff" onclick="TransferIptal(@Model[i].TransferID)"  >IPTAL ET</button>
+										                </div>
+								                </div>
+								                </div>
+							                </div>
+                                    
+                                             </td>    
+                                             }
+                                        else
+                                        { <td></td>
                                         }
-                                    </td>
                                 </tr>
                                     }
                             </tbody>
@@ -68,3 +93,19 @@
               
 </div>
 <!-- /.container-fluid -->
+
+
+
+<script type="text/javascript">
+
+    function TransferIptal(transfer_id) {
+      $.ajax("/Transfer/TransferCancel/", {
+                data: { id: transfer_id}, 
+                timeout: 500,
+                success: function () {  
+                     window.location.reload();
+                }
+     });
+    }
+
+</script>

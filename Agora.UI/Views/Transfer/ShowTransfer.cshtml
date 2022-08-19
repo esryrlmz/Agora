@@ -4,6 +4,40 @@
  <div class="row">
  <div class="col-md-6">
     <div class="card" >
+             <!--  urun kontrol baslangic  -->
+      @if(@Model.Item1.Product.User.UserDetail.NameSurname==((System.Security.Claims.ClaimsIdentity)User.Identity).FindFirst("NameSurname").Value.ToString())
+      {
+       <div class="card-header">
+        ÜRÜN TALEP EDEN KULLANICI
+      </div>
+      <div class="list-group">
+        <div class="list-group-item">
+        <div class="row">
+            <div class="col-lg-4"> <b> Ad Soyad </b></div>
+            <div class="col-lg-8">  @Model.Item1.User.UserDetail.NameSurname </div>
+        </div>
+        </div>
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-lg-4"> <b> Telefon</b></div>
+                <div class="col-lg-8">  @Model.Item1.User.UserDetail.Phone </div>
+            </div>
+        </div>
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-lg-4"> <b> Email</b></div>
+                <div class="col-lg-8">   @Model.Item1.User.UserDetail.Email </div>
+            </div>
+        </div>
+        <div class="list-group-item">
+            <div class="row">
+                <div class="col-lg-4"><b>  İl/İlce</b></div>
+                <div class="col-lg-8">   @Model.Item1.User.UserDetail.Country/@Model.Item1.User.UserDetail.Towner </div>
+            </div>
+        </div>
+       </div>
+      }
+      else{
       <div class="card-header">
         ÜRÜN SAHİBİ
       </div>
@@ -33,6 +67,8 @@
             </div>
         </div>
       </div>
+      }
+      <!--  urun kontrol son  -->
     </div>
      </div>
      <div class="col-md-6">

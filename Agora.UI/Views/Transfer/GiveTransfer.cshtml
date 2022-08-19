@@ -1,1 +1,188 @@
-﻿
+﻿@model (List<TransferDto>, Cargo)
+
+ <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span  style="color: #31708f"><b> TRANSFER ISTEKLERİ </b></span>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover" style='font-family:Arial; font-size:90%' id="dataTables-example">
+                            <thead>
+                                <tr>
+                                    <th class="col-md-1">ID No</th>
+                                    <th>Ürün</th>
+                                    <th>Talep Eden</th>
+                                    <th>Transfer Adresi</th>
+                                    <th>Transfer Türü</th>
+                                    <th>Durum</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                    <th>-</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                             @for (int i = 0; i < Model.Item1.Count(); i++)
+                                {
+                                <tr class="odd gradeA">
+                                    <td>@(i+1) </td>
+                                    <td> @Model.Item1[i].ProductName</td>
+                                    <td>  @Model.Item1[i].TransferUserName</td>
+                                    <td>@Model.Item1[i].Adress</td>
+                                     <td>@if (@Model.Item1[i].IsCargo) { <span>Kargo</span> }else{ <span>Elden</span>; }</td>
+
+                                    <td>
+                                        @if(@Model.Item1[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){<span>Rezerve Edildi</span>}
+                                        else if(@Model.Item1[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Adopted) {
+                                            if(@Model.Item1[i].IsCargo){ <span>Kargo ile Transfer Edildi</span>}
+                                            else if(@Model.Item1[i].IsHandDeliver) { <span> Elden Teslim Edildi</span>}
+                                            else{<span> Transfer Şekli Bilinmiyor</span>}
+                                        }
+                                        else if(@Model.Item1[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Cancel) {<span>Transfer İptal Edildi</span>}
+                                        else {<span>Pasif Durumda</span>}
+
+                                    </td>
+                                        
+									<td><a asp-controller="Transfer"  asp-action="ShowTransfer" asp-route-id="@Model.Item1[i].TransferID" ><i class="fa fa-eye fa-lg" aria-hidden="true" style="color:darkorange"></i> </a>  </td>
+
+                                    @if(@Model.Item1[i].ProductStatus==Agora.MODEL.Enums.ProductStatus.Rezerved){
+                                        <td> <a href="#" data-toggle="modal" data-target="#CanceltransferModal" ><i class="fa fa-ban fa-lg" aria-hidden="true" style="color:darkred"></i></a>
+                                            
+                                         <div class="modal"  tabindex="-1" id="CanceltransferModal" role="dialog">
+								            <div class="modal-dialog" role="document">
+								            <div class="modal-content">
+								                <div class="modal-header">
+									            <h5 class="modal-title" id="exampleModalLabel">TRANSFER IPTALİ</h5>
+                                                <span></span>
+									            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                <span aria-hidden="true">&times;</span>
+									            </button>
+								                </div>
+								                    <div class="modal-body">
+                                                    <span> Bu transferi İPTAL ettiğinizde, Ürün yeniden aktif olarak yayınlanacaktır..</span>
+										            </div>
+										            <div class="modal-footer">
+										            <button class="btn" style="background-color: #31708f; float: right; color:#ffffff"  onclick="TransferIptal(@Model.Item1[i].TransferID)" data-dismiss="modal">IPTAL ET</button>
+										            </div>
+								            </div>
+								            </div>
+							            </div>
+                                    
+                                        </td>
+                                       
+                                        
+                                        @if (@Model.Item1[i].IsCargo == true)
+                                            {
+                                                <td><a  href="#" data-toggle="modal" data-target="#transferModal"><i class="fa fa-check fa-lg" aria-hidden="true" style="color:darkgreen"></i></a>
+                                                
+                                                <div class="modal"  tabindex="-1" id="transferModal" role="dialog">
+								                    <div class="modal-dialog" role="document">
+								                    <div class="modal-content">
+								                      <div class="modal-header">
+									                    <h5 class="modal-title" id="exampleModalLabel">TRANSFER ONAYI</h5>
+                                                        <span></span>
+									                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                      <span aria-hidden="true">&times;</span>
+									                    </button>
+								                      </div>
+									                    <form role="form" method="post" asp-controller="Transfer"  asp-action="CargoTransferOnay" >
+								                          <div class="modal-body">
+                                                             <span> <small> Bu Tranferde Kargo Talebi Vardır, Lütfen Kargoya Verdikten Sonra , Kargo Bilgilerini Girerek Onaylayınız</small></span>
+										                    <div class="form-group">
+										                    <label for="recipient-name" class="col-form-label">Kargo Firması:</label>
+										                    <input type="text" class="form-control" asp-for="@Model.Item2.CargoFirm"/>
+									                      </div>
+									                      <div class="form-group">
+										                    <label for="message-text" class="col-form-label">Kargo Takip Numarası</label>
+										                     <input class="form-control" asp-for="@Model.Item2.CargoTrackingNumber"/>
+									                      </div>
+										                    <input type='hidden' asp-for="@Model.Item2.TranserID"  value="@Model.Item1[i].TransferID" />
+
+										                    </div>
+										                    <div class="modal-footer">
+										                    <button type="button" class="btn btn-secondary" style="background-color: #31708f; float: right; color:#ffffff" data-dismiss="modal">IPTAL</button>
+										                    <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">Kaydet</button>
+										                    </div>
+									                    </form>
+								                    </div>
+								                    </div>
+							                    </div>
+                                                </td>
+                                            }
+                                            else
+                                            {
+                                                <td><a href="#" data-toggle="modal" data-target="#HandtransferModal"><i class="fa fa-check fa-lg" aria-hidden="true" style="color:darkgreen" ></i></a>
+                                                <div class="modal"  tabindex="-1" id="HandtransferModal" role="dialog">
+								                    <div class="modal-dialog" role="document">
+								                    <div class="modal-content">
+								                      <div class="modal-header">
+									                    <h5 class="modal-title" id="exampleModalLabel">TRANSFER ONAYI</h5>
+                                                        <span></span>
+									                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									                      <span aria-hidden="true">&times;</span>
+									                    </button>
+								                      </div>
+								                          <div class="modal-body">
+                                                           <span>  Bu ürünü talep eden kişiye vermeyi kabul ettiğinizde, ürünü teslim etmek durumundasınız...</span>
+										                    </div>
+										                    <div class="modal-footer">
+										                    <button class="btn" style="background-color: #31708f; float: right; color:#ffffff"  onclick="TransferOnay(@Model.Item1[i].TransferID)" data-dismiss="modal">ONAYLA</button>
+										                    </div>
+								                    </div>
+								                    </div>
+							                    </div>
+                                            </td>
+                                            
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <td></td>
+                                             <td></td>
+                                        }
+                                    </tr>
+                                    }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                                    
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+
+              
+</div>
+<!-- /.container-fluid -->
+
+
+<script type="text/javascript">
+
+    function TransferOnay(transfer_id) {
+      $.ajax("/Transfer/TransferOnay/", {
+                data: { id: transfer_id}, 
+                timeout: 500,
+                success: function () {   
+                  window.location.reload();
+                }
+     });
+     }
+    function TransferIptal(transfer_id) {
+      $.ajax("/Transfer/TransferCancel/", {
+                data: { id: transfer_id}, 
+                timeout: 500,
+                success: function () { 
+                    window.location.reload();
+                }
+     });
+    }
+
+</script>
