@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.DAL", "Agora.DAL\Agora.DAL.csproj", "{3386760F-D085-4A64-868C-E08E5256A175}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agora.DAL", "Agora.DAL\Agora.DAL.csproj", "{3386760F-D085-4A64-868C-E08E5256A175}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.BLL", "Agora.BLL\Agora.BLL.csproj", "{5757AC3C-E486-414C-9030-D6F0D2E78A94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agora.BLL", "Agora.BLL\Agora.BLL.csproj", "{5757AC3C-E486-414C-9030-D6F0D2E78A94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.UI", "Agora.UI\Agora.UI.csproj", "{8C5110BD-0DF5-48B3-9FBA-4734DAC643EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agora.UI", "Agora.UI\Agora.UI.csproj", "{8C5110BD-0DF5-48B3-9FBA-4734DAC643EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.MODEL", "Agora.MODEL\Agora.MODEL.csproj", "{98F17EF0-A8A1-40FA-9C48-76AEBD0E5A5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agora.MODEL", "Agora.MODEL\Agora.MODEL.csproj", "{98F17EF0-A8A1-40FA-9C48-76AEBD0E5A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.MAP", "Agora.MAP\Agora.MAP.csproj", "{16DACE67-CEED-440C-A219-ADE21C674576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agora.MAP", "Agora.MAP\Agora.MAP.csproj", "{16DACE67-CEED-440C-A219-ADE21C674576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agora.API", "Agora.API\Agora.API.csproj", "{096755BA-94DE-4FA8-B76A-B092809A769E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{16DACE67-CEED-440C-A219-ADE21C674576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16DACE67-CEED-440C-A219-ADE21C674576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16DACE67-CEED-440C-A219-ADE21C674576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096755BA-94DE-4FA8-B76A-B092809A769E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096755BA-94DE-4FA8-B76A-B092809A769E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096755BA-94DE-4FA8-B76A-B092809A769E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096755BA-94DE-4FA8-B76A-B092809A769E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
