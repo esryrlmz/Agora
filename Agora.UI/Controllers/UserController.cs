@@ -59,7 +59,7 @@ namespace Agora.UI.Controllers
            
 
         }
-        public IActionResult ResetPasswpord(string email)
+        public IActionResult ResetPassword(string email)
         {
             if (TempData["Message"] != null)
             {
@@ -84,7 +84,7 @@ namespace Agora.UI.Controllers
             }
             else
             {
-                TempData["CssClassName"] = "error";
+                TempData["CssClassName"] = "Danger";
                 TempData["Message"] = "Lütfen Yeniden Deneyin!";
             }
             return RedirectToAction("LogIn", "Auth");

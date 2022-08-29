@@ -25,10 +25,10 @@ namespace Agora.UI.Controllers
                 ViewBag.CssClassName = TempData["CssClassName"];
                 ViewBag.Message = TempData["Message"];
             }
-            return View(new LoginUser());
+            return View((new LoginUser(), new MailDto()));
         }
         [HttpPost]
-        public async Task<IActionResult> Login(LoginUser user)
+        public async Task<IActionResult> Login([Bind(Prefix = "Item1")] LoginUser user)
         {
             if (!ModelState.IsValid)
             {

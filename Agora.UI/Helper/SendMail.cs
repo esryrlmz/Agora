@@ -18,10 +18,11 @@ namespace Agora.UI.Helper
                 msj.To.Add("esryrlmz@gmail.com"); 
                 msj.Subject = mail.subject;
                 msj.Body = mail.text; 
-              //  client.Send(msj);
+               // client.Send(msj);
+               // EVDEKİ PCDEN KONTROL ET PROXYDEN DOLAYI MAİL ATMIYOR OLABİLİR
                 return true;
             }
-            catch (System.Exception)
+            catch (System.Exception )
             {
                 return false;
             }
