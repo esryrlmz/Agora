@@ -19,7 +19,7 @@ namespace Agora.API.Controllers
         public ProductController(IProductRepository repoProduct, ICommentRepository repoComment)
         {
             _repoProduct = repoProduct;
-            _repoComment = repoComment; 
+            _repoComment = repoComment;
         }
 
         [HttpGet]
@@ -27,7 +27,7 @@ namespace Agora.API.Controllers
         {
             return _repoProduct.ProductCardList().ToArray();
         }
- 
+
         [HttpGet("{product_id}")]
         public string GetProduct(string product_id)
         {
@@ -49,6 +49,7 @@ namespace Agora.API.Controllers
         {
             return _repoComment.ProductCommentsAsc(Convert.ToInt32(product_id)).ToArray();
         }
+
 
 
     }

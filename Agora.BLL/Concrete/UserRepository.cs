@@ -100,6 +100,16 @@ namespace Agora.BLL.Concrete
             }
         }
 
+
+        public async Task<int> UpdateUserDetail(UserDetail userdetail)
+        {
+            userdetail.Status = DataStatus.Updates;
+            userdetail.ModifiedDate = DateTime.Now;
+            _db.Attach(userdetail);
+            _db.Entry(userdetail).State = EntityState.Modified;
+            _db.Update(userdetail);
+            return await _db.SaveChangesAsync();
+        }
         public List<OnlyUser> OnlyUserList()
         {
           return  _db.UserDetails

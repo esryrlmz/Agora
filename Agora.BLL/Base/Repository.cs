@@ -63,8 +63,11 @@ namespace Agora.BLL.Base
 
         public void Update(T item)
         {
+         
             item.Status = DataStatus.Updates;
             item.ModifiedDate = DateTime.Now;
+            table.Attach(item);
+            _db.Entry(item).State = EntityState.Modified;
             table.Update(item);
             Save();
         }

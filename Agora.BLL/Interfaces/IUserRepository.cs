@@ -17,7 +17,7 @@ namespace Agora.BLL.Interfaces
         User GetUser(int userId);
         UserDetail GetUserDetail(int userId);
         void UpdateUser(User user);
-
+        Task<int> UpdateUserDetail(UserDetail userdetail);
         List<OnlyUser> OnlyUserList();
         User UserProfile(int id);
         User UserProfile(string email);
