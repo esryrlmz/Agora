@@ -11,7 +11,7 @@ namespace Agora.UI.Helper
             try
             {
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587); //Burası aynı kalacak
-                client.Credentials = new NetworkCredential("esryrlmz@gmail.com", "1bet2ESRA**");
+                client.Credentials = new NetworkCredential("esryrlmz@gmail.com", "*****");
                 client.EnableSsl = true;
                 MailMessage msj = new MailMessage(); 
                 msj.From = new MailAddress(mail.mail);
