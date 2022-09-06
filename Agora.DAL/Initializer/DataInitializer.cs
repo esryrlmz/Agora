@@ -20,15 +20,25 @@ namespace Agora.DAL.Initializer
                new User() { ID = 1, UserName = "admin", Password = pwd, Role = MODEL.Enums.Role.Admin  },
                new User() { ID = 2, UserName = "esra", Password = pwd, Role = MODEL.Enums.Role.Admin },
                new User() { ID = 3, UserName = "Btlkc", Password = pwd, Role = MODEL.Enums.Role.Uye },
-               new User() { ID = 4, UserName = "mstfyrlmz", Password = pwd, Role = MODEL.Enums.Role.Uye }
+               new User() { ID = 4, UserName = "mstfyrlmz", Password = pwd, Role = MODEL.Enums.Role.Uye },
+               new User() { ID = 5, UserName = "nlnms", Password = pwd, Role = MODEL.Enums.Role.Uye },
+               new User() { ID = 6, UserName = "admnesr", Password = pwd, Role = MODEL.Enums.Role.Admin },
+               new User() { ID = 7, UserName = "esryrlmz", Password = pwd, Role = MODEL.Enums.Role.Uye },
+               new User() { ID = 8, UserName = "kslmn", Password = pwd, Role = MODEL.Enums.Role.Uye },
+               new User() { ID = 10, UserName = "seckin", Password = pwd, Role = MODEL.Enums.Role.Admin }
              );
             modelBuilder.Entity<UserDetail>().HasKey(k => k.ID);
             modelBuilder.Entity<UserDetail>().HasData(
                 new UserDetail() { ID = 1, NameSurname = "Admin", Phone = "00000000000", Email = "admin@gmail.com", Country = "Çorum" ,Towner= "Bayat", Gender = Gender.Female, UserID=1 },
                 new UserDetail() { ID = 2, NameSurname = "Esra Yorulmaz salman" ,Email="esra@gmail.com", Phone="05432563636", Country = "Adana",Towner = "Ceyhan" ,Gender = Gender.Female, UserID=2},
                 new UserDetail() { ID = 3, NameSurname = "Betül Koca", Phone = "02545896363", Email = "betul@gmail.com" , Country = "İstanbul", Towner = "Fatih", Gender = Gender.Female, UserID = 3 },
-                new UserDetail() { ID = 4, NameSurname = "Mustafa Yorulmaz", Phone = "05477898989", Email = "betul@gmail.com", Country = "İstanbul", Towner = "Fatih", Gender = Gender.Male, UserID = 4 }
-            );
+                new UserDetail() { ID = 4, NameSurname = "Mustafa Yorulmaz", Phone = "05477898989", Email = "mustafa@gmail.com", Country = "Çanakkale", Towner = "Çan", Gender = Gender.Male, UserID = 4 },
+                new UserDetail() { ID = 5, NameSurname = "nalan ımış", Phone = "5474877878", Email = "esryrlmz@gmail.com", Country = "Afyonkarahisar", Towner = "Şuhut", Gender = Gender.Male, UserID = 5 },
+                new UserDetail() { ID = 6, NameSurname = "admin esra", Phone = "5474784848", Email = "esraadmin@gmail.com", Country = "İstanbul", Towner = "Adalar", Gender = Gender.Male, UserID = 6 },
+                new UserDetail() { ID = 7, NameSurname = "esra yorulmaz", Phone = "5464565656", Email = "yrlmz@gmail.com", Country = "İstanbul", Towner = "Üsküdar", Gender = Gender.Male, UserID = 7 },
+                new UserDetail() { ID = 8, NameSurname = "Kubra Sayın", Phone = "5434762972", Email = "kubra@gmail.com", Country = "İstanbul", Towner = "Kartal", Gender = Gender.Male, UserID = 8 },
+                new UserDetail() { ID = 9, NameSurname = "scknyn", Phone = "5474784848", Email = "seckin@gmail.com", Country = "İstanbul", Towner = "Fatih", Gender = Gender.Male, UserID = 10 }
+                  );
             modelBuilder.Entity<Category>().HasKey(k => k.ID);
             modelBuilder.Entity<Category>().HasData(
                new Category() { ID = 1, CategoryName = "Elektronik" },
@@ -49,7 +59,120 @@ namespace Agora.DAL.Initializer
                new Category() { ID = 16, CategoryName = "Sandalye", CategoryID = 14 },
                new Category() { ID = 17, CategoryName = "Mutfak Araç Gereç" }
            );
-
+            modelBuilder.Entity<Product>().HasKey(k => k.ID);
+            modelBuilder.Entity<Product>().HasData(
+               new Product() { ID = 1, ShortName = "çalışma masası", Description = "kahverengi çalışma masası", IsActive = true, IsCargo=true, IsHandDeliver=false, ProductStatus=ProductStatus.Adopted, UserID=4, Town= "Fatih", City= "İstanbul" },
+               new Product() { ID = 2, ShortName = "siyah ayakkabı", Description = "az kullanılmış ayakkabı", IsActive = true, IsCargo = true, IsHandDeliver = false, ProductStatus = ProductStatus.Adopted, UserID = 4, Town = "Fatih", City = "İstanbul" },
+               new Product() { ID = 3, ShortName = "sandalye", Description = "ahşap kullanılabilir durumda", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Adopted, UserID = 3, Town = "Fatih", City = "İstanbul" },
+               new Product() { ID = 4, ShortName = "yaşamak Kitabı", Description = "Kitap iyi durumda , okumak isteyen talep edebilir, istanbul içinden elden teslimn, istanbul dışından ise kargo ucreti alıcınındır", IsActive = true, IsCargo = true, IsHandDeliver = false, ProductStatus = ProductStatus.Ownerless, UserID = 4, Town = "Çan", City = "Çanakkale" },
+               new Product() { ID = 5, ShortName = "madam bovary", Description = "klasi,k kitap bir defa okundu", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Ownerless, UserID = 2, Town = "Ceyhan", City = "Adana" },
+               new Product() { ID = 6, ShortName = "kitaplık", Description = "az kulanılmış", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Ownerless, UserID = 2, Town = "Ceyhan", City = "Adana" },
+               new Product() { ID = 7, ShortName = "bebek beşiği", Description = "az kullanıldı, çok temizdir, ihtiyacı olan aileye verebiliriz...", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Ownerless, UserID = 3, Town = "Fatih", City = "İstanbul" },
+               new Product() { ID = 8, ShortName = "bebek takımı", Description = "az kullanıldı 2-3 yaş erkek cocuk için uygundur", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Ownerless, UserID = 3, Town = "Fatih", City = "İstanbul" },
+               new Product() { ID = 9, ShortName = "scooter", Description = "3 yaş üzeri kullanılabilir scooter", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Adopted, UserID = 4, Town = "Çan", City = "Çanakkale" },
+               new Product() { ID = 10, ShortName = "matkap seti", Description = "küçük vidaları var, cok kuçuk cocuklar için uygun değil, matkabı pil ile çalışıyor", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Adopted, UserID = 4, Town = "Çan", City = "Çanakkale" },
+               new Product() { ID = 11, ShortName = "ütü", Description = "çalışır durumda , evimde fazladan var, ihtiyacı olana verebilirim", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Ownerless, UserID = 8, Town = "Kartal", City = "İstanbul" },
+               new Product() { ID = 12, ShortName = "saç kurutma makinesi", Description = "başlığı katlanmıyor, çalışır durumda ihtiyacı olana verebiliirm", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Adopted, UserID = 8, Town = "Kartal", City = "İstanbul" },
+               new Product() { ID = 13, ShortName = "desenli halı", Description = "az kullanılmış, ihtiyacı olana verilecektir.", IsActive = true, IsCargo = false, IsHandDeliver = true, ProductStatus = ProductStatus.Rezerved, UserID = 2, Town = "Ceyhan", City = "Adana" }
+           ) ;
+            modelBuilder.Entity<ProductCategory>().HasKey(k => k.ID);
+            modelBuilder.Entity<ProductCategory>().HasData(
+               new ProductCategory() { ID = 1, CategoryID = 15, ProductID = 1},
+               new ProductCategory() { ID = 2, CategoryID = 13, ProductID = 2},
+               new ProductCategory() { ID = 3, CategoryID = 16, ProductID = 3},
+               new ProductCategory() { ID = 4, CategoryID = 9, ProductID = 4 },
+               new ProductCategory() { ID = 5, CategoryID = 9, ProductID = 5 },
+               new ProductCategory() { ID = 6, CategoryID = 14, ProductID = 6 },
+               new ProductCategory() { ID = 7, CategoryID = 6, ProductID = 7 },
+               new ProductCategory() { ID = 8, CategoryID = 7, ProductID = 8 },
+               new ProductCategory() { ID = 9, CategoryID = 8, ProductID = 9 },
+               new ProductCategory() { ID = 10, CategoryID = 8, ProductID = 10 },
+               new ProductCategory() { ID = 11, CategoryID = 1, ProductID = 11 },
+               new ProductCategory() { ID = 12, CategoryID = 1, ProductID = 12 },
+               new ProductCategory() { ID = 13, CategoryID = 11, ProductID = 13 }
+           );
+            modelBuilder.Entity<ProductPicture>().HasKey(k => k.ID);
+            modelBuilder.Entity<ProductPicture>().HasData(
+                new ProductPicture() { ID = 1, PictureUrl= "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262451/viudyik3avclgqdhwddc.jpg", ProductID=1},
+                new ProductPicture() { ID = 2, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262452/o0podldtajbcsjyudp13.jpg", ProductID = 1 },
+                new ProductPicture() { ID = 3, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1658146924/zbplrca0xubo9hmchktl.jpg", ProductID = 1 },
+                new ProductPicture() { ID = 4, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262495/gej3ws7gndmjbz3evpab.jpg", ProductID = 2 },
+                new ProductPicture() { ID = 5, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262496/k02qhvbgmmopcagohc5z.jpg", ProductID = 2 },
+                new ProductPicture() { ID = 6, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262497/zgaxfgiehqvolhefxjm1.jpg", ProductID = 2 },
+                new ProductPicture() { ID = 7, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262536/aku57gxkz3r8xugfnnxc.jpg", ProductID = 3 },
+                new ProductPicture() { ID = 8, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262538/zpsr2sm456kquxzuc9of.jpg", ProductID = 3 },
+                new ProductPicture() { ID = 9, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1657262539/rxfx5ccuhweabjkhjqao.jpg", ProductID = 3 },
+                new ProductPicture() { ID = 11, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1658468916/vortv7inwiyvtqjgoj1s.jpg", ProductID = 4 },
+                new ProductPicture() { ID = 12, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1658468917/jrdwes1yaott3mrm8rsc.jpg", ProductID = 4 },
+                new ProductPicture() { ID = 13, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1658468919/esczryfavi8ahxs0q3rk.jpg", ProductID = 4 },
+                new ProductPicture() { ID = 14, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660650512/ppa0wfzwubvhazesu7cb.jpg", ProductID = 5 },
+                new ProductPicture() { ID = 15, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660558244/c15h42pd7do1jqkq7qcx.jpg", ProductID = 5 },
+                new ProductPicture() { ID = 16, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660558245/wkzb2emj0vj5zneoysan.jpg", ProductID = 5 },
+                new ProductPicture() { ID = 17, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660558669/dzba9u7ustinw4hkve8y.jpg", ProductID = 6 },
+                new ProductPicture() { ID = 18, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660558670/wu46dmdzcbwagiyopjpm.jpg", ProductID = 6 },
+                new ProductPicture() { ID = 19, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660558671/qeukqinfmnknzus9ceic.jpg", ProductID = 6 },
+                new ProductPicture() { ID = 20, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660652063/dycrf0lfzzztypqbnagl.jpg", ProductID = 7 },
+                new ProductPicture() { ID = 21, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660652063/ke0zyodblsj2hatazcvs.jpg", ProductID = 7 },
+                new ProductPicture() { ID = 22, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660652064/isidd7ppfsaic6jjsclq.jpg", ProductID = 7 },
+                new ProductPicture() { ID = 23, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801283/e3mdtrkhtaf6tqbwgjnr.jpg", ProductID = 8 },
+                new ProductPicture() { ID = 24, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801284/oht2jgp2p558cmqbehik.jpg", ProductID = 8 },
+                new ProductPicture() { ID = 25, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801285/k57wyxtkqsgj1cld8hna.jpg", ProductID = 8},
+                new ProductPicture() { ID = 26, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801414/ev1r5amfmy8di7doyvjz.jpg", ProductID = 9 },
+                new ProductPicture() { ID = 27, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801415/jsbwekun7zhikiqpfvrr.jpg", ProductID = 9 },
+                new ProductPicture() { ID = 28, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801416/ob5mkochyxwaesi5k3lu.jpg", ProductID = 9 },
+                new ProductPicture() { ID = 29, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801522/aeylq0dtcwuoj8tyr19s.jpg", ProductID = 10 },
+                new ProductPicture() { ID = 30, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801523/xxxnvhaiqbuhltdxpys8.jpg", ProductID = 10 },
+                new ProductPicture() { ID = 31, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801524/xk4lswttqz5bscbexdpn.jpg", ProductID = 10 },
+                new ProductPicture() { ID = 32, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801945/g2ur49inuitdg208icpl.jpg", ProductID = 11 },
+                new ProductPicture() { ID = 33, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801945/buusqaq5ywvprwjmvip9.jpg", ProductID = 11 },
+                new ProductPicture() { ID = 34, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660801946/behx3zumt1lepnc3b7z6.jpg", ProductID = 11 },
+                new ProductPicture() { ID = 35, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660802115/s0uxmkqgrww8lbwiga3h.jpg", ProductID = 12 },
+                new ProductPicture() { ID = 36, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660802117/arpcjzfg6dbh1kvs7vdh.jpg", ProductID = 12 },
+                new ProductPicture() { ID = 37, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1660802117/wievezasiwftrweqna8t.jpg", ProductID = 12 },
+                new ProductPicture() { ID = 38, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1662443629/hgndinc5au4fkn7msvvx.jpg", ProductID = 13 },
+                new ProductPicture() { ID = 39, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1662443631/ifuvq125yrbcw0lq95ay.jpg", ProductID = 13 },
+                new ProductPicture() { ID = 40, PictureUrl = "https://res.cloudinary.com/dxwhd9s8o/image/upload/v1662443631/jxxgqdgvto46ybmjfmtj.jpg", ProductID = 13 }
+           );
+            modelBuilder.Entity<Comment>().HasKey(k => k.ID);
+            modelBuilder.Entity<Comment>().HasData(
+                new Comment() { ID=1, NameSurname= "Kevser Yılmaz", Interpretation= "Ürüne ihtiyacım var nasıl temin edebiliriz", IsCheck=true, ProductID=1},
+                new Comment() { ID = 2, NameSurname = "Nalan Koca", Interpretation = "Ürünün deforme durumu nasıl?", IsCheck = false, ProductID = 2 },
+                new Comment() { ID = 3, NameSurname = "Nuh Salman", Interpretation = "Ürün hala yayında mı?", IsCheck = true, ProductID = 1 },
+                new Comment() { ID = 5, NameSurname = "Ali Koca", Interpretation = "Ürünün dayanıklılık durumu nedir?", IsCheck = true, ProductID = 1 },
+                new Comment() { ID = 6, NameSurname = "Fatih Akıllı", Interpretation = "Kitabı almak istiyorum, nasıl alabilirm?", IsCheck = true, ProductID = 5 },
+                new Comment() { ID = 7, NameSurname = "Nisa Güven", Interpretation = "Ayakabının satış fişi varmı?", IsCheck = true, ProductID = 2 },
+                new Comment() { ID = 8, NameSurname = "Betül Koca", Interpretation = "Ayakkabının numarası nedir? ", IsCheck = true, ProductID = 2 },
+                new Comment() { ID = 9, NameSurname = "Betül Koca", Interpretation = "ayakkabı çok güzel", IsCheck = true, ProductID = 2 },
+                new Comment() { ID = 10, NameSurname = "Betül Koca", Interpretation = "hangi kitaplığı alabilirim?", IsCheck = true, ProductID = 6 },
+                new Comment() { ID = 11, NameSurname = "Betül Koca", Interpretation = "Kitaplıkların boyutkları nedir?", IsCheck = true, ProductID = 6 },
+                new Comment() { ID = 12, NameSurname = "Betül Koca", Interpretation = "siyah ayakkabıyı alabilirmiyim?", IsCheck = true, ProductID = 2 },
+                new Comment() { ID = 13, NameSurname = "Betül Koca", Interpretation = "Kitabın konusu nedir?, Japon yazarı hiç okumadım , Güzelse okumak isterim", IsCheck = true, ProductID = 4 },
+                new Comment() { ID = 15, NameSurname = "Esra Yorulmaz salman", Interpretation = "yorumda uyarı gelecekmi diye test ediyorum", IsCheck = true, ProductID = 6 },
+                new Comment() { ID = 16, NameSurname = "Esra Yorulmaz salman", Interpretation = "yorum yayınlandımı?", IsCheck = true, ProductID = 4 },
+                new Comment() { ID = 17, NameSurname = "Esra Yorulmaz salman", Interpretation = "deneme uyarı sistemi", IsCheck = true, ProductID = 4 },
+                new Comment() { ID = 18, NameSurname = "Esra Yorulmaz salman", Interpretation = "yine yorum deniyoruz", IsCheck = true, ProductID = 4 },
+                new Comment() { ID = 19, NameSurname = "Esra Yorulmaz salman", Interpretation = "kitabın konusu nedir?", IsCheck = true, ProductID = 5 },
+                new Comment() { ID = 20, NameSurname = "Esra Yorulmaz salman", Interpretation = "kitaplığa ihtiyacım var, nasıl temin edebilirim", IsCheck = true, ProductID = 6 },
+                new Comment() { ID = 21, NameSurname = "Betül Koca", Interpretation = "Kendi kendine yorum kapalı olmalı ama bu sefer yazılan sorulara cevap veremez diye açık olacak", IsCheck = true, ProductID = 4 },
+                new Comment() { ID = 22, NameSurname = "Kubra Sayın", Interpretation = "başlığı sağa sola dönüyormu acaba?", IsCheck = true, ProductID = 9 },
+                new Comment() { ID = 23, NameSurname = "Kubra Sayın", Interpretation = "içinde kaç parcası var?", IsCheck = true, ProductID = 10 }
+           );
+            modelBuilder.Entity<Transfer>().HasKey(k => k.ID);
+            modelBuilder.Entity<Transfer>().HasData(
+                new Transfer() { ID=1, Adress= "ibb kasımpaşa ek hizmet binası", Description="aidım",TransferDate= Convert.ToDateTime( "2022-01-01"), ProductStatus=ProductStatus.Adopted, UserID=2, ProductID=1},
+                new Transfer() { ID =2, Adress = "eyuPsultan camisi önünden", Description = "elden aldım", TransferDate = Convert.ToDateTime("2022-07-04"), ProductStatus = ProductStatus.Adopted, UserID =4, ProductID =3},
+                new Transfer() { ID =3, Adress = "sakarya sokaka bim onu", Description = "hafta içi 5 ten sonra elden alabilirim", TransferDate = Convert.ToDateTime("2022-08-19"), ProductStatus = ProductStatus.Adopted, UserID =2, ProductID =9},
+                new Transfer() { ID =4, Adress = "Yayla camii önü", Description = "aldım", TransferDate = Convert.ToDateTime("2022-08-19"), ProductStatus = ProductStatus.Adopted, UserID =4, ProductID =12},
+                new Transfer() { ID =5, Adress = "aaaaaaa", Description = "aldım", TransferDate = Convert.ToDateTime("2022-08-19"), ProductStatus = ProductStatus.Adopted, UserID =8, ProductID =10},
+                new Transfer() { ID =6, Adress = "herhangi bi yerden", Description = "aldım", TransferDate = Convert.ToDateTime("2022-08-19"), ProductStatus = ProductStatus.Adopted, UserID =2, ProductID =2},
+                new Transfer() { ID =7, Adress = "neresi olursa", Description = "pazartesi yada salı gunu  saat 12: 00 civarı alabilirmiyim?", TransferDate = Convert.ToDateTime("2022-09-06"), ProductStatus = ProductStatus.Rezerved, UserID =4, ProductID =13}
+           );
+            modelBuilder.Entity<Cargo>().HasKey(k => k.ID);
+            modelBuilder.Entity<Cargo>().HasData(
+                new Cargo() { ID=1, CargoTrackingNumber= "T54657998643", CargoFirm= "yurt içi kargo", Description= "teslim edildi", TranserID=1 },
+                new Cargo() { ID=5, CargoTrackingNumber = "T2345434526", CargoFirm = "PTT", Description = "teslim edildi", TranserID = 6 }
+                
+           );
             // il bilgisi
             modelBuilder.Entity<City>().HasKey(k => k.ID);
             modelBuilder.Entity<City>().HasData(
@@ -1109,7 +1232,7 @@ namespace Agora.DAL.Initializer
                 new Town() { ID = 970, TownName = "Kaynaşlı", CityID = 81 }
 
 
-                );
+           );
         }
     }
 }
