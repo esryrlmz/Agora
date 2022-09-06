@@ -32,7 +32,7 @@ namespace Agora.UI.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View(user);
+                return View((user,new MailDto()));
             }
             User luser = _repoUser.IsUserLogin(user.UserNameOrMail);
             if (luser != null)
@@ -59,14 +59,14 @@ namespace Agora.UI.Controllers
                 {
                     ViewBag.CssClassName = "danger"; ;
                     ViewBag.Message = "Şifrenizi Hatalı Girdiniz!";
-                    return View(user);
+                    return View((user, new MailDto()));
                 }
             }
             else
             {
                 ViewBag.CssClassName = "danger"; ;
                 ViewBag.Message = "Kullanıcı Bulunamadı!";
-                return View(user);
+                return View((user, new MailDto()));
             }
         }
         public async Task<IActionResult> LogAuth()
