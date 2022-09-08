@@ -11,20 +11,16 @@ namespace Agora.UI.Controllers
     public class HomeController : Controller
     {
         IRepository<Town> _repoTown;
-        IRepository<City> _repoCity;
         ICategoryRepository _repoCategory;
         IRepository<UserDetail> _repoUserDetail;
-        public HomeController(IRepository<Town> repoTown, IRepository<City> repoCity, ICategoryRepository repoCategory, IRepository<UserDetail> repoUserDetail)
+        public HomeController(IRepository<Town> repoTown,  ICategoryRepository repoCategory, IRepository<UserDetail> repoUserDetail)
         {
             _repoTown = repoTown;
-            _repoCity = repoCity;
             _repoCategory = repoCategory;
             _repoUserDetail = repoUserDetail;
         }
         public IActionResult Index()
         {
-            ViewBag.CityList = _repoCity.GetActives();
-            ViewBag.CategoryList = _repoCategory.GetAllCategory();
             return View();
         }
         public JsonResult LoadTownlist(string cityId)

@@ -15,6 +15,7 @@ namespace Agora.UI.Controllers
         IUserRepository _repoUser;
 
 
+
         public UserController(IRepository<City> repoCity, IRepository<Town> repoTown, IUserRepository repoUser)
         {
             _repoCity = repoCity;   
@@ -56,8 +57,6 @@ namespace Agora.UI.Controllers
                 TempData["Message"] = "Kaydınız alınmıştır, Lütfen Giriş yapınız!";
                 return RedirectToAction("LogIn", "Auth");
             }
-           
-
         }
         public IActionResult ResetPassword(string email)
         {
