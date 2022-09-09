@@ -4,17 +4,17 @@
               <div class="form-inline my-3">
             <div class="input-group">
                 @if(@Model.Item1!=null){
-              <select  class="custom-select my-1 mr-sm-2" name="city" id=cityList asp-items="@(new SelectList(@Model.Item1,"ID","CityName"))" style="width:230px;">
+              <select  class="custom-select my-1 mr-sm-2" name="city" id="fcityList" asp-items="@(new SelectList(@Model.Item1,"ID","CityName"))" style="width:230px;">
                  <option value="0"> İl Seçiniz</option>
             </select>
-                }else{ <select  id="townList" class="custom-select my-1 mr-sm-2" name="city"  style="width:230px;" >
+                }else{ <select  id="fcityList" class="custom-select my-1 mr-sm-2" name="city"  style="width:230px;" >
                   <option value="0"> İl Seçiniz</option>
               </select>}
             </div>
             </div>
           <div class="form-inline my-3">
             <div class="input-group">
-              <select  id="townList" class="custom-select my-1 mr-sm-2" name="town"  style="width:230px;" >
+              <select  id="ftownList" class="custom-select my-1 mr-sm-2" name="town"  style="width:230px;" >
                   <option value="0"> İlçe Seçiniz</option>
               </select>
             </div>
@@ -22,17 +22,17 @@
           <div class="form-inline my-3">
             <div class="input-group">
                  @if(@Model.Item2!=null){
-              <select class="custom-select my-1 mr-sm-2" name="UstKategoriID"  id=CategoriList style="width:230px;" asp-items="@(new SelectList(@Model.Item2,"ID","CategoryName"))"  >
+              <select class="custom-select my-1 mr-sm-2" name="UstKategoriID"  id="fCategoriList" style="width:230px;" asp-items="@(new SelectList(@Model.Item2,"ID","CategoryName"))"  >
                     <option value="0"> Kategori Seçiniz</option>
               </select>
-                }else{ <select  id="townList" class="custom-select my-1 mr-sm-2" name="UstKategoriID"  style="width:230px;" >
+                }else{ <select  id="fCategoriList" class="custom-select my-1 mr-sm-2" name="UstKategoriID"  style="width:230px;" >
                   <option value="0"> Kategori Seçiniz</option>
               </select>}        
             </div>
            </div>
           <div class="form-inline my-3">
             <div class="input-group">
-              <select  class="custom-select my-1 mr-sm-2" name="AltKategoriID"  style="width:230px;"   id="SubCategoriList" placeholder="Alt Kategori Seçiniz" >
+              <select  class="custom-select my-1 mr-sm-2" name="AltKategoriID"  style="width:230px;"   id="fSubCategoriList" placeholder="Alt Kategori Seçiniz" >
                 <option value="0"> Ana Kategoriye Ekle</option>
               </select>
             </div>
@@ -43,3 +43,41 @@
             </div>
           </div>
           </form>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#fcityList").change(function() {
+        var id = $('#fcityList option:selected').val();
+        $.ajax("/Home/LoadTownlist/", {
+            data: { cityId: id}, 
+            timeout: 500,
+            success: function (data) {
+                var select_data = '<option value="0"> İlçe Seçiniz</option>';
+                $.each(data, function(index, value) { 
+                    select_data += '<option value="'+ value.id +'">'+ value.townName +'</option>';
+                });
+                $('#ftownList').html(select_data);
+            }
+        });
+    });
+});
+ $(document).ready(function() {
+        $("#fCategoriList").change(function() {
+            var id = $('#fCategoriList option:selected').val();
+            $.ajax("/Home/SubCategoriList/", {
+                data: { CategoryId: id}, 
+                timeout: 500,
+                success: function (data) {
+                    var select_data = '<option value="0"> Ana Kategori</option>';
+                    $.each(data, function(index, value) { 
+                        select_data += '<option value="'+ value.id +'">'+ value.categoryName +'</option>';
+                    });
+                    $('#fSubCategoriList').html(select_data);
+                }
+            });
+        });
+    });
+
+    
+
+</script>

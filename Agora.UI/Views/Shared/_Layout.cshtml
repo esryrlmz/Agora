@@ -164,40 +164,4 @@ $(document).ready(function() {
 
 
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#cityList").change(function() {
-        var id = $('#cityList option:selected').val();
-        $.ajax("/Home/LoadTownlist/", {
-            data: { cityId: id}, 
-            timeout: 500,
-            success: function (data) {
-                var select_data = '<option value="0"> İlçe Seçiniz</option>';
-                $.each(data, function(index, value) { 
-                    select_data += '<option value="'+ value.id +'">'+ value.townName +'</option>';
-                });
-                $('#townList').html(select_data);
-            }
-        });
-    });
-});
- $(document).ready(function() {
-        $("#CategoriList").change(function() {
-            var id = $('#CategoriList option:selected').val();
-            $.ajax("/Home/SubCategoriList/", {
-                data: { CategoryId: id}, 
-                timeout: 500,
-                success: function (data) {
-                    var select_data = '<option value="0"> Ana Kategori</option>';
-                    $.each(data, function(index, value) { 
-                        select_data += '<option value="'+ value.id +'">'+ value.categoryName +'</option>';
-                    });
-                    $('#SubCategoriList').html(select_data);
-                }
-            });
-        });
-    });
 
-    
-
-</script>

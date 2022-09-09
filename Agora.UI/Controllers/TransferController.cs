@@ -90,11 +90,6 @@ namespace Agora.UI.Controllers
             return View((transfer, pictures, cargo));
         }
 
-
-
-
-
-
         [Authorize(Policy = "UserPolicy")]
         public IActionResult TransferCancel(int id)
         {
