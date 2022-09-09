@@ -117,14 +117,24 @@ namespace Agora.UI.Controllers
             {
                 Product.CategoryID = Product.SubCategoryID;
             }
-            //oturum açan kişi
-
-                  var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
-                  Product.UserID = Convert.ToInt32(luser.FindFirst("UserID").Value);
-                 CloudinaryImage cimage = new CloudinaryImage(_configuration,Environment);
-                 List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
-                  _repoProduct.AddProduct(Product, ImageUrlList);
-                return RedirectToAction("MyProducts");
+            //oturum açan kişi 
+            try
+            {
+                var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+                Product.UserID = Convert.ToInt32(luser.FindFirst("UserID").Value);
+                CloudinaryImage cimage = new CloudinaryImage(_configuration, Environment);
+                List<string> ImageUrlList = cimage.LocalUpload(Product.Pictures);
+                _repoProduct.AddProduct(Product, ImageUrlList);
+                // ürün ekeleme başarılıysa ürünü ekleyen kişiye mail atılması
+                //MailDto dtomail = new MailDto();
+                //dtomail.mail = luser.FindFirst("Mail").Value.ToString();
+                //dtomail.subject = "İhtiyac Fazlası ürün eklendi!";
+                //dtomail.text = " Merhaba " + luser.FindFirst("NameSurname").Value.ToString() + "    Pazaryeri sitesine eklediğiniz  " + Product.ShortName + " adlı ürününüz yayına alınmıştır, Bu ürüne ihtiyac duyan üyelerimiz ürünü talep ettiğinde mail ile size ulaşılacaktır..";
+                //bool durum = new SendMail().Contact(dtomail);
+            }
+            catch {
+            }
+            return RedirectToAction("MyProducts");
         }
 
         public JsonResult SubCategoriList(string CategoryId)

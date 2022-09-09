@@ -2,6 +2,7 @@
 using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
 using Agora.MODEL.Enums;
+using Agora.UI.Helper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -15,11 +16,13 @@ namespace Agora.UI.Controllers
         ITransferRepository _repoTransfer;
         IProductRepository _repoProduct;
         IRepository<Cargo> _repoCargo;
-        public TransferController(ITransferRepository repoTransfer, IProductRepository repoProduct, IRepository<Cargo> repoCargo)
+        IRepository<UserDetail> _repoUserDetail;
+        public TransferController(ITransferRepository repoTransfer, IProductRepository repoProduct, IRepository<Cargo> repoCargo, IRepository<UserDetail> repoUserDetail)
         {
             _repoProduct=repoProduct;
             _repoTransfer=repoTransfer;
             _repoCargo = repoCargo;
+            _repoUserDetail=repoUserDetail; 
         }
         public IActionResult TakeTransfer()
         {
@@ -51,17 +54,31 @@ namespace Agora.UI.Controllers
                 TransferDate = DateTime.Now,
                 UserID= Convert.ToInt32( luser.FindFirst("UserID").Value)
             };
-             _repoTransfer.Add(trnsfr);
-             var transferid = trnsfr.ID;
-             Product prd = _repoProduct.GetById(trnsfr.ProductID);
-             prd.ProductStatus = ProductStatus.Rezerved;
-             if (transfer.IsCargo) {
-                prd.IsCargo = true; prd.IsHandDeliver = false;
-                _repoCargo.Add(new Cargo() { TranserID = transferid });
-            } else { 
-                prd.IsHandDeliver = true; prd.IsCargo = false; 
+            try
+            {
+                _repoTransfer.Add(trnsfr);
+                var transferid = trnsfr.ID;
+                Product prd = _repoProduct.GetById(trnsfr.ProductID);
+                prd.ProductStatus = ProductStatus.Rezerved;
+                if (transfer.IsCargo)
+                {
+                    prd.IsCargo = true; prd.IsHandDeliver = false;
+                    _repoCargo.Add(new Cargo() { TranserID = transferid });
+                }
+                else
+                {
+                    prd.IsHandDeliver = true; prd.IsCargo = false;
+                }
+                _repoProduct.Update(prd);
+              //  eğer transfer talebi açıldıysa ürün sahibine mail at
+                MailDto dtomail = new MailDto();
+                UserDetail ud = _repoUserDetail.GetByFilter(x => x.UserID == prd.UserID)[0];
+                dtomail.mail = ud.Email;
+                dtomail.subject = "Ürününüze bir kişinin ihtiyacı var!";
+                dtomail.text = " Merhaba " + ud.NameSurname + "    Pazaryeri sitesine eklemiş olduğunuz  " + prd.ShortName + "   ürününüze bir kişinin ihtiyacı var , Lütfen Sisteme girerek eklediğiniz ürünü ihtiyac sahibine ulaştırınız!";
+                bool durum = new SendMail().Contact(dtomail);
             }
-            _repoProduct.Update(prd);
+            catch { }
             return RedirectToAction("TakeTransfer");
         }
         [Authorize(Policy = "UserPolicy")]

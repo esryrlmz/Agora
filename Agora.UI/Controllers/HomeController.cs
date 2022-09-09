@@ -62,7 +62,6 @@ namespace Agora.UI.Controllers
                 bool durum = new SendMail().Contact(dtomail);
                 if(durum)
                 {
-                   
                     TempData["PasswordKod"] = passwordKod;
                     TempData["CssClassName"] = "success";
                     TempData["Message"] = "Lutfen 2 dk içinde mailize gelen kod ile şifrenizi değiştiriniz";
