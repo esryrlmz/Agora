@@ -166,7 +166,7 @@ namespace Agora.UI.Controllers
         public IActionResult Edit([Bind(Prefix = "Item1")] ProductDto editPrd)
         {
 
-            // 1.Adımı: kategoriler değişmiş mi?
+           // 1.Adımı: kategoriler değişmiş mi ?
             if (editPrd.SubCategoryID == 0) // ANA KATEGORİYE GEÇTİYSE
             {
                 _repoProduct.updateProductCategory(editPrd.ProductID, editPrd.CategoryID);

@@ -1,4 +1,31 @@
 ﻿@model (ProductDto ,List<Category>)
+<style type="text/css">
+
+    .modal {
+        position: fixed;
+        z-index: 998;
+        height: 100% !important;
+        width: 100% !important;
+        top: 0;
+        display: block;
+        background-color: Black !important;
+        filter: grayscale(100%);
+        opacity: 0.6;
+    }
+
+    .loading {
+        font-family: Arial;
+        font-size: 10pt;
+        border: 5px solid #67CFF5;
+        width: 200px;
+        height: 100px;
+        display: none;
+        position: fixed;
+        background-color: White;
+        z-index: 999;
+    }
+</style>
+
 <div class="container">
   <div class="card" >
   <div class="card-header">
@@ -75,8 +102,13 @@
                             </div>
                            
                              <div class="form-group">
-                               <button type="submit" class="btn" style="background-color: #31708f; float: right; color:#ffffff">KAYDET</button>
+                               <button type="submit" class="btn" id="btnLoad" style="background-color: #31708f; float: right; color:#ffffff">KAYDET</button>
                              </div>
+                             <div class="loading" align="center">
+                               Lütfen Bekleyin...<br />
+                                <br />
+                                <img src="https://www.aspsnippets.com/demos/loader.gif" alt="" />
+                            </div>
                            </form>                    
 						
                     </div>
@@ -106,6 +138,7 @@
             });
         });
     });
+    // resimlerin ön gösterimi için
     function preview(obj,outImage)
     {
 	    if (FileReader)
@@ -125,4 +158,30 @@
 		        // Not supported
 	    }
     }
+    // ekleme işleminde sayfanın loading görünümü için
+     var modal, loading;
+        function ShowProgress() {
+            modal = document.createElement("DIV");
+            modal.className = "modal";
+            document.body.appendChild(modal);
+            loading = document.getElementsByClassName("loading")[0];
+            loading.style.display = "block";
+            var top = Math.max(window.innerHeight / 2 - loading.offsetHeight / 2, 0);
+            var left = Math.max(window.innerWidth / 2 - loading.offsetWidth / 2, 0);
+            loading.style.top = top + "px";
+            loading.style.left = left + "px";
+        };
+
+        function HideProgress() {
+            document.body.removeChild(modal);
+            loading.style.display = "none";
+        };
+        $(function () {
+            $("#btnLoad").click(function () {
+                ShowProgress();
+                setTimeout(function () {
+                    HideProgress();
+                }, 8000);
+            });
+        });
 </script>
