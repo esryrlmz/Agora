@@ -145,7 +145,14 @@ namespace Agora.UI.Areas.Management.Controllers
 
         public IActionResult Profile()
         {
-            User user = new User();     
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            User user = _repoUser.UserProfile(Convert.ToInt32(luser.FindFirst("UserID").Value));
+            return View(user);
+        }
+        [HttpPost]
+        public IActionResult Profile(User user)
+        {
+            _repoUser.UpdateUser(user);
             return View(user);
         }
 
@@ -163,6 +170,8 @@ namespace Agora.UI.Areas.Management.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+
+    
 
     }
 }

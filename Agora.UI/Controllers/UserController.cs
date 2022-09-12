@@ -3,6 +3,7 @@ using Agora.MODEL.Dto;
 using Agora.MODEL.Entities;
 using Agora.MODEL.Enums;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 using System;
 using System.Collections.Generic;
 
@@ -87,6 +88,34 @@ namespace Agora.UI.Controllers
                 TempData["Message"] = "Lütfen Yeniden Deneyin!";
             }
             return RedirectToAction("LogIn", "Auth");
+        }
+
+        [Authorize(Policy = "AdminPolicy")]
+        public IActionResult Account()
+        {
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            User user = _repoUser.GetById(Convert.ToInt32(luser.FindFirst("UserID").Value));
+            return View(user);
+        }
+        [HttpPost]
+        public IActionResult Account( User user)
+        {
+            if (user.Password != null)
+            {
+                user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            }
+            _repoUser.Update(user);
+            ViewBag.CssClassName = "success";
+            ViewBag.Message = "Şifreniz Değişmiştir!!";
+            return View();
+        }
+
+        [Authorize(Policy = "AdminPolicy")]
+        public IActionResult MyProfile()
+        {
+            var luser = (System.Security.Claims.ClaimsIdentity)User.Identity;
+            UserDetail userdetail = _repoUser.GetUserDetail(Convert.ToInt32(luser.FindFirst("UserID").Value));
+            return View(userdetail);
         }
 
     }

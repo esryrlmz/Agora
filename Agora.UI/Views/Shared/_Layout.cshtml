@@ -59,19 +59,30 @@
                       <li class="nav-item"> <a class="nav-link " asp-area="Management" asp-controller="Home" asp-action="Index"><i class="fa fa-user-secret fa-lg" aria-hidden="true"></i>  Admin Panel<br></a> </li>
             } 
             }
-           
-      </ul>
+       </ul>    
+     
+       <ul class="navbar-nav ml-auto">
        
         @if(User.Identity.IsAuthenticated)
         {
              var user = (System.Security.Claims.ClaimsIdentity)User.Identity; 
-             <span class="text-right"> @user.FindFirst("NameSurname").Value </span>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarprofile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="text-right"> @user.FindFirst("NameSurname").Value </span>
+                </a>
+                 <div class="dropdown-menu" aria-labelledby="navbarprofile">
+                   <a class="dropdown-item" asp-controller="User" asp-action="Account">Hesabım</a>
+                   <a class="dropdown-item" asp-controller="User" asp-action="MyProfile" >Profilim</a>
+                </div>
+         
+           </li>
+
            <a class="btn navbar-btn ml-md-2 btn-outline-dark" asp-controller="Auth" asp-action="LogAuth" asp-area=""> <i class="fa  fa-sign-out fa-fw fa-1x py-1"></i> Çıkış <br></a>       
         }else
         {
            <a class="btn navbar-btn ml-md-2 btn-outline-dark" asp-controller="Auth" asp-action="LogIn"> <i class="fa fa-lock fa-fw fa-1x py-1"></i> Giriş <br></a>   
         }
-               
+        </ul>        
          
       </div>
     </div>

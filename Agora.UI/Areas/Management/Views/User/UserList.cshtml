@@ -18,8 +18,8 @@
                                             <thead>
                                                 <tr>
                                                     <th class="col-md-1">ID No</th>
-                                                    <th>Ad Soyad</th>
                                                     <th>Kullanıcı Adı</th>
+                                                    <th>Ad Soyad</th>
                                                     <th>Telefon</th>
                                                     <th>Mail</th>
                                                     <th>İl</th>
@@ -34,7 +34,7 @@
                                                  <tr class="odd gradeA">
                                                     <td>@(i+1) </td>
                                                     <td>@Model[i].UserName </td>
-                                                    <td>@Model[i].UserDetail.NameSurname</td>
+                                                    <td><a  asp-action="UserProfile" asp-controller="User" asp-route-id="@Model[i].ID" > @Model[i].UserDetail.NameSurname</a></td>
                                                     <td>@Model[i].UserDetail.Phone</td>
                                                     <td>@Model[i].UserDetail.Email</td>
                                                     <td>@Model[i].UserDetail.Country</td>
